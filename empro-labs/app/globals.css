@@ -641,7 +641,7 @@
   /* Design grid: hub-visual is a 700x560 box; every child below is positioned
      as a percentage of that box so the SVG paths always line up exactly with
      the tags, the hub node, and the icon row regardless of viewport width. */
-  .hub-section{ padding: 120px 0; border-top: 1px solid var(--line); }
+  .hub-section{ padding: 120px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .hub-layout{ display: flex; align-items: center; gap: 40px; }
   .hub-text{ flex: 0 0 400px; max-width: 400px; }
   .hub-text .section-lede{ margin-bottom: 0; }
