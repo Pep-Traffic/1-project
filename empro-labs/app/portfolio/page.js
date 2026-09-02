@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import PageHero from "../components/PageHero";
 import CtaBanner from "../components/CtaBanner";
 import PortfolioGrid from "./PortfolioGrid";
+import PortfolioRing from "./PortfolioRing";
 
 export const metadata = {
   title: "Portfolio — Empro Labs",
@@ -19,6 +20,8 @@ export default function PortfolioPage() {
         title="Projects across the whole stack"
         lede="From custom web builds to GHL automations, WordPress rebuilds, Shopify storefronts, SEO campaigns, and paid ads — filter by category to see relevant work."
       />
+
+      <PortfolioRing />
 
       <section className="work">
         <div className="wrap">
