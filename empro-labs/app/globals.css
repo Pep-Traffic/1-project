@@ -642,9 +642,18 @@
      as a percentage of that box so the SVG paths always line up exactly with
      the tags, the hub node, and the icon row regardless of viewport width. */
   .hub-section{ padding: 120px 0; border-top: 1px solid var(--line); }
+  .hub-layout{ display: flex; align-items: center; gap: 40px; }
+  .hub-text{ flex: 0 0 400px; max-width: 400px; }
+  .hub-text .section-lede{ margin-bottom: 0; }
   .hub-visual{
-    position: relative; width: 700px; max-width: 100%; aspect-ratio: 700 / 560;
-    margin: 70px auto 0;
+    position: relative; flex: 1; min-width: 0; max-width: 620px;
+    width: 100%; aspect-ratio: 700 / 560;
+    margin: 0 0 0 auto;
+  }
+  @media (max-width: 960px){
+    .hub-layout{ flex-direction: column; align-items: stretch; }
+    .hub-text{ flex: none; max-width: none; }
+    .hub-visual{ margin: 50px auto 0; max-width: 700px; }
   }
   .hub-tags-top{ position: absolute; inset: 0; z-index: 3; }
   .hub-tag{
