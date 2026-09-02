@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/" className="logo">
-              <span className="glyph"></span>Empro Labs
+              <img src="/brand/logo.png" alt="Empro Labs" className="logo-img" />
             </Link>
             <p>A software development agency for founders who need production-grade systems, not a demo.</p>
           </div>

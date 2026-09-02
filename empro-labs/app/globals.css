@@ -63,16 +63,7 @@
     font-family: 'Sora', sans-serif; font-weight: 700; font-size: 19px;
     letter-spacing: -0.01em; text-decoration: none;
   }
-  .logo .glyph{
-    width: 28px; height: 28px; border-radius: 8px;
-    background: linear-gradient(140deg, var(--amber), var(--amber-deep));
-    position: relative; flex-shrink: 0;
-  }
-  .logo .glyph::after{
-    content: "E"; position: absolute; inset: 0;
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #14100A;
-  }
+  .logo-img{ height: 32px; width: auto; display: block; }
   nav ul{ list-style: none; display: flex; gap: 36px; margin: 0; padding: 0; }
   nav a{ text-decoration: none; font-size: 14.5px; color: var(--ink-dim); transition: color 0.2s ease; }
   nav a:hover{ color: var(--ink); }
@@ -127,7 +118,7 @@
   @media (max-width: 380px){
     header{ padding: 14px 16px; }
     .logo{ font-size: 16px; gap: 8px; }
-    .logo .glyph{ width: 24px; height: 24px; }
+    .logo-img{ height: 24px; }
     .menu-btn{ width: 36px; height: 36px; }
   }
 

@@ -25,7 +25,7 @@ export default function Header() {
     <>
       <header>
         <Link href="/" className="logo">
-          <span className="glyph"></span>Empro Labs
+          <img src="/brand/logo.png" alt="Empro Labs" className="logo-img" />
         </Link>
         <nav>
           <ul>
