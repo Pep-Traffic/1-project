@@ -649,6 +649,7 @@
     position: relative; flex: 1; min-width: 0; max-width: 620px;
     width: 100%; aspect-ratio: 700 / 560;
     margin: 0 0 0 auto;
+    transform: scale(0.74);
   }
   @media (max-width: 960px){
     .hub-layout{ flex-direction: column; align-items: stretch; }
@@ -729,7 +730,7 @@
     50%{ transform: translate(-50%, calc(-50% - 6px)); }
   }
   @media (max-width: 760px){
-    .hub-visual{ width: auto; aspect-ratio: auto; height: auto; padding: 40px 0 90px; }
+    .hub-visual{ width: auto; aspect-ratio: auto; height: auto; padding: 40px 0 90px; transform: none; }
     .hub-tags-top, .hub-lines{ display: none; }
     .hub-backdrop{ width: 260px; }
     .hub-core{ position: relative; top: 0; left: 0; transform: none; margin: 0 auto 30px; }
