@@ -917,23 +917,31 @@
     .profile-photo{ width: 140px; height: 140px; }
   }
 
-  .contact-info-grid{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
-  .contact-info-card{
-    display: flex; align-items: center; gap: 18px; padding: 26px; text-decoration: none;
-    background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
-    transition: transform 0.22s cubic-bezier(.16,1,.3,1), border-color 0.22s ease;
-  }
-  .contact-info-card:hover{ transform: translateY(-3px); border-color: rgba(240,160,89,0.35); }
-  .contact-info-card .icon{
-    width: 46px; height: 46px; border-radius: 12px; flex-shrink: 0;
+  .profile-contact-row{ display: flex; gap: 16px; margin-top: 26px; }
+  .profile-contact-btn{
+    width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0;
     display: flex; align-items: center; justify-content: center;
-    background: linear-gradient(140deg, rgba(240,160,89,0.16), rgba(217,102,43,0.08));
-    border: 1px solid var(--line); color: var(--amber-soft);
+    background: linear-gradient(140deg, var(--amber), var(--amber-deep));
+    color: #1A1006; text-decoration: none; position: relative;
+    animation: contactGlow 2.6s ease-in-out infinite;
+    transition: transform 0.22s cubic-bezier(.16,1,.3,1);
   }
-  .contact-info-card .icon svg{ width: 20px; height: 20px; }
-  .contact-label{ display: block; font-size: 12px; color: var(--ink-faint); margin-bottom: 4px; }
-  .contact-info-card p{ font-size: 15px; font-weight: 600; color: var(--ink); margin: 0; }
-  @media (max-width: 640px){ .contact-info-grid{ grid-template-columns: 1fr; } }
+  .profile-contact-btn:hover{ transform: translateY(-3px) scale(1.05); }
+  .profile-contact-btn svg{ width: 22px; height: 22px; overflow: visible; }
+  @keyframes contactGlow{
+    0%, 100%{ box-shadow: 0 0 0 0 rgba(240,160,89,0.55); }
+    50%{ box-shadow: 0 0 0 10px rgba(240,160,89,0); }
+  }
+  .icon-draw path, .icon-draw rect{
+    stroke-dasharray: 1; stroke-dashoffset: 1;
+    animation: iconDraw 3.2s ease-in-out infinite;
+  }
+  @keyframes iconDraw{
+    0%{ stroke-dashoffset: 1; }
+    35%{ stroke-dashoffset: 0; }
+    65%{ stroke-dashoffset: 0; }
+    100%{ stroke-dashoffset: -1; }
+  }
 
   /* ================= STATS BAND (About) ================= */
   .stats-band{ padding: 90px 0; border-bottom: 1px solid var(--line); }
