@@ -22,7 +22,7 @@ export default function AdnanJavedProfilePage() {
         <div className="grain"></div>
         <div className="wrap profile-hero-inner">
           <div className="profile-photo">
-            <img src="/team/adnan-javed.svg" alt="Adnan Javed" />
+            <img src="/team/adnan-javed.png" alt="Adnan Javed" />
           </div>
           <div className="profile-info">
             <div className="eyebrow">

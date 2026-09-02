@@ -14,7 +14,7 @@ export const metadata = {
 const team = [
   {
     slug: "adnan-javed",
-    photo: "/team/adnan-javed.svg",
+    photo: "/team/adnan-javed.png",
     name: "Adnan Javed",
     role: "GHL, SEO, WordPress & Shopify Expert",
   },
