@@ -690,12 +690,12 @@
     100%{ transform: scale(1.6); opacity: 0; }
   }
   .hub-node{
-    position: relative; width: 64px; height: 64px; border-radius: 50%;
-    background: linear-gradient(140deg, var(--amber), var(--amber-deep));
-    display: flex; align-items: center; justify-content: center; color: #1A1006;
-    box-shadow: 0 0 0 8px rgba(240,160,89,0.08), 0 20px 40px -16px rgba(217,102,43,0.7);
+    position: relative; width: 88px; height: 88px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(240,160,89,0.22) 0%, rgba(217,102,43,0.06) 65%, transparent 75%);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 0 8px rgba(240,160,89,0.06);
   }
-  .hub-node svg{ width: 30px; height: 30px; }
+  .hub-node img{ width: 64px; height: auto; display: block; filter: drop-shadow(0 10px 18px rgba(217,102,43,0.55)); }
 
   .hub-icons-bottom{ position: absolute; inset: 0; z-index: 2; }
   .hub-icon{

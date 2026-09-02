@@ -335,9 +335,7 @@ export default function HomeContent() {
         <span className="hub-ring hub-ring-2"></span>
         <span className="hub-ring hub-ring-3"></span>
         <span className="hub-node">
-          <svg viewBox="0 0 200 200">
-            <path d="M62 20 H150 V52 H98 V88 H138 V118 H98 V148 H150 V180 H62 Z" fill="#1A1006" />
-          </svg>
+          <img src="/brand/icon.png" alt="Empro Labs" />
         </span>
       </div>
 
