@@ -185,6 +185,14 @@
     .wordmark-ghost, .mark-graphic{ display: none; }
     .testimonial-float{ position: static; width: 100%; max-width: 340px; margin-top: 36px; }
     .hero{ min-height: auto; padding: 60px 0 70px; }
+    .hero-inner{ padding: 0 24px; }
+    .cta-row{ flex-wrap: wrap; }
+    .btn{ white-space: nowrap; }
+  }
+
+  @media (max-width: 420px){
+    .cta-row{ flex-direction: column; align-items: stretch; }
+    .btn{ justify-content: center; }
   }
 
   /* ================= LOGO STRIP ================= */
