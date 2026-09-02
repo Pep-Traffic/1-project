@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageHero from "../components/PageHero";
@@ -11,7 +12,12 @@ export const metadata = {
 };
 
 const team = [
-  { initials: "AK", name: "Aaron Kessler", role: "Founder & Lead Engineer" },
+  {
+    slug: "adnan-javed",
+    photo: "/team/adnan-javed.svg",
+    name: "Adnan Javed",
+    role: "GHL, SEO, WordPress & Shopify Expert",
+  },
   { initials: "MR", name: "Maya R. Chen", role: "Product Design Lead" },
   { initials: "OT", name: "Owen Tran", role: "DevOps & Infrastructure" },
   { initials: "PD", name: "Priya Deshmukh", role: "Engagement Manager" },
@@ -77,13 +83,23 @@ export default function AboutPage() {
             No account managers relaying messages to engineers you'll never talk to. You work directly with the people building your product.
           </p>
           <div className="team-grid">
-            {team.map((member) => (
-              <div className="team-card" key={member.name}>
-                <div className="team-avatar">{member.initials}</div>
-                <h4>{member.name}</h4>
-                <span>{member.role}</span>
-              </div>
-            ))}
+            {team.map((member) =>
+              member.slug ? (
+                <Link href={`/about/team/${member.slug}`} className="team-card team-card-link" key={member.name}>
+                  <div className="team-avatar team-avatar-photo">
+                    <img src={member.photo} alt={member.name} />
+                  </div>
+                  <h4>{member.name}</h4>
+                  <span>{member.role}</span>
+                </Link>
+              ) : (
+                <div className="team-card" key={member.name}>
+                  <div className="team-avatar">{member.initials}</div>
+                  <h4>{member.name}</h4>
+                  <span>{member.role}</span>
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>

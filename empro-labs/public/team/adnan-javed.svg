@@ -1,0 +1,11 @@
+<svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ajgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0A059"/>
+      <stop offset="100%" stop-color="#D9662B"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="220" fill="#17130E"/>
+  <circle cx="110" cy="110" r="110" fill="#17130E"/>
+  <text x="110" y="128" font-family="Sora, sans-serif" font-weight="700" font-size="64" fill="url(#ajgrad)" text-anchor="middle">AJ</text>
+</svg>
