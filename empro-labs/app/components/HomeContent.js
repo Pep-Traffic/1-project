@@ -272,6 +272,67 @@ export default function HomeContent() {
 </section>
 
 
+<section className="hub-section">
+  <div className="wrap">
+    <div className="eyebrow"><span className="line"></span>How it all connects</div>
+    <h2>One team, plugged into every tool you already run</h2>
+    <p className="section-lede">We don't rip out your stack and start over. Empro Labs plugs straight into your website, database, and warehouse, and keeps every app your team already lives in talking to each other.</p>
+
+    <div className="hub-visual">
+      <div className="hub-tags-top">
+        <span className="hub-tag hub-tag-1">Application</span>
+        <span className="hub-tag hub-tag-2">Database</span>
+        <span className="hub-tag hub-tag-3">Website</span>
+        <span className="hub-tag hub-tag-4">Warehouse</span>
+      </div>
+
+      <svg className="hub-lines" viewBox="0 0 700 260" preserveAspectRatio="none">
+        <path className="hub-line" d="M90 20 C 220 20, 260 120, 350 150" pathLength="1" />
+        <path className="hub-line" d="M270 20 C 300 60, 330 100, 350 150" pathLength="1" />
+        <path className="hub-line" d="M430 20 C 400 60, 370 100, 350 150" pathLength="1" />
+        <path className="hub-line" d="M610 20 C 480 20, 440 120, 350 150" pathLength="1" />
+      </svg>
+
+      <div className="hub-core">
+        <span className="hub-ring hub-ring-1"></span>
+        <span className="hub-ring hub-ring-2"></span>
+        <span className="hub-ring hub-ring-3"></span>
+        <span className="hub-node">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M9 6L3 12L9 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M15 6L21 12L15 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </span>
+      </div>
+
+      <div className="hub-icons-bottom">
+        <span className="hub-icon" style={{ "--d": "0s" }}>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 17L9.5 11.5L13.5 15.5L20 9" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>
+        </span>
+        <span className="hub-icon" style={{ "--d": "0.2s" }}>
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="7" cy="17" r="2" stroke="currentColor" strokeWidth="1.8" /><circle cx="17" cy="7" r="2" stroke="currentColor" strokeWidth="1.8" /><path d="M9 16L15 8" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg>
+        </span>
+        <span className="hub-icon" style={{ "--d": "0.4s" }}>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 4H20V20H4Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /><path d="M4 10H20" stroke="currentColor" strokeWidth="1.8" /></svg>
+        </span>
+        <span className="hub-icon" style={{ "--d": "0.6s" }}>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3L4 6.5V11C4 15.5 7.4 19.7 12 21C16.6 19.7 20 15.5 20 11V6.5L12 3Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /></svg>
+        </span>
+        <span className="hub-icon" style={{ "--d": "0.8s" }}>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M13 3L4 14H12L11 21L20 10H12L13 3Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /></svg>
+        </span>
+        <span className="hub-icon" style={{ "--d": "1s" }}>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5C4 5.12 7.58 4 12 4C16.42 4 20 5.12 20 6.5C20 7.88 16.42 9 12 9C7.58 9 4 7.88 4 6.5Z" stroke="currentColor" strokeWidth="1.8" /><path d="M4 6.5V17.5C4 18.88 7.58 20 12 20C16.42 20 20 18.88 20 17.5V6.5" stroke="currentColor" strokeWidth="1.8" /></svg>
+        </span>
+        <span className="hub-icon" style={{ "--d": "1.2s" }}>
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" strokeWidth="1.8" /><path d="M8 12H16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section className="services" id="services">
   <div className="wrap">
     <div className="eyebrow"><span className="line"></span>What we do</div>
