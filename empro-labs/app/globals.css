@@ -680,7 +680,7 @@
   .hub-pulse{
     fill: none; stroke: var(--amber-soft); stroke-width: 1.8; stroke-linecap: round;
     stroke-dasharray: 0.05 1; stroke-dashoffset: 0;
-    animation: hubFlow 1.6s linear infinite;
+    animation: hubFlow 3.4s linear infinite;
     filter: drop-shadow(0 0 4px rgba(240,160,89,0.95)) drop-shadow(0 0 8px rgba(240,160,89,0.5));
   }
   @keyframes hubFlow{ to{ stroke-dashoffset: -1.05; } }
