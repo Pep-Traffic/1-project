@@ -19,6 +19,8 @@ const platforms = {
       { name: "Northline Roofing", detail: "Full rebuild from a legacy theme — 1.8s load time." },
       { name: "Ferro Studio", detail: "WooCommerce storefront with custom product filtering." },
       { name: "Marlow & Co", detail: "Editorial site with a custom block-based page builder." },
+      { name: "PracForge", detail: "WordPress build for a dental & medical practice partner.", url: "https://pracforge.com" },
+      { name: "Mangoholic", detail: "WooCommerce storefront for a fresh fruit delivery brand.", url: "https://mangoholicae.com" },
     ],
   },
   Shopify: {
@@ -60,7 +62,22 @@ export default function PlatformShowcase() {
       <div className="platform-projects">
         {current.projects.map((p) => (
           <div className="portfolio-card show" key={p.name}>
-            <div className="portfolio-thumb">{p.name.slice(0, 2).toUpperCase()}</div>
+            {p.url ? (
+              <a
+                className="portfolio-thumb portfolio-thumb-shot"
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(p.url)}?w=800`}
+                  alt={`${p.name} live screenshot`}
+                  loading="lazy"
+                />
+              </a>
+            ) : (
+              <div className="portfolio-thumb">{p.name.slice(0, 2).toUpperCase()}</div>
+            )}
             <div className="portfolio-body">
               <span className="portfolio-tag">{current.label}</span>
               <h3>{p.name}</h3>
