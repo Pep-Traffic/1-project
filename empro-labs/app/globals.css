@@ -638,32 +638,33 @@
   .logo-row span{ font-family: 'Sora', sans-serif; font-weight: 600; font-size: 15px; color: var(--ink-dim); }
 
   /* ================= INTEGRATION HUB ================= */
+  /* Design grid: hub-visual is a 700x560 box; every child below is positioned
+     as a percentage of that box so the SVG paths always line up exactly with
+     the tags, the hub node, and the icon row regardless of viewport width. */
   .hub-section{ padding: 120px 0; border-top: 1px solid var(--line); }
   .hub-visual{
-    position: relative; max-width: 720px; margin: 70px auto 0;
-    height: 560px;
+    position: relative; width: 700px; max-width: 100%; aspect-ratio: 700 / 560;
+    margin: 70px auto 0;
   }
-  .hub-tags-top{
-    position: absolute; top: 0; left: 0; right: 0;
-    display: flex; justify-content: space-between; padding: 0 4px;
-  }
+  .hub-tags-top{ position: absolute; inset: 0; z-index: 3; }
   .hub-tag{
+    position: absolute; top: 0; transform: translateX(-50%);
     font-size: 12.5px; font-weight: 600; padding: 8px 16px; border-radius: 999px;
     background: var(--panel); border: 1px solid var(--line); color: var(--ink-dim);
-    white-space: nowrap; align-self: flex-start;
+    white-space: nowrap;
   }
-  .hub-tag-2{ margin-top: 26px; } .hub-tag-3{ margin-top: 26px; }
+  .hub-tag-offset{ top: 4.6%; }
 
   .hub-backdrop{
-    position: absolute; top: 95px; left: 50%; transform: translateX(-50%);
-    width: 480px; height: 480px; border-radius: 50%; z-index: 0;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 68.5%; aspect-ratio: 1; border-radius: 50%; z-index: 0;
     background:
       radial-gradient(circle, rgba(240,160,89,0.16) 0%, rgba(240,160,89,0.1) 18%, transparent 19%),
       radial-gradient(circle, transparent 34%, rgba(217,102,43,0.08) 35%, rgba(217,102,43,0.08) 52%, transparent 53%),
       radial-gradient(circle, transparent 66%, rgba(23,19,14,0.65) 67%, rgba(23,19,14,0.5) 88%, transparent 90%);
   }
 
-  .hub-lines{ position: absolute; top: 56px; left: 10px; width: calc(100% - 20px); height: 260px; overflow: visible; z-index: 1; }
+  .hub-lines{ position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; }
   .hub-thread{
     fill: none; stroke: var(--amber-soft); stroke-width: 1; opacity: 0.22;
   }
@@ -676,7 +677,7 @@
   @keyframes hubFlow{ to{ stroke-dashoffset: -1.05; } }
 
   .hub-core{
-    position: absolute; top: 300px; left: 50%; transform: translateX(-50%); z-index: 2;
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;
     width: 150px; height: 150px; display: flex; align-items: center; justify-content: center;
   }
   .hub-ring{
@@ -694,31 +695,41 @@
     display: flex; align-items: center; justify-content: center; color: #1A1006;
     box-shadow: 0 0 0 8px rgba(240,160,89,0.08), 0 20px 40px -16px rgba(217,102,43,0.7);
   }
-  .hub-node svg{ width: 26px; height: 26px; }
+  .hub-node svg{ width: 30px; height: 30px; }
 
-  .hub-icons-bottom{
-    position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
-    display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; padding: 0 10px;
-  }
+  .hub-icons-bottom{ position: absolute; inset: 0; z-index: 2; }
   .hub-icon{
-    width: 46px; height: 46px; border-radius: 12px; flex-shrink: 0;
+    position: absolute; top: 90.5%; transform: translate(-50%, -50%);
+    width: 46px; height: 46px; border-radius: 12px;
     display: flex; align-items: center; justify-content: center;
     background: #F5F1EA; border: 1px solid rgba(0,0,0,0.05);
     box-shadow: 0 10px 20px -12px rgba(0,0,0,0.5);
-    animation: hubIconFloat 3.4s ease-in-out infinite; animation-delay: var(--d, 0s);
+    animation: hubIconFloat 3.4s ease-in-out infinite;
   }
+  .hub-icon:nth-child(1){ left: 8.57%; animation-delay: 0s; }
+  .hub-icon:nth-child(2){ left: 22.39%; animation-delay: 0.2s; }
+  .hub-icon:nth-child(3){ left: 36.19%; animation-delay: 0.4s; }
+  .hub-icon:nth-child(4){ left: 50%; animation-delay: 0.6s; }
+  .hub-icon:nth-child(5){ left: 63.81%; animation-delay: 0.8s; }
+  .hub-icon:nth-child(6){ left: 77.61%; animation-delay: 1s; }
+  .hub-icon:nth-child(7){ left: 91.43%; animation-delay: 1.2s; }
   .hub-icon svg{ width: 22px; height: 22px; }
   .hub-icon-mono{ font-family: 'Sora', sans-serif; font-weight: 800; font-size: 10.5px; letter-spacing: -0.02em; }
   @keyframes hubIconFloat{
-    0%, 100%{ transform: translateY(0); }
-    50%{ transform: translateY(-6px); }
+    0%, 100%{ transform: translate(-50%, -50%); }
+    50%{ transform: translate(-50%, calc(-50% - 6px)); }
   }
   @media (max-width: 760px){
-    .hub-visual{ height: auto; padding: 40px 0; }
+    .hub-visual{ width: auto; aspect-ratio: auto; height: auto; padding: 40px 0 90px; }
     .hub-tags-top, .hub-lines{ display: none; }
-    .hub-backdrop{ top: 50%; transform: translate(-50%, -50%); width: 340px; height: 340px; }
-    .hub-core{ position: relative; top: 0; margin: 0 auto 30px; }
-    .hub-icons-bottom{ position: relative; }
+    .hub-backdrop{ width: 260px; }
+    .hub-core{ position: relative; top: 0; left: 0; transform: none; margin: 0 auto 30px; }
+    .hub-icons-bottom{ position: static; display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; padding: 0 10px; }
+    .hub-icon{ position: static; transform: none !important; }
+    @keyframes hubIconFloat{
+      0%, 100%{ transform: translateY(0); }
+      50%{ transform: translateY(-6px); }
+    }
   }
 
   /* ================= SERVICES ================= */

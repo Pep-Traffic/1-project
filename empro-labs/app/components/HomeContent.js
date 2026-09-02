@@ -282,36 +282,52 @@ export default function HomeContent() {
       <div className="hub-backdrop"></div>
 
       <div className="hub-tags-top">
-        <span className="hub-tag hub-tag-1">Application</span>
-        <span className="hub-tag hub-tag-2">Database</span>
-        <span className="hub-tag hub-tag-3">Website</span>
-        <span className="hub-tag hub-tag-4">Warehouse</span>
+        <span className="hub-tag" style={{ left: "12.9%" }}>Application</span>
+        <span className="hub-tag hub-tag-offset" style={{ left: "38.6%" }}>Database</span>
+        <span className="hub-tag hub-tag-offset" style={{ left: "61.4%" }}>Website</span>
+        <span className="hub-tag" style={{ left: "87.1%" }}>Warehouse</span>
       </div>
 
-      <svg className="hub-lines" viewBox="0 0 700 260" preserveAspectRatio="none">
+      <svg className="hub-lines" viewBox="0 0 700 560" preserveAspectRatio="none">
         {/* tag 1 — Application */}
-        <path className="hub-thread" d="M90 20 C 200 20, 260 110, 350 150" />
-        <path className="hub-thread" d="M90 20 C 150 40, 220 130, 340 148" />
-        <path className="hub-thread" d="M90 20 C 180 10, 280 90, 360 152" />
-        <path className="hub-pulse" d="M90 20 C 200 20, 260 110, 350 150" pathLength="1" style={{ animationDelay: "0s" }} />
+        <path className="hub-thread" d="M90 40 C 200 46, 260 170, 350 248" />
+        <path className="hub-thread" d="M90 40 C 150 66, 220 190, 340 246" />
+        <path className="hub-thread" d="M90 40 C 180 26, 280 150, 360 250" />
+        <path className="hub-pulse" d="M90 40 C 200 46, 260 170, 350 248" pathLength="1" style={{ animationDelay: "0s" }} />
 
         {/* tag 2 — Database */}
-        <path className="hub-thread" d="M270 20 C 300 60, 330 100, 350 150" />
-        <path className="hub-thread" d="M270 20 C 290 70, 320 110, 340 148" />
-        <path className="hub-thread" d="M270 20 C 305 55, 335 95, 360 150" />
-        <path className="hub-pulse" d="M270 20 C 300 60, 330 100, 350 150" pathLength="1" style={{ animationDelay: "0.45s" }} />
+        <path className="hub-thread" d="M270 66 C 300 120, 330 190, 350 248" />
+        <path className="hub-thread" d="M270 66 C 290 130, 320 200, 340 246" />
+        <path className="hub-thread" d="M270 66 C 305 115, 335 185, 360 250" />
+        <path className="hub-pulse" d="M270 66 C 300 120, 330 190, 350 248" pathLength="1" style={{ animationDelay: "0.4s" }} />
 
         {/* tag 3 — Website */}
-        <path className="hub-thread" d="M430 20 C 400 60, 370 100, 350 150" />
-        <path className="hub-thread" d="M430 20 C 410 70, 380 110, 360 148" />
-        <path className="hub-thread" d="M430 20 C 395 55, 365 95, 340 150" />
-        <path className="hub-pulse" d="M430 20 C 400 60, 370 100, 350 150" pathLength="1" style={{ animationDelay: "0.9s" }} />
+        <path className="hub-thread" d="M430 66 C 400 120, 370 190, 350 248" />
+        <path className="hub-thread" d="M430 66 C 410 130, 380 200, 360 246" />
+        <path className="hub-thread" d="M430 66 C 395 115, 365 185, 340 250" />
+        <path className="hub-pulse" d="M430 66 C 400 120, 370 190, 350 248" pathLength="1" style={{ animationDelay: "0.8s" }} />
 
         {/* tag 4 — Warehouse */}
-        <path className="hub-thread" d="M610 20 C 500 20, 440 110, 350 150" />
-        <path className="hub-thread" d="M610 20 C 550 40, 480 130, 360 148" />
-        <path className="hub-thread" d="M610 20 C 520 10, 420 90, 340 152" />
-        <path className="hub-pulse" d="M610 20 C 500 20, 440 110, 350 150" pathLength="1" style={{ animationDelay: "1.35s" }} />
+        <path className="hub-thread" d="M610 40 C 500 46, 440 170, 350 248" />
+        <path className="hub-thread" d="M610 40 C 550 66, 480 190, 340 246" />
+        <path className="hub-thread" d="M610 40 C 520 26, 420 150, 360 250" />
+        <path className="hub-pulse" d="M610 40 C 500 46, 440 170, 350 248" pathLength="1" style={{ animationDelay: "1.2s" }} />
+
+        {/* hub down to each app icon */}
+        <path className="hub-thread" d="M350 312 C 250 355, 120 430, 60 507" />
+        <path className="hub-pulse" d="M350 312 C 250 355, 120 430, 60 507" pathLength="1" style={{ animationDelay: "0.15s" }} />
+        <path className="hub-thread" d="M350 312 C 300 355, 200 435, 157 507" />
+        <path className="hub-pulse" d="M350 312 C 300 355, 200 435, 157 507" pathLength="1" style={{ animationDelay: "0.5s" }} />
+        <path className="hub-thread" d="M350 312 C 335 360, 270 440, 253 507" />
+        <path className="hub-pulse" d="M350 312 C 335 360, 270 440, 253 507" pathLength="1" style={{ animationDelay: "0.85s" }} />
+        <path className="hub-thread" d="M350 312 C 350 380, 350 450, 350 507" />
+        <path className="hub-pulse" d="M350 312 C 350 380, 350 450, 350 507" pathLength="1" style={{ animationDelay: "1.2s" }} />
+        <path className="hub-thread" d="M350 312 C 365 360, 430 440, 447 507" />
+        <path className="hub-pulse" d="M350 312 C 365 360, 430 440, 447 507" pathLength="1" style={{ animationDelay: "1.55s" }} />
+        <path className="hub-thread" d="M350 312 C 400 355, 500 435, 543 507" />
+        <path className="hub-pulse" d="M350 312 C 400 355, 500 435, 543 507" pathLength="1" style={{ animationDelay: "1.9s" }} />
+        <path className="hub-thread" d="M350 312 C 450 355, 580 430, 640 507" />
+        <path className="hub-pulse" d="M350 312 C 450 355, 580 430, 640 507" pathLength="1" style={{ animationDelay: "2.25s" }} />
       </svg>
 
       <div className="hub-core">
@@ -319,33 +335,32 @@ export default function HomeContent() {
         <span className="hub-ring hub-ring-2"></span>
         <span className="hub-ring hub-ring-3"></span>
         <span className="hub-node">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M9 6L3 12L9 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M15 6L21 12L15 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          <svg viewBox="0 0 200 200">
+            <path d="M62 20 H150 V52 H98 V88 H138 V118 H98 V148 H150 V180 H62 Z" fill="#1A1006" />
           </svg>
         </span>
       </div>
 
       <div className="hub-icons-bottom">
-        <span className="hub-icon" style={{ "--d": "0s" }} title="GoHighLevel">
+        <span className="hub-icon" title="GoHighLevel">
           <span className="hub-icon-mono" style={{ color: "#0B5CFF" }}>GHL</span>
         </span>
-        <span className="hub-icon" style={{ "--d": "0.2s" }} title="ClickUp">
+        <span className="hub-icon" title="ClickUp">
           <svg viewBox="0 0 24 24" fill="#7B68EE"><path d="M2 18.439l3.69-2.828c1.961 2.56 4.044 3.739 6.363 3.739 2.307 0 4.33-1.166 6.203-3.704L22 18.405C19.298 22.065 15.941 24 12.053 24 8.178 24 4.788 22.078 2 18.439zM12.04 6.15l-6.568 5.66-3.036-3.52L12.055 0l9.543 8.296-3.05 3.509z" /></svg>
         </span>
-        <span className="hub-icon" style={{ "--d": "0.4s" }} title="Slack">
+        <span className="hub-icon" title="Slack">
           <svg viewBox="0 0 24 24" fill="#4A154B"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z" /></svg>
         </span>
-        <span className="hub-icon" style={{ "--d": "0.6s" }} title="WordPress">
+        <span className="hub-icon" title="WordPress">
           <svg viewBox="0 0 24 24" fill="#21759B"><path d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0" /></svg>
         </span>
-        <span className="hub-icon" style={{ "--d": "0.8s" }} title="Shopify">
+        <span className="hub-icon" title="Shopify">
           <svg viewBox="0 0 24 24" fill="#95BF47"><path d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z" /></svg>
         </span>
-        <span className="hub-icon" style={{ "--d": "1s" }} title="Etsy">
+        <span className="hub-icon" title="Etsy">
           <svg viewBox="0 0 24 24" fill="#F1641E"><path d="M8.559 2.445c0-.325.033-.52.59-.52h7.465c1.3 0 2.02 1.11 2.54 3.193l.42 1.666h1.27c.23-4.728.43-6.784.43-6.784s-3.196.36-5.09.36H6.635L1.521.196v1.37l1.725.326c1.21.24 1.5.496 1.6 1.606 0 0 .11 3.27.11 8.64 0 5.385-.09 8.61-.09 8.61 0 .973-.39 1.333-1.59 1.573l-1.722.33V24l5.13-.165h8.55c1.935 0 6.39.165 6.39.165.105-1.17.75-6.48.855-7.064h-1.2l-1.284 2.91c-1.005 2.28-2.476 2.445-4.11 2.445h-4.906c-1.63 0-2.415-.64-2.415-2.05V12.8s3.62 0 4.79.096c.912.064 1.463.325 1.76 1.598l.39 1.695h1.41l-.09-4.278.192-4.305h-1.391l-.45 1.89c-.283 1.244-.48 1.47-1.754 1.6-1.666.17-4.815.14-4.815.14V2.45h-.05z" /></svg>
         </span>
-        <span className="hub-icon" style={{ "--d": "1.2s" }} title="Supabase">
+        <span className="hub-icon" title="Supabase">
           <svg viewBox="0 0 24 24" fill="#3ECF8E"><path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z" /></svg>
         </span>
       </div>
