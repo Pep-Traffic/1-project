@@ -195,6 +195,14 @@
     .wordmark-ghost, .mark-graphic{ display: none; }
     .testimonial-float{ position: static; width: 100%; max-width: 340px; margin-top: 36px; }
     .hero{ min-height: auto; padding: 60px 0 70px; }
+    .hero-inner{ padding: 0 24px; }
+    .cta-row{ flex-wrap: wrap; }
+    .btn{ white-space: nowrap; }
+  }
+
+  @media (max-width: 420px){
+    .cta-row{ flex-direction: column; align-items: stretch; }
+    .btn{ justify-content: center; }
   }
 
   /* ================= LOGO STRIP ================= */
@@ -949,6 +957,8 @@
     border-bottom: 1px solid var(--line); font-family: 'Sora', sans-serif; font-weight: 700;
     font-size: 1.1rem; color: var(--amber-soft);
   }
+  .portfolio-thumb-shot{ padding: 0; overflow: hidden; }
+  .portfolio-thumb-shot img{ width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
   .portfolio-body{ padding: 20px 22px 24px; }
   .portfolio-tag{ font-size: 11.5px; color: var(--amber-soft); letter-spacing: 0.03em; margin-bottom: 8px; display: block; }
   .portfolio-body h3{ font-family: 'Sora', sans-serif; font-size: 1.05rem; font-weight: 600; margin: 0 0 8px; }
