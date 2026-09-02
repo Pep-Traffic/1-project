@@ -646,10 +646,9 @@
   .hub-text{ flex: 0 0 400px; max-width: 400px; }
   .hub-text .section-lede{ margin-bottom: 0; }
   .hub-visual{
-    position: relative; flex: 1; min-width: 0; max-width: 620px;
+    position: relative; flex: 1; min-width: 0; max-width: 460px;
     width: 100%; aspect-ratio: 700 / 560;
     margin: 0 0 0 auto;
-    transform: scale(0.74);
   }
   @media (max-width: 960px){
     .hub-layout{ flex-direction: column; align-items: stretch; }
@@ -659,7 +658,7 @@
   .hub-tags-top{ position: absolute; inset: 0; z-index: 3; }
   .hub-tag{
     position: absolute; top: 0; transform: translateX(-50%);
-    font-size: 12.5px; font-weight: 600; padding: 8px 16px; border-radius: 999px;
+    font-size: 10px; font-weight: 600; padding: 6px 12px; border-radius: 999px;
     background: var(--panel); border: 1px solid var(--line); color: var(--ink-dim);
     white-space: nowrap;
   }
@@ -688,7 +687,7 @@
 
   .hub-core{
     position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;
-    width: 150px; height: 150px; display: flex; align-items: center; justify-content: center;
+    width: 112px; height: 112px; display: flex; align-items: center; justify-content: center;
   }
   .hub-ring{
     position: absolute; inset: 0; border-radius: 50%; border: 1px solid rgba(240,160,89,0.35);
@@ -700,20 +699,20 @@
     100%{ transform: scale(1.6); opacity: 0; }
   }
   .hub-node{
-    position: relative; width: 88px; height: 88px; border-radius: 50%;
+    position: relative; width: 66px; height: 66px; border-radius: 50%;
     background: radial-gradient(circle, rgba(240,160,89,0.22) 0%, rgba(217,102,43,0.06) 65%, transparent 75%);
     display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 0 0 8px rgba(240,160,89,0.06);
+    box-shadow: 0 0 0 6px rgba(240,160,89,0.06);
   }
-  .hub-node img{ width: 64px; height: auto; display: block; filter: drop-shadow(0 10px 18px rgba(217,102,43,0.55)); }
+  .hub-node img{ width: 48px; height: auto; display: block; filter: drop-shadow(0 8px 14px rgba(217,102,43,0.55)); }
 
   .hub-icons-bottom{ position: absolute; inset: 0; z-index: 2; }
   .hub-icon{
     position: absolute; top: 90.5%; transform: translate(-50%, -50%);
-    width: 46px; height: 46px; border-radius: 12px;
+    width: 35px; height: 35px; border-radius: 9px;
     display: flex; align-items: center; justify-content: center;
     background: #F5F1EA; border: 1px solid rgba(0,0,0,0.05);
-    box-shadow: 0 10px 20px -12px rgba(0,0,0,0.5);
+    box-shadow: 0 8px 16px -10px rgba(0,0,0,0.5);
     animation: hubIconFloat 3.4s ease-in-out infinite;
   }
   .hub-icon:nth-child(1){ left: 8.57%; animation-delay: 0s; }
@@ -723,8 +722,8 @@
   .hub-icon:nth-child(5){ left: 63.81%; animation-delay: 0.8s; }
   .hub-icon:nth-child(6){ left: 77.61%; animation-delay: 1s; }
   .hub-icon:nth-child(7){ left: 91.43%; animation-delay: 1.2s; }
-  .hub-icon svg{ width: 22px; height: 22px; }
-  .hub-icon-mono{ font-family: 'Sora', sans-serif; font-weight: 800; font-size: 10.5px; letter-spacing: -0.02em; }
+  .hub-icon svg{ width: 17px; height: 17px; }
+  .hub-icon-mono{ font-family: 'Sora', sans-serif; font-weight: 800; font-size: 8px; letter-spacing: -0.02em; }
   @keyframes hubIconFloat{
     0%, 100%{ transform: translate(-50%, -50%); }
     50%{ transform: translate(-50%, calc(-50% - 6px)); }
