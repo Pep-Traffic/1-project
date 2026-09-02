@@ -35,7 +35,18 @@ export default function Header() {
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </nav>
-        <Link href="/contact" className="nav-cta">Book a call</Link>
+        <Link href="/contact" className="nav-cta">
+          <svg className="icon-draw" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M6.5 3.5H9.5L11 8L8.5 9.5C9.4 11.5 11 13.1 13 14L14.5 11.5L19 13V16C19 17.1 18.1 18 17 18C10.1 17.6 4.4 11.9 4 5C4 3.9 4.9 3 6 3L6.5 3.5Z"
+              pathLength="1"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinejoin="round"
+            />
+          </svg>
+          Book a call
+        </Link>
         <button
           className="menu-btn"
           aria-label="Open menu"
@@ -56,6 +67,15 @@ export default function Header() {
         <Link href="/about" onClick={() => setOpen(false)}>About</Link>
         <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
         <Link href="/contact" className="btn btn-primary nav-cta" onClick={() => setOpen(false)}>
+          <svg className="icon-draw" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M6.5 3.5H9.5L11 8L8.5 9.5C9.4 11.5 11 13.1 13 14L14.5 11.5L19 13V16C19 17.1 18.1 18 17 18C10.1 17.6 4.4 11.9 4 5C4 3.9 4.9 3 6 3L6.5 3.5Z"
+              pathLength="1"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinejoin="round"
+            />
+          </svg>
           Book a call
         </Link>
       </div>
