@@ -10,6 +10,8 @@ const projects = [
   { name: "Rapid Comfort Co", category: "GHL", tag: "GHL automation", result: "28 sec avg. first reply" },
   { name: "Northline Roofing", category: "WordPress", tag: "WordPress rebuild", result: "1.8s load time" },
   { name: "Ferro Studio", category: "WordPress", tag: "WooCommerce build", result: "40% more conversions" },
+  { name: "PracForge", category: "WordPress", tag: "WordPress build", result: "Live site", url: "https://pracforge.com" },
+  { name: "Mangoholic", category: "WordPress", tag: "WooCommerce build", result: "Live site", url: "https://mangoholicae.com" },
   { name: "Marlow & Co", category: "Shopify", tag: "Shopify storefront", result: "2.1x AOV increase" },
   { name: "Driftwood Goods", category: "Shopify", tag: "Shopify migration", result: "99.9% uptime" },
   { name: "Vantage Roofing", category: "SEO", tag: "Local SEO", result: "3x organic traffic" },
@@ -41,7 +43,22 @@ export default function PortfolioGrid() {
           const visible = active === "All" || p.category === active;
           return (
             <div className={`portfolio-card${visible ? " show" : " hide"}`} key={p.name}>
-              <div className="portfolio-thumb">{p.name.slice(0, 2).toUpperCase()}</div>
+              {p.url ? (
+                <a
+                  className="portfolio-thumb portfolio-thumb-shot"
+                  href={p.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(p.url)}?w=800`}
+                    alt={`${p.name} live screenshot`}
+                    loading="lazy"
+                  />
+                </a>
+              ) : (
+                <div className="portfolio-thumb">{p.name.slice(0, 2).toUpperCase()}</div>
+              )}
               <div className="portfolio-body">
                 <span className="portfolio-tag">{p.tag}</span>
                 <h3>{p.name}</h3>
