@@ -13,6 +13,12 @@ export const metadata = {
 
 const team = [
   {
+    slug: "umair-gujjar",
+    photo: "/team/umair-gujjar.jpeg",
+    name: "Umair Gujjar",
+    role: "Senior — GHL, WordPress, Shopify, Etsy, ClickFunnels & n8n Automations",
+  },
+  {
     slug: "adnan-javed",
     photo: "/team/adnan-javed.png",
     name: "Adnan Javed",

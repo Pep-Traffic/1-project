@@ -3,14 +3,22 @@ import Footer from "../../../components/Footer";
 import CtaBanner from "../../../components/CtaBanner";
 
 export const metadata = {
-  title: "Adnan Javed — Empro Labs",
+  title: "Umair Gujjar — Empro Labs",
   description:
-    "Adnan Javed is Empro Labs' GHL, SEO, WordPress, and Shopify expert.",
+    "Umair Gujjar is Empro Labs' senior team lead, specializing in GHL, WordPress, Shopify, Etsy, ClickFunnels, n8n workflows, and automations.",
 };
 
-const skills = ["GHL", "SEO", "WordPress", "Shopify"];
+const skills = [
+  "GHL",
+  "WordPress",
+  "Shopify",
+  "Etsy",
+  "ClickFunnels",
+  "n8n Workflows",
+  "Automations",
+];
 
-export default function AdnanJavedProfilePage() {
+export default function UmairGujjarProfilePage() {
   return (
     <>
       <Header />
@@ -21,18 +29,18 @@ export default function AdnanJavedProfilePage() {
         <div className="grain"></div>
         <div className="wrap profile-hero-inner">
           <div className="profile-photo">
-            <img src="/team/adnan-javed.png" alt="Adnan Javed" />
+            <img src="/team/umair-gujjar.jpeg" alt="Umair Gujjar" />
           </div>
           <div className="profile-info">
             <div className="eyebrow">
               <span className="line"></span>
               Team
             </div>
-            <h1>Adnan Javed</h1>
+            <h1>Umair Gujjar</h1>
             <p className="lede">
-              GHL, SEO, WordPress, and Shopify expert at Empro Labs — building funnels,
-              rebuilding sites, and driving organic growth for clients who need results,
-              not just deliverables.
+              Senior team lead at Empro Labs — expert across GHL, WordPress, Shopify, Etsy,
+              ClickFunnels, n8n workflows, and automations, with deep experience shaping the
+              systems the rest of the team builds on.
             </p>
             <div className="skill-row">
               {skills.map((s) => (
@@ -42,9 +50,9 @@ export default function AdnanJavedProfilePage() {
             <div className="profile-contact-row">
               <a
                 className="profile-contact-btn"
-                href="mailto:aj9599995@gmail.com"
-                aria-label="Email aj9599995@gmail.com"
-                title="aj9599995@gmail.com"
+                href="mailto:umairgujjar7@gmail.com"
+                aria-label="Email umairgujjar7@gmail.com"
+                title="umairgujjar7@gmail.com"
               >
                 <svg className="icon-draw" viewBox="0 0 24 24" fill="none">
                   <rect x="3" y="5" width="18" height="14" rx="2" pathLength="1" stroke="currentColor" strokeWidth="1.8" />
@@ -53,9 +61,9 @@ export default function AdnanJavedProfilePage() {
               </a>
               <a
                 className="profile-contact-btn"
-                href="tel:03260332830"
-                aria-label="Call 0326 0332830"
-                title="0326 0332830"
+                href="tel:+923226574425"
+                aria-label="Call +92 322 6574425"
+                title="+92 322 6574425"
               >
                 <svg className="icon-draw" viewBox="0 0 24 24" fill="none">
                   <path
@@ -69,11 +77,11 @@ export default function AdnanJavedProfilePage() {
               </a>
               <a
                 className="profile-contact-btn"
-                href="https://wa.me/923260332830"
+                href="https://wa.me/923226574425"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="WhatsApp 0326 0332830"
-                title="WhatsApp 0326 0332830"
+                aria-label="WhatsApp +92 322 6574425"
+                title="WhatsApp +92 322 6574425"
               >
                 <svg className="icon-draw" viewBox="0 0 24 24" fill="none">
                   <path
@@ -97,8 +105,8 @@ export default function AdnanJavedProfilePage() {
       </section>
 
       <CtaBanner
-        title="Want Adnan on your project?"
-        lede="Tell us what you're building — GHL, SEO, WordPress, or Shopify — and we'll get you talking to the right person."
+        title="Want Umair on your project?"
+        lede="Tell us what you're building — GHL, WordPress, Shopify, Etsy, ClickFunnels, or automations — and we'll get you talking to the right person."
       />
 
       <Footer />
