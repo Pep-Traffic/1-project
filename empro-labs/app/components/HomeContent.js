@@ -42,6 +42,7 @@ export default function HomeContent() {
   <div className="wrap">
     <p>Trusted by teams building on</p>
     <div className="logo-row">
+      <span>codenovahq</span>
       <span>Northwind</span>
       <span>Basecamp Labs</span>
       <span>Ferro</span>
