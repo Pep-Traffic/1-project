@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export default function ContactForm() {
-  const [values, setValues] = useState({ name: "", email: "", message: "" });
+  const [values, setValues] = useState({ name: "", email: "", phone: "", message: "" });
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState({ text: "", success: false });
   const [submitting, setSubmitting] = useState(false);
@@ -12,6 +12,10 @@ export default function ContactForm() {
     if (field === "name") return value.trim().length > 0 ? "" : "Please enter your name.";
     if (field === "email")
       return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()) ? "" : "Please enter a valid email.";
+    if (field === "phone")
+      return value.trim() === "" || /^[+\d][\d\s\-()]{6,}$/.test(value.trim())
+        ? ""
+        : "Please enter a valid phone number.";
     if (field === "message")
       return value.trim().length >= 10 ? "" : "Tell us a little more (10+ characters).";
     return "";
@@ -30,6 +34,7 @@ export default function ContactForm() {
     const newErrors = {
       name: validate("name", values.name),
       email: validate("email", values.email),
+      phone: validate("phone", values.phone),
       message: validate("message", values.message),
     };
     setErrors(newErrors);
@@ -48,7 +53,7 @@ export default function ContactForm() {
     setTimeout(() => {
       setStatus({ text: "Thanks — we'll reply within one business day.", success: true });
       setSubmitting(false);
-      setValues({ name: "", email: "", message: "" });
+      setValues({ name: "", email: "", phone: "", message: "" });
     }, 700);
   }
 
@@ -82,6 +87,20 @@ export default function ContactForm() {
           required
         />
         <span className="error">{errors.email}</span>
+      </div>
+
+      <div className={`field${errors.phone ? " has-error" : ""}`}>
+        <label htmlFor="phone">Phone (optional)</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          autoComplete="tel"
+          value={values.phone}
+          onChange={(e) => handleChange("phone", e.target.value)}
+          onBlur={() => handleBlur("phone")}
+        />
+        <span className="error">{errors.phone}</span>
       </div>
 
       <div className={`field${errors.message ? " has-error" : ""}`}>

@@ -500,6 +500,8 @@ export default function HomeInteractions() {
             validate: v => v.trim().length > 0 ? '' : 'Please enter your name.' },
           email: { el: document.getElementById('email'), err: document.getElementById('emailError'),
             validate: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? '' : 'Please enter a valid email.' },
+          phone: { el: document.getElementById('phone'), err: document.getElementById('phoneError'),
+            validate: v => v.trim() === '' || /^[+\d][\d\s\-()]{6,}$/.test(v.trim()) ? '' : 'Please enter a valid phone number.' },
           message: { el: document.getElementById('message'), err: document.getElementById('messageError'),
             validate: v => v.trim().length >= 10 ? '' : 'Tell us a little more (10+ characters).' }
         };

@@ -681,6 +681,11 @@ export default function HomeContent() {
           <span className="error" id="emailError"></span>
         </div>
         <div className="field">
+          <label htmlFor="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" autoComplete="tel" />
+          <span className="error" id="phoneError"></span>
+        </div>
+        <div className="field">
           <label htmlFor="message">What are you building?</label>
           <textarea id="message" name="message" rows="4" required></textarea>
           <span className="error" id="messageError"></span>
