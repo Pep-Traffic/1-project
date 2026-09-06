@@ -5,15 +5,16 @@ import PageHero from "../components/PageHero";
 import CtaBanner from "../components/CtaBanner";
 
 export const metadata = {
-  title: "Services — Empro Labs",
-  description: "Web development, SEO, and ads management services from Empro Labs.",
+  title: "GHL, WordPress & Shopify Web Development, SEO & Ads — Empro Labs",
+  description:
+    "GoHighLevel (GHL) website design, WordPress website development, Shopify website design agency services, plus SEO and ads management from Empro Labs.",
 };
 
 const services = [
   {
     href: "/services/web-development",
-    title: "Web development",
-    body: "Custom builds, GHL funnels, WordPress rebuilds, and Shopify storefronts — architected to handle real traffic, not just a demo.",
+    title: "GHL, WordPress & Shopify web development",
+    body: "GoHighLevel website design, WordPress website development, and Shopify website design — architected to handle real traffic, not just a demo.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none">
         <path d="M9 6L3 12L9 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />

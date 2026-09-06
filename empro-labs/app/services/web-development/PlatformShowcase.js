@@ -5,7 +5,7 @@ import { useState } from "react";
 const platforms = {
   GHL: {
     label: "GHL",
-    blurb: "GoHighLevel funnels and automations built to answer every lead in under 30 seconds.",
+    blurb: "GoHighLevel website design, funnels, and automations built to answer every lead in under 30 seconds.",
     projects: [
       { name: "Bayview Heating", detail: "Multi-step funnel + missed-call text-back automation." },
       { name: "Rapid Comfort Co", detail: "Pipeline automation that routes leads by service type." },
@@ -14,7 +14,7 @@ const platforms = {
   },
   WordPress: {
     label: "WordPress",
-    blurb: "WordPress rebuilds focused on load time, SEO structure, and a CMS your team can actually use.",
+    blurb: "WordPress website development focused on load time, SEO structure, and a CMS your team can actually use.",
     projects: [
       { name: "Northline Roofing", detail: "Full rebuild from a legacy theme — 1.8s load time." },
       { name: "Ferro Studio", detail: "WooCommerce storefront with custom product filtering." },
@@ -25,7 +25,7 @@ const platforms = {
   },
   Shopify: {
     label: "Shopify",
-    blurb: "Shopify builds and migrations that keep checkout fast and conversion rates climbing.",
+    blurb: "Shopify website design and migrations that keep checkout fast and conversion rates climbing.",
     projects: [
       { name: "Driftwood Goods", detail: "Migration from a custom cart to Shopify with zero downtime." },
       { name: "Marlow & Co", detail: "Custom theme build with a 2.1x increase in average order value." },
