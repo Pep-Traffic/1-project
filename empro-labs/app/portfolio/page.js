@@ -8,6 +8,7 @@ import PortfolioRing from "./PortfolioRing";
 export const metadata = {
   title: "Portfolio — Empro Labs",
   description: "Web development, GHL, WordPress, Shopify, SEO, and ads projects delivered by Empro Labs.",
+  alternates: { canonical: "/portfolio" },
 };
 
 export default function PortfolioPage() {

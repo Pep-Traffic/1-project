@@ -6,6 +6,7 @@ export const metadata = {
   title: "Adnan Javed — Empro Labs",
   description:
     "Adnan Javed is Empro Labs' GHL, SEO, WordPress, and Shopify expert.",
+  alternates: { canonical: "/about/team/adnan-javed" },
 };
 
 const skills = ["GHL", "SEO", "WordPress", "Shopify"];

@@ -6,6 +6,7 @@ import ContactForm from "./ContactForm";
 export const metadata = {
   title: "Contact — Empro Labs",
   description: "Tell Empro Labs what you're building. We reply within one business day.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

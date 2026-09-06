@@ -8,6 +8,7 @@ export const metadata = {
   title: "GoHighLevel, WordPress & Shopify Website Design — Empro Labs",
   description:
     "GoHighLevel (GHL) website design, WordPress website development, and Shopify website design agency services from Empro Labs. Hire a team that builds funnels, rebuilds sites, and ships stores that convert.",
+  alternates: { canonical: "/services/web-development" },
 };
 
 export default function WebDevelopmentPage() {

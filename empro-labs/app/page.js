@@ -7,6 +7,7 @@ export const metadata = {
   title: "Empro Labs — Software Development Agency",
   description:
     "Empro Labs builds and maintains production software for founders who are done relying on a rotating cast of freelancers. Senior engineers, one team, every release.",
+  alternates: { canonical: "/" },
 };
 
 export default function HomePage() {

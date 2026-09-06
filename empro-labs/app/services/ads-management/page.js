@@ -7,6 +7,7 @@ import AdsDashboard from "./AdsDashboard";
 export const metadata = {
   title: "Ads Management — Empro Labs",
   description: "Paid search and social ads management from Empro Labs.",
+  alternates: { canonical: "/services/ads-management" },
 };
 
 const services = [

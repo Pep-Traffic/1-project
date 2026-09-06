@@ -9,6 +9,7 @@ export const metadata = {
   title: "About — Empro Labs",
   description:
     "Empro Labs is a software development agency for founders who need production-grade systems, not a demo.",
+  alternates: { canonical: "/about" },
 };
 
 const team = [

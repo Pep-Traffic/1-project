@@ -7,6 +7,7 @@ import TrafficChart from "./TrafficChart";
 export const metadata = {
   title: "SEO — Empro Labs",
   description: "Technical SEO audits, on-page fixes, and content strategy from Empro Labs.",
+  alternates: { canonical: "/services/seo" },
 };
 
 const steps = [

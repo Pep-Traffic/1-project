@@ -6,6 +6,7 @@ export const metadata = {
   title: "Umair Gujjar — Empro Labs",
   description:
     "Umair Gujjar is Empro Labs' senior team lead, specializing in GHL, WordPress, Shopify, Etsy, ClickFunnels, n8n workflows, and automations.",
+  alternates: { canonical: "/about/team/umair-gujjar" },
 };
 
 const skills = [
