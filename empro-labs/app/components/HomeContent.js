@@ -53,6 +53,29 @@ export default function HomeContent() {
 </section>
 
 
+<section className="phases" id="leaks">
+  <div className="wrap">
+    <div className="eyebrow"><span className="line"></span>Why projects stall</div>
+    <h2>Most founders don't have a dev problem. They have a follow-through problem.</h2>
+    <p className="section-lede">Empro Labs exists to close the gap between what got promised on the kickoff call and what actually ships.</p>
+    <div className="phases-list">
+      <div className="phase">
+        <span className="phase-head"><span className="phase-num">01</span><span className="phase-title">The freelancer disappears</span></span>
+        <p>The build gets 80% done, the contractor moves on to the next gig, and nobody left on your team understands the codebase.</p>
+      </div>
+      <div className="phase">
+        <span className="phase-head"><span className="phase-num">02</span><span className="phase-title">The backlog goes quiet</span></span>
+        <p>Bug reports and feature requests pile up in a Slack channel nobody's watching, while competitors keep shipping.</p>
+      </div>
+      <div className="phase">
+        <span className="phase-head"><span className="phase-num">03</span><span className="phase-title">Nobody owns the outcome</span></span>
+        <p>Your website, your ad spend, and your CRM all report activity, but no one can say which one is actually producing paying customers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section className="solutions">
   <div className="wrap">
     <div className="eyebrow"><span className="line"></span>What we build</div>
@@ -561,11 +584,65 @@ export default function HomeContent() {
 </section>
 
 
+<section className="stats-band">
+  <div className="wrap">
+    <div className="eyebrow"><span className="line"></span>The engagement</div>
+    <h2>One team, one invoice, no surprises</h2>
+    <p className="section-lede">Straightforward terms so you know what you're agreeing to before you sign anything.</p>
+    <div className="stats-grid">
+      <div className="stat-block"><b>Fixed quote</b><span>Scoped and approved before we start — the number doesn't move</span></div>
+      <div className="stat-block"><b>2–4 wks</b><span>Typical time to first working deploy</span></div>
+      <div className="stat-block"><b>Month to month</b><span>No multi-year lock-in contract</span></div>
+      <div className="stat-block"><b>Real engineers</b><span>Direct access to who built it, not a ticket queue</span></div>
+    </div>
+  </div>
+</section>
+
+
+<section className="services">
+  <div className="wrap">
+    <div className="eyebrow"><span className="line"></span>Is this a fit?</div>
+    <h2>Who we're built for</h2>
+    <p className="section-lede">We turn down work that isn't a fit for either of us — here's how to tell in advance.</p>
+    <div className="service-list">
+      <details className="service" open>
+        <summary>
+          <div className="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 6.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
+          <div><h3>This is a fit if</h3><p>Any of these sound like where you're at right now.</p></div>
+        </summary>
+        <div className="service-more">
+          <ul>
+            <li>You need software that survives real traffic, not just a demo</li>
+            <li>You're tired of re-explaining your codebase to a new freelancer every few months</li>
+            <li>You want weekly proof of progress, not a status report</li>
+            <li>You're on GHL, WordPress, Shopify, or a custom stack and need it to actually convert</li>
+          </ul>
+        </div>
+      </details>
+      <details className="service" open>
+        <summary>
+          <div className="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18M18 6L6 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg></div>
+          <div><h3>Probably not a fit if</h3><p>We'd rather tell you now than after a wasted call.</p></div>
+        </summary>
+        <div className="service-more">
+          <ul>
+            <li>You want the cheapest day-rate available, not a scoped outcome</li>
+            <li>You need a single static page with no ongoing changes</li>
+            <li>You're not ready to have an engineer on call after launch</li>
+            <li>You want guaranteed rankings or revenue promised on the first call</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
 <section className="work" id="work">
   <div className="wrap">
     <div className="eyebrow"><span className="line"></span>Selected work</div>
     <h2>Recent releases</h2>
-    <p className="section-lede">A few of the systems we've built, rebuilt, and kept running.</p>
+    <p className="section-lede">A few of the systems we've built, rebuilt, and kept running. Numbers below are what shipped for that specific client — results vary by starting point and scope.</p>
 
     <details className="case">
       <summary>
@@ -646,11 +723,76 @@ export default function HomeContent() {
 </section>
 
 
+<section className="services">
+  <div className="wrap">
+    <div className="eyebrow"><span className="line"></span>Questions</div>
+    <h2>Frequently asked questions</h2>
+    <p className="section-lede">The things people usually ask before the first call.</p>
+    <div className="service-list">
+      <details className="service">
+        <summary>
+          <div><h3>What does Empro Labs actually do for a founder?</h3></div>
+          <span className="chev">＋</span>
+        </summary>
+        <div className="service-more">
+          <p>We build and maintain the software behind your business — websites, internal tools, GHL/CRM setups, and the infrastructure underneath — as one accountable engineering team instead of a rotating cast of freelancers.</p>
+        </div>
+      </details>
+      <details className="service">
+        <summary>
+          <div><h3>How is this priced?</h3></div>
+          <span className="chev">＋</span>
+        </summary>
+        <div className="service-more">
+          <p>Every engagement starts with a scoped, fixed quote before any work begins. No hourly guesswork, no surprise invoices.</p>
+        </div>
+      </details>
+      <details className="service">
+        <summary>
+          <div><h3>How fast can you start?</h3></div>
+          <span className="chev">＋</span>
+        </summary>
+        <div className="service-more">
+          <p>Most engagements begin with an audit within a week of the first call, and a working plan inside two weeks.</p>
+        </div>
+      </details>
+      <details className="service">
+        <summary>
+          <div><h3>Do you only build new projects, or fix existing ones?</h3></div>
+          <span className="chev">＋</span>
+        </summary>
+        <div className="service-more">
+          <p>Both. A large share of our work is rescuing a codebase a previous freelancer or agency left unfinished.</p>
+        </div>
+      </details>
+      <details className="service">
+        <summary>
+          <div><h3>Which platforms do you work with?</h3></div>
+          <span className="chev">＋</span>
+        </summary>
+        <div className="service-more">
+          <p>Custom code, GHL, WordPress, and Shopify — whichever fits what you're actually trying to do, not whichever we're most incentivized to sell.</p>
+        </div>
+      </details>
+      <details className="service">
+        <summary>
+          <div><h3>What happens after launch?</h3></div>
+          <span className="chev">＋</span>
+        </summary>
+        <div className="service-more">
+          <p>We stay on. Ongoing support is a standard part of every engagement, not an upsell.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
 <section className="cta-banner">
   <div className="wrap">
     <div className="cta-panel">
-      <h2>Ready to stop firefighting?</h2>
-      <p>Tell us what's broken or what you're building next. We'll reply with a real plan, not a sales deck.</p>
+      <h2>Ready to stop losing time to a broken stack?</h2>
+      <p>Tell us what's not working or what you're building next. We'll reply with a scoped plan, not a sales deck.</p>
       <a href="#contact" className="btn btn-primary">Book a call</a>
     </div>
   </div>
