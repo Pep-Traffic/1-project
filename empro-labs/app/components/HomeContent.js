@@ -20,8 +20,8 @@ export default function HomeContent() {
 
   <div className="hero-inner">
     <div className="eyebrow"><span className="line"></span>GHL, WordPress &amp; Shopify agency</div>
-    <h1>Stop losing customers<br />to a slow website.<br /><span className="accent">Start ranking and converting.</span></h1>
-    <p className="lede">Empro Labs builds and manages GoHighLevel funnels, WordPress rebuilds, and Shopify stores — backed by SEO and ads that actually bring in customers, not just traffic.</p>
+    <h1>Stop losing customers<br />to a slow, outdated website.<br /><span className="accent">Start with one built to convert.</span></h1>
+    <p className="lede">Empro Labs designs and builds GoHighLevel funnels, WordPress sites, and Shopify stores that load fast and turn visitors into customers — plus the SEO and ads to bring them in.</p>
     <div className="cta-row">
       <a href="#contact" className="btn btn-primary">Book a call</a>
       <a href="#work" className="btn btn-ghost">See our work</a>
