@@ -489,62 +489,6 @@ export default function HomeInteractions() {
         }
       })();
 
-      // ---------- Contact form: real client-side validation + submit handling ----------
-      (function(){
-        const form = document.getElementById('contactForm');
-        const status = document.getElementById('formStatus');
-        const submitBtn = document.getElementById('submitBtn');
-
-        const fields = {
-          name: { el: document.getElementById('name'), err: document.getElementById('nameError'),
-            validate: v => v.trim().length > 0 ? '' : 'Please enter your name.' },
-          email: { el: document.getElementById('email'), err: document.getElementById('emailError'),
-            validate: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) ? '' : 'Please enter a valid email.' },
-          phone: { el: document.getElementById('phone'), err: document.getElementById('phoneError'),
-            validate: v => v.trim() === '' || /^[+\d][\d\s\-()]{6,}$/.test(v.trim()) ? '' : 'Please enter a valid phone number.' },
-          message: { el: document.getElementById('message'), err: document.getElementById('messageError'),
-            validate: v => v.trim().length >= 10 ? '' : 'Tell us a little more (10+ characters).' }
-        };
-
-        function validateField(key){
-          const f = fields[key];
-          const msg = f.validate(f.el.value);
-          f.err.textContent = msg;
-          f.el.closest('.field').classList.toggle('has-error', !!msg);
-          return !msg;
-        }
-
-        Object.keys(fields).forEach(key => {
-          fields[key].el.addEventListener('blur', () => validateField(key));
-        });
-
-        form.addEventListener('submit', function(e){
-          e.preventDefault();
-          const results = Object.keys(fields).map(validateField);
-          if (results.includes(false)){
-            status.textContent = 'Please fix the highlighted fields.';
-            status.classList.remove('success');
-            return;
-          }
-
-          submitBtn.disabled = true;
-          submitBtn.textContent = 'Sending…';
-          status.textContent = '';
-
-          // NOTE: there is no backend wired up in this static file, so this
-          // simulates the send. To actually deliver messages, point this form
-          // at a service like Formspree, or POST to your own API endpoint here.
-          setTimeout(() => {
-            status.textContent = "Thanks — we'll reply within one business day.";
-            status.classList.add('success');
-            submitBtn.disabled = false;
-            submitBtn.textContent = 'Send message';
-            form.reset();
-          }, 700);
-        });
-      })();
-
-
     return () => {
       cleanupFns.forEach((fn) => {
         try {

@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageHero from "../components/PageHero";
-import ContactForm from "./ContactForm";
+import GHLContactForm from "../components/GHLContactForm";
 
 export const metadata = {
   title: "Contact — Empro Labs",
@@ -55,7 +55,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <ContactForm />
+            <GHLContactForm />
           </div>
         </div>
       </section>

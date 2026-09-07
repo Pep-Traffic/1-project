@@ -1,3 +1,5 @@
+import GHLContactForm from "./GHLContactForm";
+
 export default function HomeContent() {
   return (
     <>
@@ -812,30 +814,7 @@ export default function HomeContent() {
         </ul>
       </div>
 
-      <form id="contactForm" noValidate>
-        <div className="field">
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" autoComplete="name" required />
-          <span className="error" id="nameError"></span>
-        </div>
-        <div className="field">
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" autoComplete="email" required />
-          <span className="error" id="emailError"></span>
-        </div>
-        <div className="field">
-          <label htmlFor="phone">Phone (optional)</label>
-          <input type="tel" id="phone" name="phone" autoComplete="tel" />
-          <span className="error" id="phoneError"></span>
-        </div>
-        <div className="field">
-          <label htmlFor="message">What are you building?</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          <span className="error" id="messageError"></span>
-        </div>
-        <button type="submit" className="btn btn-primary" id="submitBtn">Send message</button>
-        <p className="form-status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
+      <GHLContactForm />
     </div>
   </div>
 </section>
