@@ -19,9 +19,9 @@ export default function HomeContent() {
   </svg>
 
   <div className="hero-inner">
-    <div className="eyebrow"><span className="line"></span>Software development agency</div>
-    <h1>Stop patching<br />broken releases.<br /><span className="accent">Start shipping.</span></h1>
-    <p className="lede">Empro Labs builds and maintains production software for founders who are done relying on a rotating cast of freelancers. Senior engineers, one team, every release.</p>
+    <div className="eyebrow"><span className="line"></span>GHL, WordPress &amp; Shopify agency</div>
+    <h1>Stop losing customers<br />to a slow website.<br /><span className="accent">Start ranking and converting.</span></h1>
+    <p className="lede">Empro Labs builds and manages GoHighLevel funnels, WordPress rebuilds, and Shopify stores — backed by SEO and ads that actually bring in customers, not just traffic.</p>
     <div className="cta-row">
       <a href="#contact" className="btn btn-primary">Book a call</a>
       <a href="#work" className="btn btn-ghost">See our work</a>
@@ -30,10 +30,10 @@ export default function HomeContent() {
 
   <div className="testimonial-float" id="heroTestimonial">
     <div className="chip-text">
-      <p id="heroQuote">"They shipped in three weeks what our last agency couldn't finish in three months."</p>
+      <p id="heroQuote">"They rebuilt our WordPress site and within two months we were finally on page one for our main service."</p>
       <div className="who">
         <div className="avatar"></div>
-        <div><b id="heroName">Maya R.</b> <span id="heroRole">— Startup Founder</span></div>
+        <div><b id="heroName">Dana R.</b> <span id="heroRole">— Owner, Northline Roofing</span></div>
       </div>
     </div>
   </div>
@@ -45,11 +45,11 @@ export default function HomeContent() {
     <p>Trusted by teams building on</p>
     <div className="logo-row">
       <span>codenovahq</span>
-      <span>Northwind</span>
-      <span>Basecamp Labs</span>
-      <span>Ferro</span>
-      <span>Halcyon</span>
-      <span>Cascade</span>
+      <span>Northline Roofing</span>
+      <span>Ferro Studio</span>
+      <span>Vantage Roofing</span>
+      <span>Bayview Heating</span>
+      <span>Ember &amp; Ash</span>
     </div>
   </div>
 </section>
@@ -58,20 +58,20 @@ export default function HomeContent() {
 <section className="phases" id="leaks">
   <div className="wrap">
     <div className="eyebrow"><span className="line"></span>Why projects stall</div>
-    <h2>Most founders don't have a dev problem. They have a follow-through problem.</h2>
-    <p className="section-lede">Empro Labs exists to close the gap between what got promised on the kickoff call and what actually ships.</p>
+    <h2>Most small businesses don't have a marketing problem. They have a follow-through problem.</h2>
+    <p className="section-lede">Empro Labs exists to close the gap between the website or campaign that got promised and the customers that actually show up.</p>
     <div className="phases-list">
       <div className="phase">
-        <span className="phase-head"><span className="phase-num">01</span><span className="phase-title">The freelancer disappears</span></span>
-        <p>The build gets 80% done, the contractor moves on to the next gig, and nobody left on your team understands the codebase.</p>
+        <span className="phase-head"><span className="phase-num">01</span><span className="phase-title">Your last web designer went quiet</span></span>
+        <p>The site half-launched, the freelancer moved on to the next gig, and nobody's left who can even log into WordPress or GHL to fix it.</p>
       </div>
       <div className="phase">
-        <span className="phase-head"><span className="phase-num">02</span><span className="phase-title">The backlog goes quiet</span></span>
-        <p>Bug reports and feature requests pile up in a Slack channel nobody's watching, while competitors keep shipping.</p>
+        <span className="phase-head"><span className="phase-num">02</span><span className="phase-title">Your ad account runs on autopilot</span></span>
+        <p>Nobody's watching cost-per-lead, so budget keeps burning on keywords and audiences that stopped converting months ago.</p>
       </div>
       <div className="phase">
         <span className="phase-head"><span className="phase-num">03</span><span className="phase-title">Nobody owns the outcome</span></span>
-        <p>Your website, your ad spend, and your CRM all report activity, but no one can say which one is actually producing paying customers.</p>
+        <p>Your website, your ads, and your rankings all report activity, but no one can say which one is actually producing paying customers.</p>
       </div>
     </div>
   </div>
@@ -81,8 +81,8 @@ export default function HomeContent() {
 <section className="solutions">
   <div className="wrap">
     <div className="eyebrow"><span className="line"></span>What we build</div>
-    <h2>Software that does the follow-up for you</h2>
-    <p className="section-lede">Three pieces of the same system: a site that captures the lead, tools your team can search, and infrastructure that tells you the truth about cost and uptime.</p>
+    <h2>A website, campaigns, and rankings that do the follow-up for you</h2>
+    <p className="section-lede">Three pieces of the same system: a site that captures the lead, campaigns your team can track, and reporting that tells you the truth about cost and results.</p>
 
     <div className="solution-grid">
 
@@ -127,7 +127,7 @@ export default function HomeContent() {
           </div>
         </div>
         <div className="solution-foot">
-          <p><b>Every tool your team uses,</b> searchable in one place</p>
+          <p><b>Every campaign and page you're running,</b> tracked in one place</p>
           <a href="#contact" className="arrow">↗</a>
         </div>
       </div>
@@ -154,7 +154,7 @@ export default function HomeContent() {
           </div>
         </div>
         <div className="solution-foot">
-          <p><b>Infrastructure costs, tracked</b> and trending down</p>
+          <p><b>Hosting and ad spend, tracked</b> and trending down</p>
           <a href="#contact" className="arrow">↗</a>
         </div>
       </div>
@@ -170,7 +170,7 @@ export default function HomeContent() {
           </div>
         </div>
         <div className="solution-foot">
-          <p><b>Every feature gets its own preview,</b> not a shared staging server</p>
+          <p><b>Every page gets tested before it goes live,</b> not guesswork</p>
           <a href="#contact" className="arrow">↗</a>
         </div>
       </div>
@@ -224,7 +224,7 @@ export default function HomeContent() {
           </div>
         </div>
         <div className="solution-foot">
-          <p><b>A real engineer on call,</b> not a support bot</p>
+          <p><b>A real specialist on call,</b> not a support bot</p>
           <a href="#contact" className="arrow">↗</a>
         </div>
       </div>
@@ -284,11 +284,11 @@ export default function HomeContent() {
           </div>
         </div>
         <div className="float-chip cal-chip" id="calChip">
-          <div className="chip-text"><b id="calDay">Thursday, 2:00pm</b><span>Sprint demo — come see what shipped</span></div>
+          <div className="chip-text"><b id="calDay">Thursday, 2:00pm</b><span>Strategy call — come see what's live</span></div>
           <span className="tag">Scheduled</span>
         </div>
         <div className="solution-foot">
-          <p><b>Sprint demos, booked</b> straight onto your calendar</p>
+          <p><b>Strategy calls, booked</b> straight onto your calendar</p>
           <a href="#contact" className="arrow">↗</a>
         </div>
       </div>
@@ -304,17 +304,17 @@ export default function HomeContent() {
     <div className="hub-text">
     <div className="eyebrow"><span className="line"></span>How it all connects</div>
     <h2>One team, plugged into every tool you already run</h2>
-    <p className="section-lede">We don't rip out your stack and start over. Empro Labs plugs straight into your website, database, and warehouse, and keeps every app your team already lives in talking to each other.</p>
+    <p className="section-lede">We don't rip out your stack and start over. Empro Labs plugs straight into your website, your CRM, and your ad accounts, and keeps every tool your team already uses talking to each other.</p>
     </div>
 
     <div className="hub-visual">
       <div className="hub-backdrop"></div>
 
       <div className="hub-tags-top">
-        <span className="hub-tag" style={{ left: "12.9%" }}>Application</span>
-        <span className="hub-tag hub-tag-offset" style={{ left: "38.6%" }}>Database</span>
-        <span className="hub-tag hub-tag-offset" style={{ left: "61.4%" }}>Website</span>
-        <span className="hub-tag" style={{ left: "87.1%" }}>Warehouse</span>
+        <span className="hub-tag" style={{ left: "12.9%" }}>Website</span>
+        <span className="hub-tag hub-tag-offset" style={{ left: "38.6%" }}>GHL / CRM</span>
+        <span className="hub-tag hub-tag-offset" style={{ left: "61.4%" }}>Ads</span>
+        <span className="hub-tag" style={{ left: "87.1%" }}>Analytics</span>
       </div>
 
       <svg className="hub-lines" viewBox="0 0 700 560" preserveAspectRatio="none">
@@ -400,51 +400,51 @@ export default function HomeContent() {
 <section className="services" id="services">
   <div className="wrap">
     <div className="eyebrow"><span className="line"></span>What we do</div>
-    <h2>Everything between an idea and a system that runs itself</h2>
-    <p className="section-lede">We don't hand off a scope document and disappear. Empro Labs stays on as the engineering team behind your product, from the first commit to the tenth release.</p>
+    <h2>Website design, SEO, and ads — run by one accountable team</h2>
+    <p className="section-lede">We don't hand off a website and disappear. Empro Labs stays on as the team behind your online presence, from the first page live to the tenth campaign.</p>
 
     <div className="service-list">
       <details className="service">
         <summary>
           <div className="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M9 6L3 12L9 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/><path d="M15 6L21 12L15 18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
-          <div><h3>Product engineering</h3><p>Full-stack web and mobile builds, architected to handle real traffic — not just a demo.</p></div>
+          <div><h3>GHL, WordPress &amp; Shopify web development</h3><p>Funnels, rebuilds, and stores — architected to handle real traffic, not just a demo.</p></div>
           <span className="chev">＋</span>
         </summary>
         <div className="service-more">
           <ul>
-            <li>Web and mobile apps built on a modern, typed stack</li>
-            <li>Architecture reviewed for real production load, not a demo</li>
-            <li>Handoff includes documentation your own team can extend</li>
+            <li>Custom GoHighLevel funnels built to convert, not just look good</li>
+            <li>WordPress rebuilds focused on speed and SEO structure</li>
+            <li>Shopify storefronts built to sell, not just browse</li>
           </ul>
         </div>
       </details>
 
       <details className="service">
         <summary>
-          <div className="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6.5C4 5.12 7.58 4 12 4C16.42 4 20 5.12 20 6.5C20 7.88 16.42 9 12 9C7.58 9 4 7.88 4 6.5Z" stroke="currentColor" strokeWidth="1.8"/><path d="M4 6.5V17.5C4 18.88 7.58 20 12 20C16.42 20 20 18.88 20 17.5V6.5" stroke="currentColor" strokeWidth="1.8"/><path d="M4 12C4 13.38 7.58 14.5 12 14.5C16.42 14.5 20 13.38 20 12" stroke="currentColor" strokeWidth="1.8"/></svg></div>
-          <div><h3>DevOps &amp; infrastructure</h3><p>CI/CD pipelines, cloud architecture, and monitoring so releases stop being a gamble.</p></div>
+          <div className="icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" strokeWidth="1.8" /><path d="M20 20L15.2 15.2" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg></div>
+          <div><h3>SEO</h3><p>Technical audits, on-page fixes, and content that actually targets what your customers search for.</p></div>
           <span className="chev">＋</span>
         </summary>
         <div className="service-more">
           <ul>
-            <li>Automated pipelines — every merge tests, builds, and deploys itself</li>
-            <li>Cloud infrastructure sized for your actual traffic, not guesswork</li>
-            <li>Alerting wired up before launch, not after the first outage</li>
+            <li>Full technical and on-page audit before any changes</li>
+            <li>Content built around real search volume, not guesses</li>
+            <li>Local SEO for businesses that serve a city or region</li>
           </ul>
         </div>
       </details>
 
       <details className="service">
         <summary>
-          <div className="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20L8.5 15.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/><path d="M13 4L20 11L11 20L4 20L4 13L11 6L13 4Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg></div>
-          <div><h3>Product design</h3><p>Interfaces designed around how your users actually work, not around a template.</p></div>
+          <div className="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 10V14C4 14.55 4.45 15 5 15H7L10 19V5L7 9H5C4.45 9 4 9.45 4 10Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /><path d="M14 9C15 9.8 15.6 10.85 15.6 12C15.6 13.15 15 14.2 14 15" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /><path d="M16.5 6.5C18.2 7.9 19.2 9.85 19.2 12C19.2 14.15 18.2 16.1 16.5 17.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg></div>
+          <div><h3>Ads management</h3><p>Paid search and social campaigns managed by a team that reports the numbers that actually matter.</p></div>
           <span className="chev">＋</span>
         </summary>
         <div className="service-more">
           <ul>
-            <li>Flows mapped from real user tasks, not a component library</li>
-            <li>Interactive prototypes you can test before a line of code is written</li>
-            <li>A design system your engineers can actually build from</li>
+            <li>Campaigns built around your actual sales funnel, not a generic template</li>
+            <li>Weekly budget reallocation toward what's actually converting</li>
+            <li>You see cost per lead and cost per booked job, not just impressions</li>
           </ul>
         </div>
       </details>
@@ -452,79 +452,17 @@ export default function HomeContent() {
       <details className="service">
         <summary>
           <div className="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3L4 6.5V11C4 15.5 7.4 19.7 12 21C16.6 19.7 20 15.5 20 11V6.5L12 3Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/><path d="M9 12L11 14L15.5 9.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
-          <div><h3>Ongoing support</h3><p>An SLA-backed team on call for bugs, scaling issues, and the features that come next.</p></div>
+          <div><h3>Ongoing support</h3><p>An SLA-backed team on call for fixes, updates, and the changes that come next.</p></div>
           <span className="chev">＋</span>
         </summary>
         <div className="service-more">
           <ul>
             <li>Guaranteed response times, in writing</li>
-            <li>The same engineers who built it — no re-explaining your codebase</li>
-            <li>Monthly capacity for new features, not just bug fixes</li>
+            <li>The same specialists who built it — no re-explaining your business</li>
+            <li>Monthly capacity for new pages and campaigns, not just fixes</li>
           </ul>
         </div>
       </details>
-    </div>
-  </div>
-</section>
-
-
-<section className="pipeline">
-  <div className="wrap">
-    <div className="pipeline-grid">
-      <div>
-        <div className="eyebrow"><span className="line"></span>Right now</div>
-        <h2>Live from a production pipeline</h2>
-        <p className="section-lede">This is a real terminal simulation, updating on an interval — a preview of the kind of visibility you get once we're running your releases.</p>
-
-        <div className="terminal">
-          <div className="terminal-bar">
-            <div className="dots"><i></i><i></i><i></i></div>
-            <div className="env">production · us-east-1</div>
-          </div>
-          <div className="terminal-body">
-            <div className="metric-grid">
-              <div className="metric"><span>Uptime</span><b id="mUptime">99.98<em>%</em></b></div>
-              <div className="metric"><span>Deploys today</span><b id="mDeploys">7</b></div>
-              <div className="metric"><span>p95 latency</span><b id="mLatency">142<em>ms</em></b></div>
-            </div>
-            <div className="log" id="log" aria-live="polite"></div>
-          </div>
-        </div>
-      </div>
-
-      <div className="regions-panel">
-        <div className="regions-head">
-          <b>Deployed across 4 regions</b>
-          <span className="live-tag"><i></i>Live</span>
-        </div>
-        <div className="regions-list" id="regionsList">
-          <div className="region-row" data-base="18">
-            <span className="region-dot"></span>
-            <span className="region-name">us-east-1</span>
-            <span className="region-load"><i style={{width: '62%'}}></i></span>
-            <span className="region-ms">18<em>ms</em></span>
-          </div>
-          <div className="region-row" data-base="34">
-            <span className="region-dot"></span>
-            <span className="region-name">eu-west-1</span>
-            <span className="region-load"><i style={{width: '41%'}}></i></span>
-            <span className="region-ms">34<em>ms</em></span>
-          </div>
-          <div className="region-row" data-base="52">
-            <span className="region-dot"></span>
-            <span className="region-name">ap-southeast-1</span>
-            <span className="region-load"><i style={{width: '28%'}}></i></span>
-            <span className="region-ms">52<em>ms</em></span>
-          </div>
-          <div className="region-row" data-base="21">
-            <span className="region-dot"></span>
-            <span className="region-name">sa-east-1</span>
-            <span className="region-load"><i style={{width: '35%'}}></i></span>
-            <span className="region-ms">21<em>ms</em></span>
-          </div>
-        </div>
-        <p className="regions-note">Requests routed to the nearest healthy region automatically.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -538,10 +476,10 @@ export default function HomeContent() {
 
     <div className="steps">
       <div className="step-dot"></div>
-      <div className="step"><div className="num">01</div><h4>Discover</h4><p>We audit your codebase and goals before writing a single line.</p></div>
+      <div className="step"><div className="num">01</div><h4>Discover</h4><p>We audit your site, rankings, and ad spend before touching anything.</p></div>
       <div className="step"><div className="num">02</div><h4>Plan</h4><p>A scoped roadmap with milestones you can hold us to.</p></div>
-      <div className="step"><div className="num">03</div><h4>Build</h4><p>Weekly demos. You see progress, not status reports.</p></div>
-      <div className="step"><div className="num">04</div><h4>Ship</h4><p>Deployed, monitored, and load-tested before it reaches users.</p></div>
+      <div className="step"><div className="num">03</div><h4>Build</h4><p>Weekly check-ins. You see progress, not status reports.</p></div>
+      <div className="step"><div className="num">04</div><h4>Launch</h4><p>Tested and checked across devices before it reaches real customers.</p></div>
       <div className="step"><div className="num">05</div><h4>Support</h4><p>We stay on to maintain and extend what we built.</p></div>
     </div>
   </div>
@@ -554,15 +492,15 @@ export default function HomeContent() {
       <div className="phases-list">
         <div className="phase">
           <span className="phase-head"><span className="phase-num">01</span><span className="phase-title">The audit</span></span>
-          <p>We map where your engineering time is actually leaking. You get the plan either way, and it's free.</p>
+          <p>We map where your website, SEO, and ad spend are actually leaking customers. You get the plan either way, and it's free.</p>
         </div>
         <div className="phase">
           <span className="phase-head"><span className="phase-num">02</span><span className="phase-title">The build</span></span>
-          <p>We build and test the whole fix in weeks, before it ever touches production.</p>
+          <p>We rebuild the site, funnel, or campaign in weeks, before it ever goes live to real customers.</p>
         </div>
         <div className="phase">
           <span className="phase-head"><span className="phase-num">03</span><span className="phase-title">The handoff</span></span>
-          <p>You get monitoring, documentation, and a team on call — not just a repo and a goodbye.</p>
+          <p>You get reporting, documentation, and a team on call — not just a live site and a goodbye.</p>
         </div>
       </div>
 
@@ -571,14 +509,14 @@ export default function HomeContent() {
         <div className="kanban-fade kanban-fade-bottom"></div>
         <div className="kanban-track">
           <div className="kanban-card"><span className="kb-dot"></span><span>Audit complete</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card"><span className="kb-dot"></span><span>Codebase rebuilt</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card"><span className="kb-dot"></span><span>Tests passing</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card"><span className="kb-dot"></span><span>Deployed to production</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          
+          <div className="kanban-card"><span className="kb-dot"></span><span>Site rebuilt</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div className="kanban-card"><span className="kb-dot"></span><span>Live and tracking</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div className="kanban-card"><span className="kb-dot"></span><span>Campaigns launched</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+
           <div className="kanban-card" aria-hidden="true"><span className="kb-dot"></span><span>Audit complete</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card" aria-hidden="true"><span className="kb-dot"></span><span>Codebase rebuilt</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card" aria-hidden="true"><span className="kb-dot"></span><span>Tests passing</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card" aria-hidden="true"><span className="kb-dot"></span><span>Deployed to production</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div className="kanban-card" aria-hidden="true"><span className="kb-dot"></span><span>Site rebuilt</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div className="kanban-card" aria-hidden="true"><span className="kb-dot"></span><span>Live and tracking</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div className="kanban-card" aria-hidden="true"><span className="kb-dot"></span><span>Campaigns launched</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
         </div>
       </div>
     </div>
@@ -593,9 +531,9 @@ export default function HomeContent() {
     <p className="section-lede">Straightforward terms so you know what you're agreeing to before you sign anything.</p>
     <div className="stats-grid">
       <div className="stat-block"><b>Fixed quote</b><span>Scoped and approved before we start — the number doesn't move</span></div>
-      <div className="stat-block"><b>2–4 wks</b><span>Typical time to first working deploy</span></div>
+      <div className="stat-block"><b>2–4 wks</b><span>Typical time to a live, working site</span></div>
       <div className="stat-block"><b>Month to month</b><span>No multi-year lock-in contract</span></div>
-      <div className="stat-block"><b>Real engineers</b><span>Direct access to who built it, not a ticket queue</span></div>
+      <div className="stat-block"><b>Real specialists</b><span>Direct access to who built it, not a ticket queue</span></div>
     </div>
   </div>
 </section>
@@ -614,8 +552,8 @@ export default function HomeContent() {
         </summary>
         <div className="service-more">
           <ul>
-            <li>You need software that survives real traffic, not just a demo</li>
-            <li>You're tired of re-explaining your codebase to a new freelancer every few months</li>
+            <li>You need a website that converts, not just looks good in a screenshot</li>
+            <li>You're tired of re-explaining your business to a new freelancer every few months</li>
             <li>You want weekly proof of progress, not a status report</li>
             <li>You're on GHL, WordPress, Shopify, or a custom stack and need it to actually convert</li>
           </ul>
@@ -630,7 +568,7 @@ export default function HomeContent() {
           <ul>
             <li>You want the cheapest day-rate available, not a scoped outcome</li>
             <li>You need a single static page with no ongoing changes</li>
-            <li>You're not ready to have an engineer on call after launch</li>
+            <li>You're not ready to have a specialist on call after launch</li>
             <li>You want guaranteed rankings or revenue promised on the first call</li>
           </ul>
         </div>
@@ -643,57 +581,57 @@ export default function HomeContent() {
 <section className="work" id="work">
   <div className="wrap">
     <div className="eyebrow"><span className="line"></span>Selected work</div>
-    <h2>Recent releases</h2>
-    <p className="section-lede">A few of the systems we've built, rebuilt, and kept running. Numbers below are what shipped for that specific client — results vary by starting point and scope.</p>
+    <h2>Recent work</h2>
+    <p className="section-lede">A few of the sites, campaigns, and rankings we've built and kept running. Numbers below are what shipped for that specific client — results vary by starting point and scope.</p>
 
     <details className="case">
       <summary>
         <div>
-          <span className="tag">Northwind — E-commerce</span>
-          <h3>Rebuilt checkout from the ground up</h3>
-          <p>Replaced a legacy checkout flow that was losing customers at payment. New stack shipped in six weeks.</p>
+          <span className="tag">Northline Roofing — WordPress</span>
+          <h3>Rebuilt a legacy WordPress site from the ground up</h3>
+          <p>Replaced a slow, outdated theme that was costing organic rankings. New build shipped in four weeks.</p>
         </div>
-        <div className="stat"><b>62%</b><span>faster checkout load</span></div>
+        <div className="stat"><b>1.8s</b><span>page load time</span></div>
       </summary>
       <div className="case-more">
         <ul>
-          <li>Replaced a 3rd-party checkout widget with an in-house flow</li>
-          <li>Cut payment-step abandonment by moving validation client-side</li>
-          <li>Shipped with feature flags so rollout was fully reversible</li>
+          <li>Replaced a bloated page-builder theme with a lean custom build</li>
+          <li>Rebuilt on-page SEO structure alongside the redesign</li>
+          <li>Shipped with zero downtime for the existing site</li>
         </ul>
       </div>
     </details>
     <details className="case">
       <summary>
         <div>
-          <span className="tag">Halcyon — SaaS platform</span>
-          <h3>Migrated a decade-old PHP monolith</h3>
-          <p>Moved a 10-year-old codebase to a modern stack with zero downtime and no feature freeze.</p>
+          <span className="tag">Vantage Roofing — SEO</span>
+          <h3>Turned a stagnant listing into the top local result</h3>
+          <p>A technical audit and content overhaul moved a page-two local business to the top of its core service terms.</p>
         </div>
-        <div className="stat"><b>0</b><span>minutes of downtime</span></div>
+        <div className="stat"><b>3x</b><span>organic traffic increase</span></div>
       </summary>
       <div className="case-more">
         <ul>
-          <li>Ran the old and new systems side by side behind a router</li>
-          <li>Migrated data in batches, verified against the live system</li>
-          <li>Team kept shipping features throughout the migration</li>
+          <li>Fixed technical issues blocking indexing on key service pages</li>
+          <li>Rebuilt content around real local search volume, not guesses</li>
+          <li>Rankings tracked and reported monthly, not left to assumption</li>
         </ul>
       </div>
     </details>
     <details className="case">
       <summary>
         <div>
-          <span className="tag">Cascade — Internal tools</span>
-          <h3>Built an operations dashboard from scratch</h3>
-          <p>Replaced six spreadsheets and a Slack bot with one internal tool the ops team actually uses.</p>
+          <span className="tag">Ember &amp; Ash — Ads management</span>
+          <h3>Rebuilt a wasteful ad account around booked jobs</h3>
+          <p>Replaced a campaign optimized for clicks with one optimized for actual booked jobs, cutting acquisition cost by more than half.</p>
         </div>
-        <div className="stat"><b>20 hrs</b><span>saved per week</span></div>
+        <div className="stat"><b>$99</b><span>cost per booked job</span></div>
       </summary>
       <div className="case-more">
         <ul>
-          <li>Interviewed the ops team before designing a single screen</li>
-          <li>Replaced manual spreadsheet reconciliation with live syncing</li>
-          <li>Delivered in four two-week sprints with weekly demos</li>
+          <li>Rebuilt campaign structure around the real sales funnel</li>
+          <li>Cut spend on keywords that generated clicks but not jobs</li>
+          <li>Client sees cost per lead and cost per booked job weekly</li>
         </ul>
       </div>
     </details>
@@ -704,21 +642,21 @@ export default function HomeContent() {
 <section className="testimonials">
   <div className="wrap">
     <div className="eyebrow"><span className="line"></span>What clients say</div>
-    <h2>Teams that stopped worrying about their stack</h2>
-    <p className="section-lede">A few words from founders and operators we've worked alongside.</p>
+    <h2>Small businesses that stopped worrying about their marketing</h2>
+    <p className="section-lede">A few words from owners and operators we've worked alongside.</p>
 
     <div className="quote-grid">
       <div className="quote">
-        <p>"They shipped in three weeks what our last agency couldn't finish in three months."</p>
-        <div className="who"><div className="avatar"></div><div><b>Maya R.</b><span>Startup Founder, Northwind</span></div></div>
+        <p>"They rebuilt our WordPress site and our organic traffic tripled inside a quarter."</p>
+        <div className="who"><div className="avatar"></div><div><b>Dana R.</b><span>Owner, Northline Roofing</span></div></div>
       </div>
       <div className="quote">
-        <p>"The migration was the scariest part of our roadmap. Empro Labs made it the smoothest."</p>
-        <div className="who"><div className="avatar"></div><div><b>Owen T.</b><span>CTO, Halcyon</span></div></div>
+        <p>"Our ad spend was going nowhere until Empro Labs took it over. Now we know exactly what a booked job costs us."</p>
+        <div className="who"><div className="avatar"></div><div><b>Marcus T.</b><span>Owner, Ember &amp; Ash</span></div></div>
       </div>
       <div className="quote">
-        <p>"We finally have an engineering partner who tells us the truth about timelines."</p>
-        <div className="who"><div className="avatar"></div><div><b>Priya D.</b><span>COO, Cascade</span></div></div>
+        <p>"We finally have a team that tells us the truth about what's actually working, not just vanity numbers."</p>
+        <div className="who"><div className="avatar"></div><div><b>Priya D.</b><span>Owner, Vantage Roofing</span></div></div>
       </div>
     </div>
   </div>
@@ -733,11 +671,11 @@ export default function HomeContent() {
     <div className="service-list">
       <details className="service">
         <summary>
-          <div><h3>What does Empro Labs actually do for a founder?</h3></div>
+          <div><h3>What does Empro Labs actually do for a small business?</h3></div>
           <span className="chev">＋</span>
         </summary>
         <div className="service-more">
-          <p>We build and maintain the software behind your business — websites, internal tools, GHL/CRM setups, and the infrastructure underneath — as one accountable engineering team instead of a rotating cast of freelancers.</p>
+          <p>We build and manage the website, GHL funnel, or Shopify store behind your business, plus the SEO and ads that bring customers to it — as one accountable team instead of a rotating cast of freelancers.</p>
         </div>
       </details>
       <details className="service">
@@ -764,7 +702,7 @@ export default function HomeContent() {
           <span className="chev">＋</span>
         </summary>
         <div className="service-more">
-          <p>Both. A large share of our work is rescuing a codebase a previous freelancer or agency left unfinished.</p>
+          <p>Both. A large share of our work is rescuing a website or campaign a previous freelancer or agency left unfinished.</p>
         </div>
       </details>
       <details className="service">
@@ -793,8 +731,8 @@ export default function HomeContent() {
 <section className="cta-banner">
   <div className="wrap">
     <div className="cta-panel">
-      <h2>Ready to stop losing time to a broken stack?</h2>
-      <p>Tell us what's not working or what you're building next. We'll reply with a scoped plan, not a sales deck.</p>
+      <h2>Ready to stop losing customers to a broken funnel?</h2>
+      <p>Tell us what's not working — your site, your rankings, or your ads. We'll reply with a scoped plan, not a sales deck.</p>
       <a href="#contact" className="btn btn-primary">Book a call</a>
     </div>
   </div>

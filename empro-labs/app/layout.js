@@ -4,9 +4,9 @@ const SITE_URL = "https://www.emprolabs.com";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Empro Labs — Software Development Agency",
+  title: "GHL, WordPress & Shopify Web Design, SEO & Ads Agency — Empro Labs",
   description:
-    "Empro Labs builds and maintains production software for founders who are done relying on a rotating cast of freelancers.",
+    "Empro Labs builds GoHighLevel funnels, WordPress and Shopify sites, plus the SEO and ads that bring in customers — for small businesses done relying on a rotating cast of freelancers.",
   alternates: {
     canonical: "/",
   },
@@ -33,7 +33,7 @@ const jsonLd = [
     name: "Empro Labs",
     url: SITE_URL,
     description:
-      "GoHighLevel (GHL) website design, WordPress website development, Shopify website design, SEO, and ads management for founders who need production-grade systems.",
+      "GoHighLevel (GHL) website design, WordPress website development, Shopify website design, SEO, and ads management for small businesses who need real customers, not just a nice-looking site.",
     makesOffer: [
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "GoHighLevel (GHL) website design" } },
       { "@type": "Offer", itemOffered: { "@type": "Service", name: "WordPress website development" } },

@@ -4,9 +4,9 @@ import HomeContent from "./components/HomeContent";
 import HomeInteractions from "./components/HomeInteractions";
 
 export const metadata = {
-  title: "Empro Labs — Software Development Agency",
+  title: "GHL, WordPress & Shopify Web Design, SEO & Ads Agency — Empro Labs",
   description:
-    "Empro Labs builds and maintains production software for founders who are done relying on a rotating cast of freelancers. Senior engineers, one team, every release.",
+    "Empro Labs builds GoHighLevel funnels, WordPress and Shopify sites, plus the SEO and ads that bring in customers — for small businesses done relying on a rotating cast of freelancers.",
   alternates: { canonical: "/" },
 };
 

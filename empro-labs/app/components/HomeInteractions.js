@@ -38,9 +38,9 @@ export default function HomeInteractions() {
         const nameEl = document.getElementById('heroName');
         const roleEl = document.getElementById('heroRole');
         const quotes = [
-          { quote: '"They shipped in three weeks what our last agency couldn\'t finish in three months."', name: 'Maya R.', role: '— Startup Founder, Northwind' },
-          { quote: '"The migration was the scariest part of our roadmap. Empro Labs made it the smoothest."', name: 'Owen T.', role: '— CTO, Halcyon' },
-          { quote: '"We finally have an engineering partner who tells us the truth about timelines."', name: 'Priya D.', role: '— COO, Cascade' }
+          { quote: '"They rebuilt our WordPress site and within two months we were finally on page one for our main service."', name: 'Dana R.', role: '— Owner, Northline Roofing' },
+          { quote: '"Our ad spend was going nowhere until Empro Labs took it over. Now we know exactly what a booked job costs us."', name: 'Marcus T.', role: '— Owner, Ember & Ash' },
+          { quote: '"We finally have a team that tells us the truth about what\'s actually working, not just vanity numbers."', name: 'Priya D.', role: '— Owner, Vantage Roofing' }
         ];
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         let i = 0;
