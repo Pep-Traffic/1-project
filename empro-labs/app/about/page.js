@@ -43,6 +43,10 @@ const values = [
     title: "Stay on after launch",
     body: "We don't disappear after the handoff. Every engagement includes a real support plan, not a goodbye email.",
   },
+  {
+    title: "Built on social values",
+    body: "We only take on work that helps a real local business survive and grow — that social value shapes which projects we accept, not just how we deliver them.",
+  },
 ];
 
 export default function AboutPage() {
