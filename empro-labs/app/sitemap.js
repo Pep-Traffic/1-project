@@ -1,4 +1,5 @@
 import { posts } from "./blog/data";
+import { industries } from "./industries/data";
 
 const BASE_URL = "https://www.emprolabs.com";
 
@@ -15,6 +16,8 @@ const routes = [
   "/contact",
   "/blog",
   ...posts.map((post) => `/blog/${post.slug}`),
+  "/industries",
+  ...industries.map((ind) => `/industries/${ind.slug}`),
 ];
 
 export default function sitemap() {

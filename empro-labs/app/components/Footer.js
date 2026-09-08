@@ -29,6 +29,15 @@ export default function Footer() {
             </ul>
           </div>
           <div>
+            <h5>Industries</h5>
+            <ul>
+              <li><Link href="/industries/roofing">Roofing</Link></li>
+              <li><Link href="/industries/hvac-heating">HVAC &amp; Heating</Link></li>
+              <li><Link href="/industries/plumbing">Plumbing</Link></li>
+              <li><Link href="/industries">All industries</Link></li>
+            </ul>
+          </div>
+          <div>
             <h5>Contact</h5>
             <ul>
               <li><a href="mailto:hello@emprolabs.dev">hello@emprolabs.dev</a></li>

@@ -30,6 +30,7 @@ export default function Header() {
         <nav>
           <ul>
             <li><Link href="/services">Services</Link></li>
+            <li><Link href="/industries">Industries</Link></li>
             <li><Link href="/portfolio">Portfolio</Link></li>
             <li><Link href="/blog">Blog</Link></li>
             <li><Link href="/about">About</Link></li>
@@ -64,6 +65,7 @@ export default function Header() {
           ✕
         </button>
         <Link href="/services" onClick={() => setOpen(false)}>Services</Link>
+        <Link href="/industries" onClick={() => setOpen(false)}>Industries</Link>
         <Link href="/portfolio" onClick={() => setOpen(false)}>Portfolio</Link>
         <Link href="/blog" onClick={() => setOpen(false)}>Blog</Link>
         <Link href="/about" onClick={() => setOpen(false)}>About</Link>
