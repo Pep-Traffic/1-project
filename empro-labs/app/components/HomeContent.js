@@ -472,7 +472,7 @@ export default function HomeContent() {
   <div className="wrap">
     <div className="eyebrow"><span className="line"></span>How we work</div>
     <h2>Five steps, no surprises</h2>
-    <p className="section-lede">Every engagement follows the Empro Labs System — an advanced website development process built to keep speed, SEO, and conversion baked in from day one, so you always know what's shipping and when.</p>
+    <p className="section-lede">Every engagement follows the Empro Lab System — an advanced website development process built to keep speed, SEO, and conversion baked in from day one, so you always know what's shipping and when.</p>
 
     <div className="steps">
       <div className="step-dot"></div>
