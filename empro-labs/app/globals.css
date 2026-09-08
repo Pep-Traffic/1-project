@@ -1071,6 +1071,30 @@
   .value-card p{ font-size: 14px; line-height: 1.6; color: var(--ink-dim); margin: 0; }
   @media (max-width: 800px){ .values-grid{ grid-template-columns: 1fr; } }
 
+  /* ================= BLOG POST BODY ================= */
+  .post-body{ font-size: 16px; line-height: 1.75; color: var(--ink-dim); }
+  .post-body p{ margin: 0 0 22px; }
+  .post-body em{ color: var(--ink-faint); font-style: italic; }
+  .post-body h2{ font-size: clamp(1.4rem, 2.4vw, 1.8rem); margin: 52px 0 18px; color: var(--ink); }
+  .post-body h3{ font-size: 1.15rem; font-weight: 600; margin: 36px 0 14px; color: var(--ink); font-family: 'Sora', sans-serif; }
+  .post-body ul{ margin: 0 0 22px; padding-left: 22px; }
+  .post-body li{ margin-bottom: 10px; }
+  .post-body code{
+    background: var(--panel); border: 1px solid var(--line); border-radius: 4px;
+    padding: 2px 6px; font-size: 0.88em; font-family: 'SFMono-Regular', Consolas, monospace; color: var(--amber-soft);
+  }
+  .post-body pre{
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 20px 22px; overflow-x: auto; margin: 0 0 26px;
+  }
+  .post-body pre code{
+    background: none; border: none; padding: 0; color: var(--ink); font-size: 13.5px; line-height: 1.6;
+  }
+  .post-body table{ width: 100%; border-collapse: collapse; margin: 0 0 30px; font-size: 14px; }
+  .post-body th, .post-body td{ text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+  .post-body th{ color: var(--ink); font-family: 'Sora', sans-serif; font-weight: 600; }
+  .post-body td{ color: var(--ink-dim); }
+
   .team-grid{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
   .team-card{ text-align: left; }
   .team-avatar{

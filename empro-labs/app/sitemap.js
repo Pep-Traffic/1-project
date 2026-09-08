@@ -1,3 +1,5 @@
+import { posts } from "./blog/data";
+
 const BASE_URL = "https://www.emprolabs.com";
 
 const routes = [
@@ -11,6 +13,8 @@ const routes = [
   "/about/team/umair-gujjar",
   "/about/team/adnan-javed",
   "/contact",
+  "/blog",
+  ...posts.map((post) => `/blog/${post.slug}`),
 ];
 
 export default function sitemap() {
