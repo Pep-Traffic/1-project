@@ -68,10 +68,10 @@ export default function WebDevelopmentPage() {
               </p>
             </div>
             <div className="value-card">
-              <h3>Custom website development &amp; software consultancy</h3>
+              <h3>Custom website &amp; software development company</h3>
               <p>
                 Outgrown GHL, WordPress, or Shopify? As a custom website developer and custom
-                software consultancy, we build bespoke sites and internal tools for businesses
+                software development company, we build bespoke sites and internal tools for businesses
                 whose workflow doesn't fit a template — as your dedicated custom website makers,
                 not a generic dev shop.
               </p>

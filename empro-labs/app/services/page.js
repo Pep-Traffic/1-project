@@ -7,7 +7,7 @@ import CtaBanner from "../components/CtaBanner";
 export const metadata = {
   title: "GHL, WordPress & Shopify Web Development, SEO & Ads — Empro Labs",
   description:
-    "GoHighLevel (GHL) website design, WordPress website development, Shopify agency services, plus SEO and ads management from Empro Labs — your custom website developer and custom software consultancy.",
+    "GoHighLevel (GHL) website design, WordPress website development, Shopify agency services, plus SEO and ads management from Empro Labs — your custom website developer and custom software development company.",
   alternates: { canonical: "/services" },
 };
 
