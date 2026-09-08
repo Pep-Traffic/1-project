@@ -19,7 +19,7 @@ export default function WebDevelopmentPage() {
       <PageHero
         eyebrow="Service"
         title="GoHighLevel, WordPress & Shopify website design"
-        lede="Whether you need GoHighLevel website design and funnel builds, a WordPress website development rebuild, or a Shopify website design agency to launch or migrate your store, we build it to handle real traffic and hand it off with documentation your team can actually use."
+        lede="Whether you need GoHighLevel website design and funnel builds, a WordPress website development rebuild, or a Shopify website design agency to launch or migrate your store, we build it on the Empro System — our advanced website development process — and hand it off with documentation your team can actually use."
       />
 
       <section className="services">

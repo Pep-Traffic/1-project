@@ -56,7 +56,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="What we do"
         title="Three services, one accountable team"
-        lede="Pick a service below to see exactly how we work, what's included, and the kind of results past clients have seen."
+        lede="Pick a service below to see exactly how we work, what's included, and the kind of results past clients have seen — all built on the Empro System, our advanced website development process."
       />
 
       <section className="services">
