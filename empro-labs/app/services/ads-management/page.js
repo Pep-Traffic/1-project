@@ -5,10 +5,34 @@ import CtaBanner from "../../components/CtaBanner";
 import AdsDashboard from "./AdsDashboard";
 
 export const metadata = {
-  title: "Ads Management — Empro Labs",
-  description: "Paid search and social ads management from Empro Labs.",
+  title: "Ads Management Agency for Small Businesses — Empro Labs",
+  description:
+    "Empro Labs is an ads management agency for small businesses on GoHighLevel, WordPress, and Shopify. Paid search and social campaigns run on the Empro Labs System, optimized for cost per booked job, not just clicks.",
   alternates: { canonical: "/services/ads-management" },
 };
+
+const faqs = [
+  {
+    q: "What platforms do you run ads on?",
+    a: "Google Search, Google Local Services Ads, Meta (Facebook/Instagram), and retargeting across both — whichever mix actually reaches the customers who book with businesses like yours.",
+  },
+  {
+    q: "Do you connect ads to my GHL, WordPress, or Shopify site?",
+    a: "Yes. We wire conversion tracking directly into whatever your site or funnel is built on — a GHL pipeline, a WordPress form, or a Shopify checkout — so cost per lead and cost per booked job are measured against what actually happened, not just an ad-platform pixel guess.",
+  },
+  {
+    q: "What is the Empro Labs System for ads?",
+    a: "The same accountable process behind every engagement: set up campaigns around your real funnel, test creative continuously, reallocate spend weekly toward what's converting, and report the numbers that matter — cost per lead and cost per booked job, not impressions.",
+  },
+  {
+    q: "How much should I be spending on ads?",
+    a: "It depends on your industry, service area, and margins. We benchmark your current spend (or a target budget, if you're starting fresh) against what we typically see for similar small businesses — free, before you commit to anything.",
+  },
+  {
+    q: "Can you manage ads without also doing our website or SEO?",
+    a: "Yes, ads management stands on its own. That said, most of our ad clients also work with us on the website or SEO because a slow or unclear landing page is usually the biggest thing capping ad performance — we'll tell you honestly if that's what's happening.",
+  },
+];
 
 const services = [
   {
@@ -70,6 +94,27 @@ export default function AdsManagementPage() {
         <div className="wrap">
           <div className="eyebrow">
             <span className="line"></span>
+            Why small businesses hire us
+          </div>
+          <h2>An ads management agency that ties spend to booked jobs</h2>
+          <p className="section-lede">
+            Every ad account we run follows the Empro Labs System — the same accountable process across search,
+            social, and retargeting: set up around your real funnel, tested continuously, and reported on the
+            numbers that actually matter.
+          </p>
+          <p className="section-lede">
+            Most small businesses we meet are already spending on ads through a rotating cast of freelancers or
+            a self-serve dashboard, with no one accountable for whether that spend turns into booked jobs. We take
+            over the account, connect it to whatever your site runs on — GHL, WordPress, or Shopify — and report
+            cost per lead and cost per booked job every month, not just impressions and clicks.
+          </p>
+        </div>
+      </section>
+
+      <section className="services">
+        <div className="wrap">
+          <div className="eyebrow">
+            <span className="line"></span>
             Live example
           </div>
           <h2>What a managed campaign looks like</h2>
@@ -96,6 +141,30 @@ export default function AdsManagementPage() {
                   <p>{s.body}</p>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="services">
+        <div className="wrap">
+          <div className="eyebrow">
+            <span className="line"></span>
+            Questions
+          </div>
+          <h2>Ads management questions we get asked most</h2>
+          <p className="section-lede">The things people usually ask before the first call.</p>
+          <div className="service-list">
+            {faqs.map((f) => (
+              <details className="service" key={f.q}>
+                <summary>
+                  <div><h3>{f.q}</h3></div>
+                  <span className="chev">＋</span>
+                </summary>
+                <div className="service-more">
+                  <p>{f.a}</p>
+                </div>
+              </details>
             ))}
           </div>
         </div>
