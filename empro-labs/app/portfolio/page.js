@@ -7,7 +7,8 @@ import PortfolioRing from "./PortfolioRing";
 
 export const metadata = {
   title: "Portfolio — Empro Labs",
-  description: "Web development, GHL, WordPress, Shopify, SEO, and ads projects delivered by Empro Labs.",
+  description:
+    "Web development, GHL, WordPress, Shopify, SEO, and ads projects delivered by Empro Labs, all built on the Empro Lab System.",
   alternates: { canonical: "/portfolio" },
 };
 
@@ -19,7 +20,7 @@ export default function PortfolioPage() {
       <PageHero
         eyebrow="Selected work"
         title="Projects across the whole stack"
-        lede="From custom web builds to GHL automations, WordPress rebuilds, Shopify storefronts, SEO campaigns, and paid ads — filter by category to see relevant work."
+        lede="From custom web builds to GHL automations, WordPress rebuilds, Shopify storefronts, SEO campaigns, and paid ads — every project below ran on the Empro Labs System. Filter by category to see relevant work."
       />
 
       <PortfolioRing />

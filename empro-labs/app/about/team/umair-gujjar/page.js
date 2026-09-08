@@ -41,7 +41,7 @@ export default function UmairGujjarProfilePage() {
             <p className="lede">
               Senior team lead at Empro Labs — expert across GHL, WordPress, Shopify, Etsy,
               ClickFunnels, n8n workflows, and automations, with deep experience shaping the
-              systems the rest of the team builds on.
+              Empro Lab System the rest of the team builds on.
             </p>
             <div className="skill-row">
               {skills.map((s) => (

@@ -5,7 +5,8 @@ import GHLContactForm from "../components/GHLContactForm";
 
 export const metadata = {
   title: "Contact — Empro Labs",
-  description: "Tell Empro Labs what you're building. We reply within one business day.",
+  description:
+    "Tell Empro Labs what you're building. Every engagement runs on the Empro Lab System, and we reply within one business day.",
   alternates: { canonical: "/contact" },
 };
 
@@ -30,7 +31,9 @@ export default function ContactPage() {
               </div>
               <h2>Skip the contact form queue</h2>
               <p className="section-lede">
-                Prefer email or a specific department? Reach us directly using the details below.
+                Prefer email or a specific department? Reach us directly using the details below. Every new
+                engagement kicks off on the Empro Labs System, our audit-first process for GHL, WordPress, and
+                Shopify projects.
               </p>
               <ul className="contact-info">
                 <li>

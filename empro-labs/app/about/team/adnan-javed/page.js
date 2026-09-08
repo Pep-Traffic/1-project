@@ -5,7 +5,7 @@ import CtaBanner from "../../../components/CtaBanner";
 export const metadata = {
   title: "Adnan Javed — Empro Labs",
   description:
-    "Adnan Javed is Empro Labs' GHL, SEO, WordPress, and Shopify expert.",
+    "Adnan Javed is Empro Labs' GHL, SEO, WordPress, and Shopify expert, part of the Empro Lab team behind the Empro Labs System.",
   alternates: { canonical: "/about/team/adnan-javed" },
 };
 
@@ -33,7 +33,8 @@ export default function AdnanJavedProfilePage() {
             <p className="lede">
               GHL, SEO, WordPress, and Shopify expert at Empro Labs — building funnels,
               rebuilding sites, and driving organic growth for clients who need results,
-              not just deliverables.
+              not just deliverables. Part of the Empro Lab team running every engagement on
+              the Empro Labs System.
             </p>
             <div className="skill-row">
               {skills.map((s) => (

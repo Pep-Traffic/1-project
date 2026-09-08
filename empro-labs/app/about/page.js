@@ -8,7 +8,7 @@ import StatsBand from "./StatsBand";
 export const metadata = {
   title: "About — Empro Labs",
   description:
-    "Empro Labs is a software development agency for founders who need production-grade systems, not a demo.",
+    "Empro Labs is the team behind the Empro Lab System — an advanced website development process for GHL, WordPress, and Shopify small businesses.",
   alternates: { canonical: "/about" },
 };
 
@@ -70,7 +70,8 @@ export default function AboutPage() {
           </div>
           <h2>A few things we won't compromise on</h2>
           <p className="section-lede">
-            These aren't values on a poster — they're the reasons clients come back for a second and third project.
+            These aren't values on a poster — they're the reasons clients come back for a second and third project,
+            and why every engagement runs on the Empro Labs System instead of guesswork.
           </p>
           <div className="values-grid">
             {values.map((v) => (
