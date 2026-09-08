@@ -7,7 +7,7 @@ import PlatformShowcase from "./PlatformShowcase";
 export const metadata = {
   title: "GoHighLevel, WordPress & Shopify Website Design — Empro Labs",
   description:
-    "GoHighLevel (GHL) website design, WordPress website development, and Shopify website design agency services from Empro Labs. Hire a team that builds funnels, rebuilds sites, and ships stores that convert.",
+    "GoHighLevel (GHL) website design, WordPress website development, and Shopify agency services from Empro Labs — the custom website developer and custom software consultancy small businesses hire to build funnels, rebuild sites, and ship stores that convert.",
   alternates: { canonical: "/services/web-development" },
 };
 
@@ -65,6 +65,15 @@ export default function WebDevelopmentPage() {
                 Looking to hire a Shopify developer? We design and migrate Shopify storefronts —
                 custom themes, Shopify Functions, and checkout flows built to convert, not just
                 look good in a demo.
+              </p>
+            </div>
+            <div className="value-card">
+              <h3>Custom website development &amp; software consultancy</h3>
+              <p>
+                Outgrown GHL, WordPress, or Shopify? As a custom website developer and custom
+                software consultancy, we build bespoke sites and internal tools for businesses
+                whose workflow doesn't fit a template — as your dedicated custom website makers,
+                not a generic dev shop.
               </p>
             </div>
           </div>

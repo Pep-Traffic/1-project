@@ -556,6 +556,7 @@ export default function HomeContent() {
             <li>You're tired of re-explaining your business to a new freelancer every few months</li>
             <li>You want weekly proof of progress, not a status report</li>
             <li>You're on GHL, WordPress, Shopify, or a custom stack and need it to actually convert</li>
+            <li>You need a custom website developer or custom software consultancy for something a template can't handle</li>
           </ul>
         </div>
       </details>
