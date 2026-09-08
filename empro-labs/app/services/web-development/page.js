@@ -7,7 +7,7 @@ import PlatformShowcase from "./PlatformShowcase";
 export const metadata = {
   title: "GoHighLevel, WordPress & Shopify Website Design — Empro Labs",
   description:
-    "GoHighLevel (GHL) website design, WordPress website development, and Shopify agency services from Empro Labs — the custom website developer and custom software consultancy small businesses hire to build funnels, rebuild sites, and ship stores that convert.",
+    "GoHighLevel (GHL) website design, WordPress website development, and Shopify agency services from Empro Labs — the website redesign company and custom website developer small businesses hire to build funnels, rebuild sites, and ship stores that convert. Get a free quote.",
   alternates: { canonical: "/services/web-development" },
 };
 
@@ -81,8 +81,9 @@ export default function WebDevelopmentPage() {
       </section>
 
       <CtaBanner
-        title="Ready to hire a GHL, WordPress, or Shopify developer?"
-        lede="Tell us whether you're thinking GoHighLevel website design, a WordPress rebuild, a Shopify storefront, or a custom build — we'll tell you honestly which fits."
+        title="Ready to hire a GoHighLevel developer or website redesign company?"
+        lede="Tell us whether you're thinking GoHighLevel website design, a WordPress rebuild, a Shopify storefront, or a custom build — get a free quote and we'll tell you honestly which fits."
+        ctaLabel="Get a Free Quote"
       />
       <Footer />
     </>

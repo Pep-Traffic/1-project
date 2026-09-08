@@ -7,7 +7,7 @@ import TrafficChart from "./TrafficChart";
 export const metadata = {
   title: "SEO Agency for Small Businesses — Empro Labs",
   description:
-    "Empro Labs is an SEO agency for small businesses running on GoHighLevel, WordPress, or Shopify. Technical audits, on-page fixes, and content strategy built on the Empro Lab System, tracked back to leads and booked jobs — not just rankings.",
+    "Empro Labs offers local SEO services and SEO for small businesses running on GoHighLevel, WordPress, or Shopify. Technical audits, on-page fixes, and content strategy built on the Empro Lab System, tracked back to leads and booked jobs. Get a free SEO audit.",
   alternates: { canonical: "/services/seo" },
 };
 
@@ -131,8 +131,9 @@ export default function SeoPage() {
       </section>
 
       <CtaBanner
-        title="Curious what an audit would find?"
-        lede="We'll run a free technical audit and show you exactly where your site is leaking rankings."
+        title="Get a free SEO audit from a local SEO agency that shows the receipts"
+        lede="We'll run a free technical and local SEO audit and show you exactly where your site is leaking rankings — no obligation to hire us after."
+        ctaLabel="Get My Free Audit"
       />
       <Footer />
     </>

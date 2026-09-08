@@ -7,7 +7,7 @@ import AdsDashboard from "./AdsDashboard";
 export const metadata = {
   title: "Ads Management Agency for Small Businesses — Empro Labs",
   description:
-    "Empro Labs is an ads management agency for small businesses on GoHighLevel, WordPress, and Shopify. Paid search and social campaigns run on the Empro Labs System, optimized for cost per booked job, not just clicks.",
+    "Empro Labs is a PPC management agency for small businesses on GoHighLevel, WordPress, and Shopify. Paid search and social campaigns run on the Empro Labs System, optimized for cost per booked job, not just clicks. Get a free quote.",
   alternates: { canonical: "/services/ads-management" },
 };
 
@@ -171,8 +171,9 @@ export default function AdsManagementPage() {
       </section>
 
       <CtaBanner
-        title="Curious what your cost per lead should be?"
-        lede="We'll benchmark your current spend against what we typically see for your industry — free of charge."
+        title="Get a free quote from a PPC management agency that reports real numbers"
+        lede="We'll benchmark your current spend against what we typically see for your industry, and give you a scoped quote — free of charge, no obligation."
+        ctaLabel="Get a Free Quote"
       />
       <Footer />
     </>

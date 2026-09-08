@@ -91,8 +91,9 @@ export default function IndustryPage({ params }) {
       </section>
 
       <CtaBanner
-        title={`Ready to book more ${ind.name.toLowerCase()} jobs?`}
-        lede="Tell us what's not working — your site, your rankings, or your ads. We'll reply with a scoped plan, not a sales deck."
+        title={`Get a free quote for ${ind.name.toLowerCase()} website design, SEO & ads`}
+        lede="Tell us what's not working — your site, your rankings, or your ads. We'll reply with a scoped quote, not a sales deck."
+        ctaLabel="Get a Free Quote"
       />
       <Footer />
     </>

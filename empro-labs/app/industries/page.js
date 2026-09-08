@@ -45,8 +45,9 @@ export default function IndustriesPage() {
       </section>
 
       <CtaBanner
-        title="Don't see your trade listed?"
+        title="Don't see your trade listed? Get a free quote anyway"
         lede="We work with home service businesses beyond this list too — tell us what you do and we'll tell you honestly if we're a fit."
+        ctaLabel="Get a Free Quote"
       />
       <Footer />
     </>
