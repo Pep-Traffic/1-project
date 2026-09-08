@@ -21,7 +21,7 @@ export default function HomeContent() {
   <div className="hero-inner">
     <div className="eyebrow"><span className="line"></span>GHL, WordPress &amp; Shopify agency</div>
     <h1>The web design agency that turns <span className="accent">visitors into paying customers.</span></h1>
-    <p className="lede">Empro Labs designs and builds GoHighLevel funnels, WordPress sites, and Shopify stores that load fast and convert — plus the SEO and ads to bring customers to them. Every build runs on the Empro System, our advanced website development process refined across dozens of launches.</p>
+    <p className="lede">Empro Labs designs and builds GoHighLevel funnels, WordPress sites, and Shopify stores that load fast and convert — plus the SEO and ads to bring customers to them. Every build runs on the Empro Lab System, our advanced website development process refined across dozens of launches.</p>
     <div className="cta-row">
       <a href="#contact" className="btn btn-primary">Book a call</a>
       <a href="#work" className="btn btn-ghost">See our work</a>
@@ -472,7 +472,7 @@ export default function HomeContent() {
   <div className="wrap">
     <div className="eyebrow"><span className="line"></span>How we work</div>
     <h2>Five steps, no surprises</h2>
-    <p className="section-lede">Every engagement follows the Empro System — an advanced website development process built to keep speed, SEO, and conversion baked in from day one, so you always know what's shipping and when.</p>
+    <p className="section-lede">Every engagement follows the Empro Lab System — an advanced website development process built to keep speed, SEO, and conversion baked in from day one, so you always know what's shipping and when.</p>
 
     <div className="steps">
       <div className="step-dot"></div>
