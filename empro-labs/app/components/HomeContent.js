@@ -146,6 +146,7 @@ export default function HomeContent() {
           </div>
           <div className="cost-row"><div><span>Cost per deploy</span><b id="costNumber">$0.42</b></div><span>and falling</span></div>
           <div className="chat-chip" id="chatChip">
+            <button className="chat-close" id="chatClose1" aria-label="Dismiss">✕</button>
             <div className="av"></div>
             <div>
               <div className="dots"><i></i><i></i><i></i></div>

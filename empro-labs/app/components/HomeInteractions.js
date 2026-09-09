@@ -415,6 +415,13 @@ export default function HomeInteractions() {
       (function(){
         const chip = document.getElementById('chatChip');
         if (!chip) return;
+        const closeBtn1 = document.getElementById('chatClose1');
+        if (closeBtn1){
+          closeBtn1.addEventListener('click', (e) => {
+            e.preventDefault();
+            chip.classList.add('dismissed');
+          });
+        }
         const card = chip.closest('.solution-card');
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches){
           chip.classList.add('done');
