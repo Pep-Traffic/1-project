@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/" className="logo">
-              <img src="/brand/logo.png" alt="Empro Labs" className="logo-img" />
+              <Image src="/brand/logo.png" alt="Empro Labs" className="logo-img" width={121} height={32} />
             </Link>
             <p>The web makers behind small business websites, SEO, and ads — a Shopify agency, custom website developer, and custom software development company under one roof.</p>
             <p>Also known as EmPro.</p>

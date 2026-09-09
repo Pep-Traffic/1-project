@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -25,7 +26,7 @@ export default function Header() {
     <>
       <header>
         <Link href="/" className="logo">
-          <img src="/brand/logo.png" alt="Empro Labs" className="logo-img" />
+          <Image src="/brand/logo.png" alt="Empro Labs" className="logo-img" width={121} height={32} priority />
         </Link>
         <nav>
           <ul>
