@@ -90,6 +90,14 @@ export default function WhatIsLeadConnectorCrm() {
         No — it's the built-in communication layer inside every GoHighLevel account, not a separate
         purchase or integration.
       </p>
+      <h3>Where do I go for GoHighLevel login / Lead Connector login?</h3>
+      <p>
+        This page covers how Lead Connector works and how to configure it — for the actual GHL login
+        (sometimes searched as "GoHighLevel login," "HighLevel login," or "GHL login"), go directly to{" "}
+        <a href="https://app.gohighlevel.com" target="_blank" rel="noopener noreferrer">
+          app.gohighlevel.com
+        </a>. We're not the login page — we're the team that sets up what happens after you log in.
+      </p>
       <h3>Why aren't my Lead Connector texts sending?</h3>
       <p>
         The most common cause is an unregistered or incomplete A2P 10DLC compliance submission — carriers
