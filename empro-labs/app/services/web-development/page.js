@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PageHero from "../../components/PageHero";
@@ -43,30 +44,30 @@ export default function WebDevelopmentPage() {
             Platform expertise
           </div>
           <div className="values-grid">
-            <div className="value-card">
+            <Link href="/services/gohighlevel" className="value-card" style={{ display: "block" }}>
               <h3>GoHighLevel (GHL) website design</h3>
               <p>
                 Need a GoHighLevel expert? We build GHL websites, funnels, pipelines, and automations
                 for agencies, coaches, and service businesses that want every lead answered within
                 seconds — not a template with your logo dropped in.
               </p>
-            </div>
-            <div className="value-card">
+            </Link>
+            <Link href="/services/wordpress" className="value-card" style={{ display: "block" }}>
               <h3>WordPress website development</h3>
               <p>
                 Hire a WordPress developer who treats speed and SEO structure as requirements, not
                 afterthoughts. We rebuild legacy WordPress sites and WooCommerce stores onto a CMS
                 your team can actually manage.
               </p>
-            </div>
-            <div className="value-card">
+            </Link>
+            <Link href="/services/shopify" className="value-card" style={{ display: "block" }}>
               <h3>Shopify website design agency</h3>
               <p>
                 Looking to hire a Shopify developer? We design and migrate Shopify storefronts —
                 custom themes, Shopify Functions, and checkout flows built to convert, not just
                 look good in a demo.
               </p>
-            </div>
+            </Link>
             <div className="value-card">
               <h3>Custom website &amp; software development company</h3>
               <p>
