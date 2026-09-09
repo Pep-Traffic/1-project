@@ -51,8 +51,8 @@ export default function GoHighLevelPage() {
 
       <PageHero
         eyebrow="Service · GoHighLevel"
-        title="Hire a GoHighLevel developer for the build most agencies skip"
-        lede="Custom snapshot setup, funnel styling, and webhook automation for small businesses running on GHL — and the agencies reselling it who need reliable technical execution behind the scenes."
+        title="Your GHL funnel isn't converting. Here's why."
+        lede="Most GHL funnels underperform because of the build, not the platform — a snapshot nobody customized, styling nobody fixed, or automations that silently drop leads. We fix the build."
       />
 
       <section className="services">
@@ -69,6 +69,30 @@ export default function GoHighLevelPage() {
                 <p>{s.body}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="services">
+        <div className="wrap">
+          <div className="eyebrow">
+            <span className="line"></span>
+            Real result
+          </div>
+          <h2>Bayview Heating</h2>
+          <p className="section-lede">
+            Built a multi-step GHL funnel with missed-call text-back automation, so an emergency
+            heating call at 8pm gets a reply in seconds instead of going to voicemail.
+          </p>
+          <div className="values-grid">
+            <div className="value-card">
+              <h3 style={{ color: "var(--amber)", fontSize: "1.8rem" }}>3x</h3>
+              <p>lead response speed</p>
+            </div>
+            <div className="value-card">
+              <h3 style={{ color: "var(--amber)", fontSize: "1.8rem" }}>28s</h3>
+              <p>avg. first reply, via Rapid Comfort Co's GHL automation</p>
+            </div>
           </div>
         </div>
       </section>

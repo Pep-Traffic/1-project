@@ -51,8 +51,8 @@ export default function WordPressPage() {
 
       <PageHero
         eyebrow="Service · WordPress"
-        title="Hire a WordPress developer who treats speed as a requirement"
-        lede="Custom Elementor and Gutenberg builds, WooCommerce rebuilds, and speed and security hardening for small businesses who need a site that actually loads fast and ranks — not just looks good in a demo."
+        title="Your WordPress site is slow. That's costing you rankings."
+        lede="Most slow WordPress sites aren't a hosting problem — they're a bloated theme, a stack of conflicting plugins, or a page builder nobody ever cleaned up. We fix the actual cause, not just the symptom."
       />
 
       <section className="services">
@@ -69,6 +69,30 @@ export default function WordPressPage() {
                 <p>{s.body}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="services">
+        <div className="wrap">
+          <div className="eyebrow">
+            <span className="line"></span>
+            Real result
+          </div>
+          <h2>Northline Roofing</h2>
+          <p className="section-lede">
+            Rebuilt a legacy WordPress site from the ground up — replaced a slow, outdated theme
+            that was costing organic rankings. New build shipped in four weeks.
+          </p>
+          <div className="values-grid">
+            <div className="value-card">
+              <h3 style={{ color: "var(--amber)", fontSize: "1.8rem" }}>1.8s</h3>
+              <p>page load time after rebuild</p>
+            </div>
+            <div className="value-card">
+              <h3 style={{ color: "var(--amber)", fontSize: "1.8rem" }}>40%</h3>
+              <p>more conversions, Ferro Studio WooCommerce rebuild</p>
+            </div>
           </div>
         </div>
       </section>

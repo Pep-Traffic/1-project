@@ -51,8 +51,8 @@ export default function ShopifyPage() {
 
       <PageHero
         eyebrow="Service · Shopify"
-        title="Hire a Shopify developer who builds for conversions, not just launch day"
-        lede="Custom theme design, speed optimization, and app integration for small business Shopify stores that load fast and actually sell — not just look good in a screenshot."
+        title="Your store gets traffic. It's not converting."
+        lede="Most underperforming Shopify stores aren't a traffic problem — they're a slow theme, an app-script pileup, or a checkout flow nobody's audited. We fix what's actually costing you sales."
       />
 
       <section className="services">
@@ -70,6 +70,22 @@ export default function ShopifyPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="services">
+        <div className="wrap">
+          <div className="eyebrow">
+            <span className="line"></span>
+            Real result
+          </div>
+          <h2>Shopify results coming soon</h2>
+          <p className="section-lede">
+            We're building out our Shopify portfolio and will publish real client numbers here as
+            soon as we have them — not placeholder projects. In the meantime, see what we've shipped
+            on <a href="/services/wordpress" style={{ color: "var(--amber)" }}>WordPress</a> and{" "}
+            <a href="/services/gohighlevel" style={{ color: "var(--amber)" }}>GoHighLevel</a>.
+          </p>
         </div>
       </section>
 
