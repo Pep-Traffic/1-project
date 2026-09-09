@@ -147,7 +147,18 @@ export default function HomeContent() {
           <div className="cost-row"><div><span>Cost per deploy</span><b id="costNumber">$0.42</b></div><span>and falling</span></div>
           <div className="chat-chip" id="chatChip">
             <button className="chat-close" id="chatClose1" aria-label="Dismiss">✕</button>
-            <div className="av"></div>
+            <div className="av">
+              <svg viewBox="0 0 24 24" fill="none" width="15" height="15">
+                <rect x="5" y="8" width="14" height="11" rx="4" fill="#1A1006" />
+                <rect x="9" y="3" width="2" height="4" rx="1" fill="#1A1006" />
+                <circle cx="10" cy="4.5" r="1.4" fill="#1A1006" />
+                <circle cx="9.3" cy="13.2" r="1.6" fill="#F0A059" />
+                <circle cx="14.7" cy="13.2" r="1.6" fill="#F0A059" />
+                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#F0A059" />
+                <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#1A1006" />
+                <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#1A1006" />
+              </svg>
+            </div>
             <div>
               <div className="dots"><i></i><i></i><i></i></div>
               <p className="msg">Hi there! Any questions? Chat with us.</p>
@@ -217,7 +228,18 @@ export default function HomeContent() {
           </div>
           <div className="chat-chip" id="chatChip2">
             <button className="chat-close" id="chatClose" aria-label="Dismiss">✕</button>
-            <div className="av"></div>
+            <div className="av">
+              <svg viewBox="0 0 24 24" fill="none" width="15" height="15">
+                <rect x="5" y="8" width="14" height="11" rx="4" fill="#1A1006" />
+                <rect x="9" y="3" width="2" height="4" rx="1" fill="#1A1006" />
+                <circle cx="10" cy="4.5" r="1.4" fill="#1A1006" />
+                <circle cx="9.3" cy="13.2" r="1.6" fill="#F0A059" />
+                <circle cx="14.7" cy="13.2" r="1.6" fill="#F0A059" />
+                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#F0A059" />
+                <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#1A1006" />
+                <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#1A1006" />
+              </svg>
+            </div>
             <div>
               <div className="dots"><i></i><i></i><i></i></div>
               <p className="msg">Hi there! Need a hand? Chat with us.</p>
