@@ -10,6 +10,7 @@ export default function Footer() {
               <img src="/brand/logo.png" alt="Empro Labs" className="logo-img" />
             </Link>
             <p>The web makers behind small business websites, SEO, and ads — a Shopify agency, custom website developer, and custom software development company under one roof.</p>
+            <p>Also known as EmPro.</p>
           </div>
           <div>
             <h5>Company</h5>
