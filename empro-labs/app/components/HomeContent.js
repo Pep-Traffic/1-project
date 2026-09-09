@@ -60,17 +60,29 @@ export default function HomeContent() {
     <div className="eyebrow"><span className="line"></span>Why projects stall</div>
     <h2>Most small businesses don't have a marketing problem. They have a follow-through problem.</h2>
     <p className="section-lede">Empro Labs exists to close the gap between the website or campaign that got promised and the customers that actually show up.</p>
-    <div className="phases-list">
-      <div className="phase">
-        <span className="phase-head"><span className="phase-num">01</span><span className="phase-title">Your last web designer went quiet</span></span>
+    <div className="leak-grid">
+      <div className="leak-card">
+        <div className="leak-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 10H16M8 14H12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/><path d="M4 6C4 4.9 4.9 4 6 4H18C19.1 4 20 4.9 20 6V14C20 15.1 19.1 16 18 16H10L6 19.5V16H6C4.9 16 4 15.1 4 14V6Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/><path d="M3 3L21 21" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
+        </div>
+        <span className="leak-num">01</span>
+        <h3 className="leak-title">Your last web designer went quiet</h3>
         <p>The site half-launched, the freelancer moved on to the next gig, and nobody's left who can even log into WordPress or GHL to fix it.</p>
       </div>
-      <div className="phase">
-        <span className="phase-head"><span className="phase-num">02</span><span className="phase-title">Your ad account runs on autopilot</span></span>
+      <div className="leak-card">
+        <div className="leak-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.8"/><path d="M12 8V12L15 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
+        </div>
+        <span className="leak-num">02</span>
+        <h3 className="leak-title">Your ad account runs on autopilot</h3>
         <p>Nobody's watching cost-per-lead, so budget keeps burning on keywords and audiences that stopped converting months ago.</p>
       </div>
-      <div className="phase">
-        <span className="phase-head"><span className="phase-num">03</span><span className="phase-title">Nobody owns the outcome</span></span>
+      <div className="leak-card">
+        <div className="leak-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 16.5V16.51" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/><path d="M12 7.5C13.4 7.5 14.5 8.6 14.5 10C14.5 11.9 12 12 12 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.8"/></svg>
+        </div>
+        <span className="leak-num">03</span>
+        <h3 className="leak-title">Nobody owns the outcome</h3>
         <p>Your website, your ads, and your rankings all report activity, but no one can say which one is actually producing paying customers.</p>
       </div>
     </div>

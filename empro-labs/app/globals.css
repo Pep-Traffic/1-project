@@ -535,6 +535,24 @@
   .phase-title{ font-family: 'Sora', sans-serif; font-weight: 600; font-size: 1.25rem; color: var(--ink); letter-spacing: -0.01em; }
   .phase p{ margin: 0; font-size: 14.5px; line-height: 1.6; color: var(--ink-dim); max-width: 44ch; }
 
+  /* ================= LEAK CARDS (why projects stall) ================= */
+  .leak-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 44px; }
+  .leak-card{
+    position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 18px;
+    padding: 28px 26px 26px; transition: transform 0.25s cubic-bezier(.16,1,.3,1), border-color 0.25s ease;
+  }
+  .leak-card:hover{ transform: translateY(-4px); border-color: rgba(240,160,89,0.35); }
+  .leak-icon{
+    width: 42px; height: 42px; border-radius: 12px; margin-bottom: 18px;
+    background: rgba(240,160,89,0.12); color: var(--amber-soft);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .leak-icon svg{ width: 21px; height: 21px; }
+  .leak-num{ position: absolute; top: 26px; right: 26px; font-family: 'Sora', sans-serif; font-weight: 600; font-size: 13px; color: var(--ink-faint); }
+  .leak-title{ font-family: 'Sora', sans-serif; font-weight: 600; font-size: 1.15rem; color: var(--ink); letter-spacing: -0.01em; margin: 0 0 10px; }
+  .leak-card p{ margin: 0; font-size: 14.5px; line-height: 1.6; color: var(--ink-dim); }
+  @media (max-width: 900px){ .leak-grid{ grid-template-columns: 1fr; } }
+
   .kanban{
     position: relative; height: 260px; overflow: hidden; border-radius: 16px;
     background: var(--panel); border: 1px solid var(--line);
