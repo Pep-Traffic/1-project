@@ -30,9 +30,9 @@ export default function HomeContent() {
 
   <div className="testimonial-float" id="heroTestimonial">
     <div className="chip-text">
-      <p id="heroQuote">"They rebuilt our WordPress site and within two months we were finally on page one for our main service."</p>
+      <p id="heroQuote">"Empro Labs rebuilt our WordPress site and within two months we were finally on page one for our main service."</p>
       <div className="who">
-        <div className="avatar"></div>
+        <img className="avatar" id="heroAvatar" src="https://i.pravatar.cc/64?img=47" alt="Dana R." />
         <div><b id="heroName">Dana R.</b> <span id="heroRole">— Owner, Northline Roofing</span></div>
       </div>
     </div>
@@ -649,16 +649,16 @@ export default function HomeContent() {
 
     <div className="quote-grid">
       <div className="quote">
-        <p>"They rebuilt our WordPress site and our organic traffic tripled inside a quarter."</p>
-        <div className="who"><div className="avatar"></div><div><b>Dana R.</b><span>Owner, Northline Roofing</span></div></div>
+        <p>"Empro Labs rebuilt our WordPress site and our organic traffic tripled inside a quarter."</p>
+        <div className="who"><img className="avatar" src="https://i.pravatar.cc/64?img=47" alt="Dana R." /><div><b>Dana R.</b><span>Owner, Northline Roofing</span></div></div>
       </div>
       <div className="quote">
         <p>"Our ad spend was going nowhere until Empro Labs took it over. Now we know exactly what a booked job costs us."</p>
-        <div className="who"><div className="avatar"></div><div><b>Marcus T.</b><span>Owner, Ember &amp; Ash</span></div></div>
+        <div className="who"><img className="avatar" src="https://i.pravatar.cc/64?img=33" alt="Marcus T." /><div><b>Marcus T.</b><span>Owner, Ember &amp; Ash</span></div></div>
       </div>
       <div className="quote">
-        <p>"We finally have a team that tells us the truth about what's actually working, not just vanity numbers."</p>
-        <div className="who"><div className="avatar"></div><div><b>Priya D.</b><span>Owner, Vantage Roofing</span></div></div>
+        <p>"Empro Labs is the first team that's told us the truth about what's actually working, not just vanity numbers."</p>
+        <div className="who"><img className="avatar" src="https://i.pravatar.cc/64?img=25" alt="Priya D." /><div><b>Priya D.</b><span>Owner, Vantage Roofing</span></div></div>
       </div>
     </div>
   </div>
