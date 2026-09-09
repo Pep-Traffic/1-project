@@ -9,7 +9,6 @@ const platforms = {
     projects: [
       { name: "Bayview Heating", detail: "Multi-step funnel + missed-call text-back automation." },
       { name: "Rapid Comfort Co", detail: "Pipeline automation that routes leads by service type." },
-      { name: "Northline HVAC", detail: "Review-request and rebooking workflows on autopilot." },
     ],
   },
   WordPress: {
@@ -18,18 +17,8 @@ const platforms = {
     projects: [
       { name: "Northline Roofing", detail: "Full rebuild from a legacy theme — 1.8s load time." },
       { name: "Ferro Studio", detail: "WooCommerce storefront with custom product filtering." },
-      { name: "Marlow & Co", detail: "Editorial site with a custom block-based page builder." },
       { name: "PracForge", detail: "WordPress build for a dental & medical practice partner.", url: "https://pracforge.com" },
       { name: "Mangoholic", detail: "WooCommerce storefront for a fresh fruit delivery brand.", url: "https://mangoholicae.com" },
-    ],
-  },
-  Shopify: {
-    label: "Shopify",
-    blurb: "Shopify website design and migrations that keep checkout fast and conversion rates climbing.",
-    projects: [
-      { name: "Driftwood Goods", detail: "Migration from a custom cart to Shopify with zero downtime." },
-      { name: "Marlow & Co", detail: "Custom theme build with a 2.1x increase in average order value." },
-      { name: "Ember & Ash", detail: "Subscription and bundling logic built on Shopify Functions." },
     ],
   },
 };

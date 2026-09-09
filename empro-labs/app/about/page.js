@@ -25,9 +25,6 @@ const team = [
     name: "Adnan Javed",
     role: "GHL, SEO, WordPress & Shopify Expert",
   },
-  { initials: "MR", name: "Maya R. Chen", role: "Product Design Lead" },
-  { initials: "OT", name: "Owen Tran", role: "DevOps & Infrastructure" },
-  { initials: "PD", name: "Priya Deshmukh", role: "Engagement Manager" },
 ];
 
 const values = [
