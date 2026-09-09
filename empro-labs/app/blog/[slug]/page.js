@@ -4,9 +4,11 @@ import Footer from "../../components/Footer";
 import CtaBanner from "../../components/CtaBanner";
 import { posts, getPostBySlug } from "../data";
 import ShopifyGoHighLevelIntegrationGuide from "../content/shopify-gohighlevel-integration-guide";
+import WhatIsLeadConnectorCrm from "../content/what-is-lead-connector-crm";
 
 const CONTENT_MAP = {
   "shopify-gohighlevel-integration-guide": ShopifyGoHighLevelIntegrationGuide,
+  "what-is-lead-connector-crm": WhatIsLeadConnectorCrm,
 };
 
 export function generateStaticParams() {

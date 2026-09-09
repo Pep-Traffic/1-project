@@ -39,6 +39,10 @@ const faqs = [
     a: "Yes — webhook and API integrations between GHL and your website, ad accounts, or other software are a regular part of our GHL work.",
   },
   {
+    q: "Do you set up calls, texts, and reviews inside GHL's Lead Connector CRM?",
+    a: "Yes — Lead Connector is the calling, texting, and review layer built into every GHL account, and getting it configured correctly (numbers, templates, review requests) is part of a proper GHL setup, not an afterthought.",
+  },
+  {
     q: "We're an agency reselling GHL to our own clients — can you work behind the scenes?",
     a: "Yes, we handle the technical build and support work directly so you can stay the face of the account with your client.",
   },
