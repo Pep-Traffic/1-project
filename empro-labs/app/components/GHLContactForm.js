@@ -24,7 +24,7 @@ export default function GHLContactForm() {
         data-cookie-consent-provider="auto"
         title="Empro Labs contact form"
       />
-      <Script src="https://link.pmcasolutions.com/js/form_embed.js" strategy="lazyOnload" />
+      <Script src="https://link.pmcasolutions.com/js/form_embed.js" strategy="afterInteractive" />
     </>
   );
 }
