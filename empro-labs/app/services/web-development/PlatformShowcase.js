@@ -5,7 +5,7 @@ import { useState } from "react";
 const platforms = {
   GHL: {
     label: "GHL",
-    blurb: "GoHighLevel website design, funnels, and automations built to answer every lead in under 30 seconds.",
+    blurb: "GoHighLevel website design, funnels, and automations — including Lead Connector CRM setup — built to answer every lead in under 30 seconds.",
     projects: [
       { name: "Bayview Heating", detail: "Multi-step funnel + missed-call text-back automation." },
       { name: "Rapid Comfort Co", detail: "Pipeline automation that routes leads by service type." },

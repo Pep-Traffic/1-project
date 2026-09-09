@@ -49,7 +49,8 @@ export default function WebDevelopmentPage() {
               <p>
                 Need a GoHighLevel expert? We build GHL websites, funnels, pipelines, and automations
                 for agencies, coaches, and service businesses that want every lead answered within
-                seconds — not a template with your logo dropped in.
+                seconds — not a template with your logo dropped in. That includes Lead Connector CRM
+                setup, so calls, texts, and review requests actually work.
               </p>
             </Link>
             <Link href="/services/wordpress" className="value-card" style={{ display: "block" }}>

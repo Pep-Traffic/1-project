@@ -413,6 +413,7 @@ export default function HomeContent() {
         <div className="service-more">
           <ul>
             <li>Custom GoHighLevel funnels built to convert, not just look good</li>
+            <li>Lead Connector CRM setup — calling, texting, and review requests configured correctly</li>
             <li>WordPress rebuilds focused on speed and SEO structure</li>
             <li>Shopify storefronts built to sell, not just browse</li>
           </ul>
