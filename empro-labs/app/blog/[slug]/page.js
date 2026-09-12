@@ -5,10 +5,12 @@ import CtaBanner from "../../components/CtaBanner";
 import { posts, getPostBySlug } from "../data";
 import ShopifyGoHighLevelIntegrationGuide from "../content/shopify-gohighlevel-integration-guide";
 import WhatIsLeadConnectorCrm from "../content/what-is-lead-connector-crm";
+import WebsiteBuilderVsHiringAWebDesignAgency from "../content/website-builder-vs-hiring-a-web-design-agency";
 
 const CONTENT_MAP = {
   "shopify-gohighlevel-integration-guide": ShopifyGoHighLevelIntegrationGuide,
   "what-is-lead-connector-crm": WhatIsLeadConnectorCrm,
+  "website-builder-vs-hiring-a-web-design-agency": WebsiteBuilderVsHiringAWebDesignAgency,
 };
 
 export function generateStaticParams() {

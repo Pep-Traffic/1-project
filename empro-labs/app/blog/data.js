@@ -17,6 +17,15 @@ export const posts = [
     date: "2026-09-10",
     readTime: "8 min read",
   },
+  {
+    slug: "website-builder-vs-hiring-a-web-design-agency",
+    title: "Website Builder vs. Hiring a Web Design Agency: Which Is Right for Your Small Business?",
+    excerpt:
+      "A small business website builder gets you online fast and cheap — until it can't do what you actually need. Here's exactly where DIY builders stop working and what a professional build fixes.",
+    category: "Web Development",
+    date: "2026-09-12",
+    readTime: "9 min read",
+  },
 ];
 
 export function getPostBySlug(slug) {
