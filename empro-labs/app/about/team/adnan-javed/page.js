@@ -25,10 +25,6 @@ export default function AdnanJavedProfilePage() {
             <img src="/team/adnan-javed.png" alt="Adnan Javed" />
           </div>
           <div className="profile-info">
-            <div className="eyebrow">
-              <span className="line"></span>
-              Team
-            </div>
             <h1>Adnan Javed</h1>
             <p className="lede">
               GHL, SEO, WordPress, and Shopify expert at Empro Labs — building funnels,

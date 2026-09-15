@@ -8,7 +8,8 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/" className="logo">
-              <Image src="/brand/logo.png" alt="Empro Labs" className="logo-img" width={121} height={32} />
+              <Image src="/brand/icon.png" alt="" className="logo-mark" width={32} height={32} />
+              <span>Empro Labs</span>
             </Link>
             <p>The web makers behind small business websites, SEO, and ads — a Shopify agency, custom website developer, and custom software development company under one roof.</p>
             <p>Also known as EmPro.</p>

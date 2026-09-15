@@ -57,10 +57,6 @@ export default function WordPressPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            What we build
-          </div>
           <h2>WordPress website design built to be maintained, not just launched</h2>
           <div className="values-grid">
             {solutions.map((s) => (
@@ -75,10 +71,6 @@ export default function WordPressPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Real result
-          </div>
           <h2>Northline Roofing</h2>
           <p className="section-lede">
             Rebuilt a legacy WordPress site from the ground up — replaced a slow, outdated theme
@@ -99,10 +91,6 @@ export default function WordPressPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Questions
-          </div>
           <h2>WordPress questions we get asked most</h2>
           <div className="service-list">
             {faqs.map((f) => (

@@ -14,7 +14,6 @@ const routes = [
   "/services/ads-management",
   "/portfolio",
   "/about",
-  "/about/team/umair-gujjar",
   "/about/team/adnan-javed",
   "/contact",
   "/blog",

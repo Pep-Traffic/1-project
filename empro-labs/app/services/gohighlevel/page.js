@@ -61,10 +61,6 @@ export default function GoHighLevelPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            What we build
-          </div>
           <h2>GoHighLevel work built around how you actually book jobs</h2>
           <div className="values-grid">
             {solutions.map((s) => (
@@ -79,10 +75,6 @@ export default function GoHighLevelPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Real result
-          </div>
           <h2>Bayview Heating</h2>
           <p className="section-lede">
             Built a multi-step GHL funnel with missed-call text-back automation, so an emergency
@@ -103,10 +95,6 @@ export default function GoHighLevelPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Questions
-          </div>
           <h2>GoHighLevel questions we get asked most</h2>
           <div className="service-list">
             {faqs.map((f) => (

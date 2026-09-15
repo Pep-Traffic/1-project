@@ -25,10 +25,6 @@ export default function WebDevelopmentPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Platforms we build on
-          </div>
           <h2>See work by platform</h2>
           <p className="section-lede">
             Switch between platforms to see the kind of projects we've delivered on each.
@@ -39,10 +35,6 @@ export default function WebDevelopmentPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Platform expertise
-          </div>
           <div className="values-grid">
             <Link href="/services/gohighlevel" className="value-card" style={{ display: "block" }}>
               <h3>GoHighLevel (GHL) website design</h3>

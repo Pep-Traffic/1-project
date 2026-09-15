@@ -57,10 +57,6 @@ export default function ShopifyPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            What we build
-          </div>
           <h2>Shopify website design built to convert</h2>
           <div className="values-grid">
             {solutions.map((s) => (
@@ -75,10 +71,6 @@ export default function ShopifyPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Real result
-          </div>
           <h2>Shopify results coming soon</h2>
           <p className="section-lede">
             We're building out our Shopify portfolio and will publish real client numbers here as
@@ -91,10 +83,6 @@ export default function ShopifyPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Questions
-          </div>
           <h2>Shopify questions we get asked most</h2>
           <div className="service-list">
             {faqs.map((f) => (

@@ -35,10 +35,6 @@ export default function IndustryPage({ params }) {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            What's included
-          </div>
           <h2>Everything your {ind.name.toLowerCase()} business needs, run by one team</h2>
           <div className="values-grid">
             {ind.bullets.map((b) => (
@@ -53,10 +49,6 @@ export default function IndustryPage({ params }) {
       {ind.caseStudy && (
         <section className="services">
           <div className="wrap">
-            <div className="eyebrow">
-              <span className="line"></span>
-              Real result
-            </div>
             <h2>{ind.caseStudy.name}</h2>
             <p className="section-lede">{ind.caseStudy.note}</p>
             <div className="value-card" style={{ maxWidth: "320px" }}>
@@ -69,10 +61,6 @@ export default function IndustryPage({ params }) {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Questions
-          </div>
           <h2>{ind.name} questions we get asked most</h2>
           <div className="service-list">
             {ind.faqs.map((f) => (

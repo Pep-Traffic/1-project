@@ -77,7 +77,7 @@ export default function AdsDashboard() {
           <i
             key={i}
             className={i === bars.length - 1 ? "hl" : ""}
-            style={{ height: `${(v / max) * 100}%`, transition: "height 0.4s ease, transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)" }}
+            style={{ height: `${(v / max) * 100}%`, transition: "height 0.4s ease, transform 0.8s cubic-bezier(.16,1,.3,1)" }}
           ></i>
         ))}
       </div>

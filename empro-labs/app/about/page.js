@@ -14,12 +14,6 @@ export const metadata = {
 
 const team = [
   {
-    slug: "umair-gujjar",
-    photo: "/team/umair-gujjar.jpeg",
-    name: "Umair Gujjar",
-    role: "Senior — GHL, WordPress, Shopify, Etsy, ClickFunnels & n8n Automations",
-  },
-  {
     slug: "adnan-javed",
     photo: "/team/adnan-javed.png",
     name: "Adnan Javed",
@@ -61,10 +55,6 @@ export default function AboutPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            What we believe
-          </div>
           <h2>A few things we won't compromise on</h2>
           <p className="section-lede">
             These aren't values on a poster — they're the reasons clients come back for a second and third project,
@@ -83,10 +73,6 @@ export default function AboutPage() {
 
       <section className="work">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            The team
-          </div>
           <h2>A small, senior team</h2>
           <p className="section-lede">
             No account managers relaying messages to engineers you'll never talk to. You work directly with the people building your product.

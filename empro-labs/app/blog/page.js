@@ -25,10 +25,6 @@ export default function BlogPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Latest
-          </div>
           <h2>All articles</h2>
           <p className="section-lede">
             Filed under GoHighLevel, WordPress, Shopify, SEO, and Ads — the platforms and channels we work in every day.

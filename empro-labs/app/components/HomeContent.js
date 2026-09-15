@@ -11,15 +11,14 @@ export default function HomeContent() {
   <svg className="mark-graphic" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="fgrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stopColor="#F0A059"/>
-        <stop offset="100%" stopColor="#D9662B"/>
+        <stop offset="0%" stopColor="#6B8CFF"/>
+        <stop offset="100%" stopColor="#1636B0"/>
       </linearGradient>
     </defs>
     <path d="M62 20 H150 V52 H98 V88 H138 V118 H98 V148 H150 V180 H62 Z" fill="url(#fgrad)"/>
   </svg>
 
   <div className="hero-inner">
-    <div className="eyebrow"><span className="line"></span>GHL, WordPress &amp; Shopify agency</div>
     <h1>The web design agency that turns <span className="accent">visitors into paying customers.</span></h1>
     <p className="lede">Empro Labs designs and builds GoHighLevel funnels, WordPress sites, and Shopify stores that load fast and convert — plus the SEO and ads to bring customers to them. Every build runs on the Empro Labs System, our advanced website development process refined across dozens of launches.</p>
     <div className="cta-row">
@@ -57,7 +56,6 @@ export default function HomeContent() {
 
 <section className="phases" id="leaks">
   <div className="wrap">
-    <div className="eyebrow"><span className="line"></span>Why projects stall</div>
     <h2>Most small businesses don't have a marketing problem. They have a follow-through problem.</h2>
     <p className="section-lede">Empro Labs exists to close the gap between the website or campaign that got promised and the customers that actually show up.</p>
     <div className="leak-grid">
@@ -65,7 +63,6 @@ export default function HomeContent() {
         <div className="leak-icon">
           <svg viewBox="0 0 24 24" fill="none"><path d="M8 10H16M8 14H12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/><path d="M4 6C4 4.9 4.9 4 6 4H18C19.1 4 20 4.9 20 6V14C20 15.1 19.1 16 18 16H10L6 19.5V16H6C4.9 16 4 15.1 4 14V6Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/><path d="M3 3L21 21" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
         </div>
-        <span className="leak-num">01</span>
         <h3 className="leak-title">Your last web designer went quiet</h3>
         <p>The site half-launched, the freelancer moved on to the next gig, and nobody's left who can even log into WordPress or GHL to fix it.</p>
       </div>
@@ -73,7 +70,6 @@ export default function HomeContent() {
         <div className="leak-icon">
           <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.8"/><path d="M12 8V12L15 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </div>
-        <span className="leak-num">02</span>
         <h3 className="leak-title">Your ad account runs on autopilot</h3>
         <p>Nobody's watching cost-per-lead, so budget keeps burning on keywords and audiences that stopped converting months ago.</p>
       </div>
@@ -81,7 +77,6 @@ export default function HomeContent() {
         <div className="leak-icon">
           <svg viewBox="0 0 24 24" fill="none"><path d="M12 16.5V16.51" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/><path d="M12 7.5C13.4 7.5 14.5 8.6 14.5 10C14.5 11.9 12 12 12 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.8"/></svg>
         </div>
-        <span className="leak-num">03</span>
         <h3 className="leak-title">Nobody owns the outcome</h3>
         <p>Your website, your ads, and your rankings all report activity, but no one can say which one is actually producing paying customers.</p>
       </div>
@@ -92,7 +87,6 @@ export default function HomeContent() {
 
 <section className="solutions">
   <div className="wrap">
-    <div className="eyebrow"><span className="line"></span>What we build</div>
     <h2>A website, campaigns, and rankings that do the follow-up for you</h2>
     <p className="section-lede">Three pieces of the same system: a site that captures the lead, campaigns your team can track, and reporting that tells you the truth about cost and results.</p>
 
@@ -161,14 +155,14 @@ export default function HomeContent() {
             <button className="chat-close" id="chatClose1" aria-label="Dismiss">✕</button>
             <div className="av">
               <svg viewBox="0 0 24 24" fill="none" width="15" height="15">
-                <rect x="5" y="8" width="14" height="11" rx="4" fill="#1A1006" />
-                <rect x="9" y="3" width="2" height="4" rx="1" fill="#1A1006" />
-                <circle cx="10" cy="4.5" r="1.4" fill="#1A1006" />
-                <circle cx="9.3" cy="13.2" r="1.6" fill="#F0A059" />
-                <circle cx="14.7" cy="13.2" r="1.6" fill="#F0A059" />
-                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#F0A059" />
-                <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#1A1006" />
-                <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#1A1006" />
+                <rect x="5" y="8" width="14" height="11" rx="4" fill="#FFFFFF" />
+                <rect x="9" y="3" width="2" height="4" rx="1" fill="#FFFFFF" />
+                <circle cx="10" cy="4.5" r="1.4" fill="#FFFFFF" />
+                <circle cx="9.3" cy="13.2" r="1.6" fill="#1636B0" />
+                <circle cx="14.7" cy="13.2" r="1.6" fill="#1636B0" />
+                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#1636B0" />
+                <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
+                <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
               </svg>
             </div>
             <div>
@@ -242,14 +236,14 @@ export default function HomeContent() {
             <button className="chat-close" id="chatClose" aria-label="Dismiss">✕</button>
             <div className="av">
               <svg viewBox="0 0 24 24" fill="none" width="15" height="15">
-                <rect x="5" y="8" width="14" height="11" rx="4" fill="#1A1006" />
-                <rect x="9" y="3" width="2" height="4" rx="1" fill="#1A1006" />
-                <circle cx="10" cy="4.5" r="1.4" fill="#1A1006" />
-                <circle cx="9.3" cy="13.2" r="1.6" fill="#F0A059" />
-                <circle cx="14.7" cy="13.2" r="1.6" fill="#F0A059" />
-                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#F0A059" />
-                <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#1A1006" />
-                <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#1A1006" />
+                <rect x="5" y="8" width="14" height="11" rx="4" fill="#FFFFFF" />
+                <rect x="9" y="3" width="2" height="4" rx="1" fill="#FFFFFF" />
+                <circle cx="10" cy="4.5" r="1.4" fill="#FFFFFF" />
+                <circle cx="9.3" cy="13.2" r="1.6" fill="#1636B0" />
+                <circle cx="14.7" cy="13.2" r="1.6" fill="#1636B0" />
+                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#1636B0" />
+                <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
+                <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
               </svg>
             </div>
             <div>
@@ -337,7 +331,6 @@ export default function HomeContent() {
   <div className="wrap">
     <div className="hub-layout">
     <div className="hub-text">
-    <div className="eyebrow"><span className="line"></span>How it all connects</div>
     <h2>One team, plugged into every tool you already run</h2>
     <p className="section-lede">We don't rip out your stack and start over. Empro Labs plugs straight into your website, your CRM, and your ad accounts, and keeps every tool your team already uses talking to each other.</p>
     </div>
@@ -434,7 +427,6 @@ export default function HomeContent() {
 
 <section className="services" id="services">
   <div className="wrap">
-    <div className="eyebrow"><span className="line"></span>What we do</div>
     <h2>Website design, SEO, and ads — run by one accountable team</h2>
     <p className="section-lede">We don't hand off a website and disappear. Empro Labs stays on as the team behind your online presence, from the first page live to the tenth campaign.</p>
 
@@ -506,7 +498,6 @@ export default function HomeContent() {
 
 <section className="process" id="process">
   <div className="wrap">
-    <div className="eyebrow"><span className="line"></span>How we work</div>
     <h2>Five steps, no surprises</h2>
     <p className="section-lede">Every engagement follows the Empro Lab System — an advanced website development process built to keep speed, SEO, and conversion baked in from day one, so you always know what's shipping and when.</p>
 
@@ -562,7 +553,6 @@ export default function HomeContent() {
 
 <section className="stats-band">
   <div className="wrap">
-    <div className="eyebrow"><span className="line"></span>The engagement</div>
     <h2>One team, one invoice, no surprises</h2>
     <p className="section-lede">Straightforward terms so you know what you're agreeing to before you sign anything.</p>
     <div className="stats-grid">
@@ -577,7 +567,6 @@ export default function HomeContent() {
 
 <section className="services">
   <div className="wrap">
-    <div className="eyebrow"><span className="line"></span>Is this a fit?</div>
     <h2>Who we're built for</h2>
     <p className="section-lede">We turn down work that isn't a fit for either of us — here's how to tell in advance.</p>
     <div className="service-list">
@@ -618,7 +607,6 @@ export default function HomeContent() {
 
 <section className="work" id="work">
   <div className="wrap">
-    <div className="eyebrow"><span className="line"></span>Selected work</div>
     <h2>Recent work</h2>
     <p className="section-lede">A few of the sites, campaigns, and rankings we've built and kept running. Numbers below are what shipped for that specific client — results vary by starting point and scope.</p>
 
@@ -679,7 +667,6 @@ export default function HomeContent() {
 
 <section className="testimonials">
   <div className="wrap">
-    <div className="eyebrow"><span className="line"></span>What clients say</div>
     <h2>Small businesses that stopped worrying about their marketing</h2>
     <p className="section-lede">A few words from owners and operators we've worked alongside.</p>
 
@@ -703,7 +690,6 @@ export default function HomeContent() {
 
 <section className="services">
   <div className="wrap">
-    <div className="eyebrow"><span className="line"></span>Questions</div>
     <h2>Frequently asked questions</h2>
     <p className="section-lede">The things people usually ask before the first call.</p>
     <div className="service-list">
@@ -781,7 +767,6 @@ export default function HomeContent() {
   <div className="wrap">
     <div className="contact-grid">
       <div>
-        <div className="eyebrow"><span className="line"></span>Get in touch</div>
         <h2>Tell us what you're building</h2>
         <p className="section-lede">Fill this in and we'll reply within one business day with next steps — no sales call required first.</p>
         <ul className="contact-info">

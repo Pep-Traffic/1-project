@@ -25,10 +25,6 @@ export default function IndustriesPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Pick your trade
-          </div>
           <h2>Industries we build for</h2>
           <p className="section-lede">
             Every industry page below runs on the Empro Labs System — website, SEO, and ads, tuned to how that trade actually books work.

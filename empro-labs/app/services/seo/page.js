@@ -54,10 +54,6 @@ export default function SeoPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Why small businesses hire us
-          </div>
           <h2>An SEO agency built for GHL, WordPress &amp; Shopify sites</h2>
           <p className="section-lede">
             Most SEO agencies hand you a generic checklist and a monthly PDF. We run the Empro Labs System instead — an
@@ -74,10 +70,6 @@ export default function SeoPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Live example
-          </div>
           <h2>Organic traffic, month over month</h2>
           <p className="section-lede">
             A simulation of the kind of growth curve a well-run SEO engagement produces over its first two quarters.
@@ -88,10 +80,6 @@ export default function SeoPage() {
 
       <section className="process">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            How it works
-          </div>
           <h2>Four steps, repeated monthly</h2>
           <div className="steps">
             <div className="step-dot four"></div>
@@ -108,10 +96,6 @@ export default function SeoPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Questions
-          </div>
           <h2>SEO questions we get asked most</h2>
           <p className="section-lede">The things people usually ask before the first call.</p>
           <div className="service-list">

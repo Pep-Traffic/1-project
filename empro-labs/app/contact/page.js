@@ -25,10 +25,6 @@ export default function ContactPage() {
         <div className="wrap">
           <div className="contact-grid">
             <div>
-              <div className="eyebrow">
-                <span className="line"></span>
-                Direct lines
-              </div>
               <h2>Skip the contact form queue</h2>
               <p className="section-lede">
                 Prefer email or a specific department? Reach us directly using the details below. Every new

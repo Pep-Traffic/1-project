@@ -41,10 +41,6 @@ export default function BlogPostPage({ params }) {
         <div className="beam-2"></div>
         <div className="grain"></div>
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            {post.category} · {post.readTime}
-          </div>
           <h1>{post.title}</h1>
           <p className="lede">{post.excerpt}</p>
         </div>

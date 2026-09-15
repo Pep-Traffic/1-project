@@ -92,10 +92,6 @@ export default function AdsManagementPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Why small businesses hire us
-          </div>
           <h2>An ads management agency that ties spend to booked jobs</h2>
           <p className="section-lede">
             Every ad account we run follows the Empro Labs System — the same accountable process across search,
@@ -113,10 +109,6 @@ export default function AdsManagementPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Live example
-          </div>
           <h2>What a managed campaign looks like</h2>
           <p className="section-lede">
             A simulation of the kind of live campaign dashboard you'd get access to as a client.
@@ -127,10 +119,6 @@ export default function AdsManagementPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            What's included
-          </div>
           <h2>Everything from setup to reporting</h2>
           <div className="service-list">
             {services.map((s) => (
@@ -148,10 +136,6 @@ export default function AdsManagementPage() {
 
       <section className="services">
         <div className="wrap">
-          <div className="eyebrow">
-            <span className="line"></span>
-            Questions
-          </div>
           <h2>Ads management questions we get asked most</h2>
           <p className="section-lede">The things people usually ask before the first call.</p>
           <div className="service-list">

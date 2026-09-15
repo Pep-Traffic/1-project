@@ -26,7 +26,8 @@ export default function Header() {
     <>
       <header>
         <Link href="/" className="logo">
-          <Image src="/brand/logo.png" alt="Empro Labs" className="logo-img" width={121} height={32} priority />
+          <Image src="/brand/icon.png" alt="" className="logo-mark" width={32} height={32} priority />
+          <span>Empro Labs</span>
         </Link>
         <nav>
           <ul>
