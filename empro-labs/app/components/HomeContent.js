@@ -11,8 +11,8 @@ export default function HomeContent() {
   <svg className="mark-graphic" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="fgrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stopColor="#6B8CFF"/>
-        <stop offset="100%" stopColor="#1636B0"/>
+        <stop offset="0%" stopColor="#F0B90B"/>
+        <stop offset="100%" stopColor="#C99400"/>
       </linearGradient>
     </defs>
     <path d="M62 20 H150 V52 H98 V88 H138 V118 H98 V148 H150 V180 H62 Z" fill="url(#fgrad)"/>
@@ -59,27 +59,27 @@ export default function HomeContent() {
     <h2>Most small businesses don't have a marketing problem. They have a follow-through problem.</h2>
     <p className="section-lede">Empro Labs exists to close the gap between the website or campaign that got promised and the customers that actually show up.</p>
     <div className="leak-grid">
-      <div className="leak-card">
+      <a href="#contact" className="leak-card">
         <div className="leak-icon">
           <svg viewBox="0 0 24 24" fill="none"><path d="M8 10H16M8 14H12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/><path d="M4 6C4 4.9 4.9 4 6 4H18C19.1 4 20 4.9 20 6V14C20 15.1 19.1 16 18 16H10L6 19.5V16H6C4.9 16 4 15.1 4 14V6Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/><path d="M3 3L21 21" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
         </div>
         <h3 className="leak-title">Your last web designer went quiet</h3>
         <p>The site half-launched, the freelancer moved on to the next gig, and nobody's left who can even log into WordPress or GHL to fix it.</p>
-      </div>
-      <div className="leak-card">
+      </a>
+      <a href="#contact" className="leak-card">
         <div className="leak-icon">
           <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.8"/><path d="M12 8V12L15 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
         </div>
         <h3 className="leak-title">Your ad account runs on autopilot</h3>
         <p>Nobody's watching cost-per-lead, so budget keeps burning on keywords and audiences that stopped converting months ago.</p>
-      </div>
-      <div className="leak-card">
+      </a>
+      <a href="#contact" className="leak-card">
         <div className="leak-icon">
           <svg viewBox="0 0 24 24" fill="none"><path d="M12 16.5V16.51" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/><path d="M12 7.5C13.4 7.5 14.5 8.6 14.5 10C14.5 11.9 12 12 12 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.8"/></svg>
         </div>
         <h3 className="leak-title">Nobody owns the outcome</h3>
         <p>Your website, your ads, and your rankings all report activity, but no one can say which one is actually producing paying customers.</p>
-      </div>
+      </a>
     </div>
   </div>
 </section>
@@ -158,9 +158,9 @@ export default function HomeContent() {
                 <rect x="5" y="8" width="14" height="11" rx="4" fill="#FFFFFF" />
                 <rect x="9" y="3" width="2" height="4" rx="1" fill="#FFFFFF" />
                 <circle cx="10" cy="4.5" r="1.4" fill="#FFFFFF" />
-                <circle cx="9.3" cy="13.2" r="1.6" fill="#1636B0" />
-                <circle cx="14.7" cy="13.2" r="1.6" fill="#1636B0" />
-                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#1636B0" />
+                <circle cx="9.3" cy="13.2" r="1.6" fill="#14110A" />
+                <circle cx="14.7" cy="13.2" r="1.6" fill="#14110A" />
+                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#14110A" />
                 <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
                 <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
               </svg>
@@ -239,9 +239,9 @@ export default function HomeContent() {
                 <rect x="5" y="8" width="14" height="11" rx="4" fill="#FFFFFF" />
                 <rect x="9" y="3" width="2" height="4" rx="1" fill="#FFFFFF" />
                 <circle cx="10" cy="4.5" r="1.4" fill="#FFFFFF" />
-                <circle cx="9.3" cy="13.2" r="1.6" fill="#1636B0" />
-                <circle cx="14.7" cy="13.2" r="1.6" fill="#1636B0" />
-                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#1636B0" />
+                <circle cx="9.3" cy="13.2" r="1.6" fill="#14110A" />
+                <circle cx="14.7" cy="13.2" r="1.6" fill="#14110A" />
+                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#14110A" />
                 <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
                 <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
               </svg>
