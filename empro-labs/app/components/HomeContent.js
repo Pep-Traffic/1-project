@@ -11,8 +11,8 @@ export default function HomeContent() {
   <svg className="mark-graphic" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="fgrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stopColor="#F0B90B"/>
-        <stop offset="100%" stopColor="#C99400"/>
+        <stop offset="0%" stopColor="#F0A059"/>
+        <stop offset="100%" stopColor="#D9662B"/>
       </linearGradient>
     </defs>
     <path d="M62 20 H150 V52 H98 V88 H138 V118 H98 V148 H150 V180 H62 Z" fill="url(#fgrad)"/>
@@ -158,9 +158,9 @@ export default function HomeContent() {
                 <rect x="5" y="8" width="14" height="11" rx="4" fill="#FFFFFF" />
                 <rect x="9" y="3" width="2" height="4" rx="1" fill="#FFFFFF" />
                 <circle cx="10" cy="4.5" r="1.4" fill="#FFFFFF" />
-                <circle cx="9.3" cy="13.2" r="1.6" fill="#14110A" />
-                <circle cx="14.7" cy="13.2" r="1.6" fill="#14110A" />
-                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#14110A" />
+                <circle cx="9.3" cy="13.2" r="1.6" fill="#1A1006" />
+                <circle cx="14.7" cy="13.2" r="1.6" fill="#1A1006" />
+                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#1A1006" />
                 <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
                 <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
               </svg>
@@ -239,9 +239,9 @@ export default function HomeContent() {
                 <rect x="5" y="8" width="14" height="11" rx="4" fill="#FFFFFF" />
                 <rect x="9" y="3" width="2" height="4" rx="1" fill="#FFFFFF" />
                 <circle cx="10" cy="4.5" r="1.4" fill="#FFFFFF" />
-                <circle cx="9.3" cy="13.2" r="1.6" fill="#14110A" />
-                <circle cx="14.7" cy="13.2" r="1.6" fill="#14110A" />
-                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#14110A" />
+                <circle cx="9.3" cy="13.2" r="1.6" fill="#1A1006" />
+                <circle cx="14.7" cy="13.2" r="1.6" fill="#1A1006" />
+                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#1A1006" />
                 <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
                 <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
               </svg>
