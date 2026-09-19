@@ -472,28 +472,42 @@ export default function HomeContent() {
     <div className="p3-board">
       <div className="p3-cols">
         <div className="p3-col">
-          <span className="p3-num">1</span>
+          <div className="p3-numrow"><span className="p3-num">1</span></div>
           <h3>The audit</h3>
           <p>We map where your website, SEO, and ad spend are leaking customers. You get the plan either way, and it's free.</p>
         </div>
         <div className="p3-col">
-          <span className="p3-num">2</span>
+          <div className="p3-numrow"><span className="p3-num">2</span></div>
           <h3>The build</h3>
           <p>We rebuild the site, funnel, or campaign in weeks and test everything before it reaches real customers.</p>
         </div>
         <div className="p3-col">
-          <span className="p3-num">3</span>
+          <div className="p3-numrow p3-numrow-last"><span className="p3-num">3</span></div>
           <h3>The launch</h3>
           <p>Everything goes live, every lead gets a fast reply, and we keep tuning based on what the numbers show.</p>
         </div>
       </div>
-      <div className="p3-sweep" aria-hidden="true"></div>
       <div className="p3-lanes" aria-hidden="true">
-        <div className="p3-pill"><i></i><span>Audit complete</span><b><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></b></div>
-        <div className="p3-pill"><i></i><span>Site rebuilt</span><b><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></b></div>
-        <div className="p3-pill"><i></i><span>Tracking installed</span><b><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></b></div>
-        <div className="p3-pill"><i></i><span>Campaigns live</span><b><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></b></div>
-        <div className="p3-pill"><i></i><span>Leads answered</span><b><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></b></div>
+        <div className="p3-pill">
+          <i></i><span className="p3-task">Website pages</span>
+          <span className="p3-status"><em className="s1">Audited</em><em className="s2">Building</em><em className="s3"><svg viewBox="0 0 16 16" fill="none" width="11" height="11"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>Live</em></span>
+        </div>
+        <div className="p3-pill">
+          <i></i><span className="p3-task">Lead tracking</span>
+          <span className="p3-status"><em className="s1">Audited</em><em className="s2">Building</em><em className="s3"><svg viewBox="0 0 16 16" fill="none" width="11" height="11"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>Live</em></span>
+        </div>
+        <div className="p3-pill">
+          <i></i><span className="p3-task">Fast follow-up</span>
+          <span className="p3-status"><em className="s1">Audited</em><em className="s2">Building</em><em className="s3"><svg viewBox="0 0 16 16" fill="none" width="11" height="11"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>Live</em></span>
+        </div>
+        <div className="p3-pill">
+          <i></i><span className="p3-task">Local SEO</span>
+          <span className="p3-status"><em className="s1">Audited</em><em className="s2">Building</em><em className="s3"><svg viewBox="0 0 16 16" fill="none" width="11" height="11"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>Live</em></span>
+        </div>
+        <div className="p3-pill">
+          <i></i><span className="p3-task">Ad campaigns</span>
+          <span className="p3-status"><em className="s1">Audited</em><em className="s2">Building</em><em className="s3"><svg viewBox="0 0 16 16" fill="none" width="11" height="11"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>Live</em></span>
+        </div>
       </div>
     </div>
   </div>
