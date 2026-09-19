@@ -71,6 +71,7 @@ export default function HomeContent() {
     <div className="solution-grid">
 
       <div className="solution-card">
+        <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9S14.5 18.4 12 21c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg></span>
         <div className="mockup">
           <div className="chrome-dots"><i></i><i></i></div>
           <div className="bar full"></div>
@@ -91,6 +92,7 @@ export default function HomeContent() {
       </div>
 
       <div className="solution-card">
+        <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
         <div className="mockup mk">
           <div className="mk-search"><svg viewBox="0 0 24 24" fill="none" width="14" height="14"><circle cx="11" cy="11" r="6.5" stroke="currentColor" strokeWidth="2"/><path d="M16 16L20 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg><span>roofing contractor near me</span></div>
           <div className="mk-map">
@@ -105,6 +107,7 @@ export default function HomeContent() {
       </div>
 
       <div className="solution-card">
+        <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10v4a1 1 0 0 0 1 1h2l6 4V5L7 9H5a1 1 0 0 0-1 1Z"/><path d="M17 9.5a4 4 0 0 1 0 5"/></svg></span>
         <div className="mockup mk">
           <div className="mk-head"><span>Campaign performance</span><em className="mk-badge">Active</em></div>
           <div className="mk-bars"><i style={{ height: "18%" }}></i><i style={{ height: "30%" }}></i><i style={{ height: "26%" }}></i><i style={{ height: "42%" }}></i><i style={{ height: "38%" }}></i><i style={{ height: "58%" }}></i><i style={{ height: "72%" }}></i></div>
@@ -121,6 +124,7 @@ export default function HomeContent() {
     <div className="solution-grid" style={{ marginTop: "22px" }}>
 
       <div className="solution-card">
+        <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="8" width="14" height="11" rx="3.5"/><path d="M12 4v4M9.5 13.2v.01M14.5 13.2v.01M9.5 16h5"/></svg></span>
         <div className="mockup mk">
           <div className="mk-head"><span><i className="mk-live"></i>Lead assistant</span></div>
           <div className="mk-bubble mk-in">Do you repair roof leaks?</div>
@@ -134,6 +138,7 @@ export default function HomeContent() {
       </div>
 
       <div className="solution-card">
+        <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 2-2Z"/></svg></span>
         <div className="mockup mk mk-center">
           <span className="mk-ico"><svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg></span>
           <b>Missed call</b>
@@ -147,6 +152,7 @@ export default function HomeContent() {
       </div>
 
       <div className="solution-card">
+        <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3Z"/></svg></span>
         <div className="mockup mk">
           <div className="mk-stars">★★★★★</div>
           <div className="mk-row"><svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg>Review request sent</div>
@@ -163,6 +169,7 @@ export default function HomeContent() {
     <div className="solution-grid solution-grid-centered">
 
       <div className="solution-card">
+        <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.8c1.8.7 3 2.4 3 5.2"/></svg></span>
         <div className="mockup mk">
           <div className="mk-head"><span>Past customers</span></div>
           <div className="mk-progress"><i></i></div>
@@ -175,6 +182,7 @@ export default function HomeContent() {
       </div>
 
       <div className="solution-card">
+        <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="6" height="6" rx="1.5"/><rect x="15" y="14" width="6" height="6" rx="1.5"/><path d="M9 7h3a3 3 0 0 1 3 3v4"/></svg></span>
         <div className="mockup mk">
           <div className="mk-cols">
             <div><em>New lead</em><span className="mk-k">Roof repair</span></div>
