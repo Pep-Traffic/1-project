@@ -3,6 +3,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PageHero from "../../components/PageHero";
 import CtaBanner from "../../components/CtaBanner";
+import Faq from "../../components/Faq";
 import { industries, getIndustryBySlug } from "../data";
 
 export function generateStaticParams() {
@@ -59,24 +60,7 @@ export default function IndustryPage({ params }) {
         </section>
       )}
 
-      <section className="services">
-        <div className="wrap">
-          <h2>{ind.name} questions we get asked most</h2>
-          <div className="service-list">
-            {ind.faqs.map((f) => (
-              <details className="service" key={f.q}>
-                <summary>
-                  <div><h3>{f.q}</h3></div>
-                  <span className="chev">＋</span>
-                </summary>
-                <div className="service-more">
-                  <p>{f.a}</p>
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Faq title={<>{ind.name} questions we get asked most</>} items={ind.faqs} />
 
       <CtaBanner
         title={`Get a free quote for ${ind.name.toLowerCase()} website design, SEO & ads`}

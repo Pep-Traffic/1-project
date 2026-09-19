@@ -2,6 +2,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PageHero from "../../components/PageHero";
 import CtaBanner from "../../components/CtaBanner";
+import Faq from "../../components/Faq";
 
 export const metadata = {
   title: "GoHighLevel Developer & CRM Setup — Empro Labs",
@@ -73,24 +74,7 @@ export default function GoHighLevelPage() {
         </div>
       </section>
 
-      <section className="services">
-        <div className="wrap">
-          <h2>GoHighLevel questions we get asked most</h2>
-          <div className="service-list">
-            {faqs.map((f) => (
-              <details className="service" key={f.q}>
-                <summary>
-                  <div><h3>{f.q}</h3></div>
-                  <span className="chev">＋</span>
-                </summary>
-                <div className="service-more">
-                  <p>{f.a}</p>
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Faq title={<>GoHighLevel questions we get asked most</>} items={faqs} />
 
       <CtaBanner
         title="Ready to hire a GoHighLevel developer who won't disappear mid-build?"

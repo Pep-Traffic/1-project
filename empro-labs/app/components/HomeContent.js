@@ -1,4 +1,5 @@
 import GHLContactForm from "./GHLContactForm";
+import Faq from "./Faq";
 
 const trades = [
   { name: "Roofing", icon: "<path d=\"M3 11l9-7 9 7\"/><path d=\"M5 10v10h14V10\"/>" },
@@ -599,68 +600,32 @@ export default function HomeContent() {
 </section>
 
 
-<section className="services">
-  <div className="wrap">
-    <h2>Frequently asked questions</h2>
-    <p className="section-lede">The things people usually ask before the first call.</p>
-    <div className="service-list">
-      <details className="service">
-        <summary>
-          <div><h3>What does Empro Labs actually do for a small business?</h3></div>
-          <span className="chev">＋</span>
-        </summary>
-        <div className="service-more">
-          <p>We build and manage the website, GHL funnel, or Shopify store behind your business, plus the SEO and ads that bring customers to it — as one accountable team instead of a rotating cast of freelancers.</p>
-        </div>
-      </details>
-      <details className="service">
-        <summary>
-          <div><h3>How is this priced?</h3></div>
-          <span className="chev">＋</span>
-        </summary>
-        <div className="service-more">
-          <p>Every engagement starts with a scoped, fixed quote before any work begins. No hourly guesswork, no surprise invoices.</p>
-        </div>
-      </details>
-      <details className="service">
-        <summary>
-          <div><h3>How fast can you start?</h3></div>
-          <span className="chev">＋</span>
-        </summary>
-        <div className="service-more">
-          <p>Most engagements begin with an audit within a week of the first call, and a working plan inside two weeks.</p>
-        </div>
-      </details>
-      <details className="service">
-        <summary>
-          <div><h3>Do you only build new projects, or fix existing ones?</h3></div>
-          <span className="chev">＋</span>
-        </summary>
-        <div className="service-more">
-          <p>Both. A large share of our work is rescuing a website or campaign a previous freelancer or agency left unfinished.</p>
-        </div>
-      </details>
-      <details className="service">
-        <summary>
-          <div><h3>Which platforms do you work with?</h3></div>
-          <span className="chev">＋</span>
-        </summary>
-        <div className="service-more">
-          <p>Custom code, GHL, WordPress, and Shopify — whichever fits what you're actually trying to do, not whichever we're most incentivized to sell.</p>
-        </div>
-      </details>
-      <details className="service">
-        <summary>
-          <div><h3>What happens after launch?</h3></div>
-          <span className="chev">＋</span>
-        </summary>
-        <div className="service-more">
-          <p>We stay on. Ongoing support is a standard part of every engagement, not an upsell.</p>
-        </div>
-      </details>
-    </div>
-  </div>
-</section>
+<Faq title="Frequently asked questions" lede="The things people usually ask before the first call." items={[
+  {
+    "q": "What does Empro Labs actually do for a small business?",
+    "a": "We build and manage the website, GHL funnel, or Shopify store behind your business, plus the SEO and ads that bring customers to it — as one accountable team instead of a rotating cast of freelancers."
+  },
+  {
+    "q": "How is this priced?",
+    "a": "Every engagement starts with a scoped, fixed quote before any work begins. No hourly guesswork, no surprise invoices."
+  },
+  {
+    "q": "How fast can you start?",
+    "a": "Most engagements begin with an audit within a week of the first call, and a working plan inside two weeks."
+  },
+  {
+    "q": "Do you only build new projects, or fix existing ones?",
+    "a": "Both. A large share of our work is rescuing a website or campaign a previous freelancer or agency left unfinished."
+  },
+  {
+    "q": "Which platforms do you work with?",
+    "a": "Custom code, GHL, WordPress, and Shopify — whichever fits what you're actually trying to do, not whichever we're most incentivized to sell."
+  },
+  {
+    "q": "What happens after launch?",
+    "a": "We stay on. Ongoing support is a standard part of every engagement, not an upsell."
+  }
+]} />
 
 
 <section className="cta-banner">

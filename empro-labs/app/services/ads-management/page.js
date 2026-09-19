@@ -2,6 +2,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PageHero from "../../components/PageHero";
 import CtaBanner from "../../components/CtaBanner";
+import Faq from "../../components/Faq";
 
 export const metadata = {
   title: "Ads Management Agency for Small Businesses — Empro Labs",
@@ -123,25 +124,7 @@ export default function AdsManagementPage() {
         </div>
       </section>
 
-      <section className="services">
-        <div className="wrap">
-          <h2>Ads management questions we get asked most</h2>
-          <p className="section-lede">The things people usually ask before the first call.</p>
-          <div className="service-list">
-            {faqs.map((f) => (
-              <details className="service" key={f.q}>
-                <summary>
-                  <div><h3>{f.q}</h3></div>
-                  <span className="chev">＋</span>
-                </summary>
-                <div className="service-more">
-                  <p>{f.a}</p>
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Faq title={<>Ads management questions we get asked most</>} lede="The things people usually ask before the first call." items={faqs} />
 
       <CtaBanner
         title="Get a free quote from a PPC management agency that reports real numbers"

@@ -2,6 +2,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PageHero from "../../components/PageHero";
 import CtaBanner from "../../components/CtaBanner";
+import Faq from "../../components/Faq";
 
 export const metadata = {
   title: "Shopify Developer & Website Design — Empro Labs",
@@ -81,24 +82,7 @@ export default function ShopifyPage() {
         </div>
       </section>
 
-      <section className="services">
-        <div className="wrap">
-          <h2>Shopify questions we get asked most</h2>
-          <div className="service-list">
-            {faqs.map((f) => (
-              <details className="service" key={f.q}>
-                <summary>
-                  <div><h3>{f.q}</h3></div>
-                  <span className="chev">＋</span>
-                </summary>
-                <div className="service-more">
-                  <p>{f.a}</p>
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Faq title={<>Shopify questions we get asked most</>} items={faqs} />
 
       <CtaBanner
         title="Ready to hire a Shopify developer who reports real numbers?"
