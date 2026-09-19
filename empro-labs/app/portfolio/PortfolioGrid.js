@@ -3,6 +3,10 @@
 import { useState } from "react";
 
 const projects = [
+  { name: "CorePower Peptide", categories: ["Web Development"], tag: "Custom build", result: "Live site", url: "https://corepowerpeptide.com" },
+  { name: "AIMTN", categories: ["Web Development"], tag: "Custom build", result: "Live site", url: "https://aimtn.org" },
+  { name: "What Are Peptides", categories: ["Web Development"], tag: "Custom build", result: "Live site", url: "https://whatarepeptides.us" },
+  { name: "Motscbuy", categories: ["Web Development"], tag: "Custom build", result: "Live site", url: "https://motscbuy.com" },
   { name: "Jeff Flowers Insurance", categories: ["Web Development", "GHL"], tag: "GoHighLevel website", result: "Live site", url: "https://jflowersinsurance.com" },
   { name: "Bayview Heating", categories: ["GHL"], tag: "GoHighLevel funnel", result: "3x lead response speed" },
   { name: "Rapid Comfort Co", categories: ["GHL"], tag: "GHL automation", result: "28 sec avg. first reply" },
