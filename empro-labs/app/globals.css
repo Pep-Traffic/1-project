@@ -48,18 +48,18 @@
   h2{
     font-family: var(--font-sora), sans-serif;
     font-weight: 700;
-    font-size: clamp(1.9rem, 3vw, 2.6rem);
+    font-size: clamp(1.7rem, 2.6vw, 2.3rem);
     line-height: 1.15;
     letter-spacing: -0.015em;
-    margin: 0 0 16px;
-    max-width: 18ch;
+    margin: 0 0 14px;
+    max-width: 24ch;
   }
   .section-lede{
     font-size: 1.02rem;
     line-height: 1.6;
     color: var(--ink-dim);
-    max-width: 52ch;
-    margin: 0 0 56px;
+    max-width: 56ch;
+    margin: 0 0 40px;
   }
   @media (max-width: 640px){ .wrap{ padding: 0 22px; } }
 
@@ -224,7 +224,7 @@
   .logo-strip p{ font-size: 12.5px; color: var(--ink-faint); margin: 0; white-space: nowrap; }
 
   /* ================= SOLUTIONS (dark theme, animated internals) ================= */
-  .solutions{ padding: 110px 0; background: var(--bg); }
+  .solutions{ padding: 84px 0; background: var(--bg); }
   .solution-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
   .solution-card{
     position: relative;
@@ -543,7 +543,7 @@
   @media (max-width: 980px){ .solution-grid{ grid-template-columns: 1fr; } }
 
   /* ================= PHASES + LIVE BOARD ================= */
-  .phases{ padding: 110px 0; border-top: 1px solid var(--line); }
+  .phases{ padding: 80px 0; border-top: 1px solid var(--line); }
   .phases-grid{ display: grid; grid-template-columns: 1fr 0.85fr; gap: 60px; align-items: center; }
   .phases-list{ display: flex; flex-direction: column; }
   .phase{ padding: 26px 0; border-bottom: 1px solid var(--line); }
@@ -693,7 +693,7 @@
   .logo-row span{ font-family: var(--font-sora), sans-serif; font-weight: 600; font-size: 15px; color: var(--ink-dim); }
 
     /* ================= INTEGRATION HUB ================= */
-  .hub-section{ padding: 110px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .hub-section{ padding: 84px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .hub-layout{ display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 56px; align-items: center; }
   .hub-text .section-lede{ margin-bottom: 24px; }
   .hub-points{ list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
@@ -745,7 +745,7 @@
 
 
   /* ================= SERVICES ================= */
-  .services{ padding: 120px 0; }
+  .services{ padding: 88px 0; }
   .service-list{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 1px solid var(--line); }
   .service{ border-bottom: 1px solid var(--line); }
   a.service{
@@ -850,7 +850,7 @@
   @media (max-width: 900px){ .quote-grid{ grid-template-columns: 1fr; } }
 
   /* ================= PROCESS ================= */
-  .process{ padding: 120px 0; background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .process{ padding: 88px 0; background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .steps{ display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; position: relative; }
   .steps::before{ content: ""; position: absolute; top: 20px; left: 6%; right: 6%; height: 1px; background: var(--line); }
   .step-dot{
@@ -897,7 +897,7 @@
   }
 
   /* ================= WORK / CASE STUDIES ================= */
-  .work{ padding: 120px 0; }
+  .work{ padding: 88px 0; }
   .case{ border-bottom: 1px solid var(--line); }
   .case:first-of-type{ border-top: 1px solid var(--line); }
   .case summary{
@@ -923,7 +923,7 @@
   }
 
   /* ================= TESTIMONIALS ================= */
-  .testimonials{ padding: 120px 0; background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .testimonials{ padding: 88px 0; background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
   .quote-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
   .quote{ background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 26px 24px; }
   .quote p{ font-size: 14.5px; line-height: 1.6; color: var(--ink); font-style: italic; margin: 0 0 20px; }
@@ -935,17 +935,26 @@
   @media (max-width: 900px){ .quote-grid{ grid-template-columns: 1fr; } }
 
   /* ================= CTA BANNER ================= */
-  .cta-banner{ padding: 110px 0; }
-  .cta-panel{ position: relative; border-radius: 22px; padding: 70px 48px; text-align: center; overflow: hidden;
-    background: var(--panel); border: 1px solid var(--line); }
+  .cta-banner{ padding: 56px 0; }
+  .cta-panel{
+    position: relative; border-radius: 22px; padding: 40px 44px; overflow: hidden;
+    background: var(--panel); border: 1px solid var(--line);
+    display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 40px; align-items: center; text-align: left;
+  }
   .cta-panel::before{ content: ""; position: absolute; inset: -40%; z-index: 0;
-    background: radial-gradient(ellipse 50% 60% at 50% 0%, rgba(240,160,89,0.18), transparent 70%); }
-  .cta-panel h2{ position: relative; z-index: 1; margin: 0 auto 16px; max-width: 16ch; }
-  .cta-panel p{ position: relative; z-index: 1; color: var(--ink-dim); max-width: 44ch; margin: 0 auto 34px; font-size: 1.02rem; }
-  .cta-panel .btn{ position: relative; z-index: 1; }
+    background: radial-gradient(ellipse 45% 60% at 0% 100%, rgba(240,160,89,0.16), transparent 70%); }
+  .cta-panel h2{ position: relative; z-index: 1; margin: 0 0 8px; max-width: 28ch; font-size: clamp(1.45rem, 2.2vw, 1.9rem); grid-column: 1; }
+  .cta-panel p{ position: relative; z-index: 1; color: var(--ink-dim); max-width: 58ch; margin: 0; font-size: 0.98rem; line-height: 1.55; grid-column: 1; }
+  .cta-panel .btn{ position: relative; z-index: 1; grid-column: 2; grid-row: 1 / span 2; white-space: nowrap; }
+  @media (max-width: 760px){
+    .cta-banner{ padding: 40px 0; }
+    .cta-panel{ grid-template-columns: 1fr; padding: 30px 24px; text-align: center; row-gap: 18px; }
+    .cta-panel h2, .cta-panel p{ margin-left: auto; margin-right: auto; }
+    .cta-panel .btn{ grid-column: 1; grid-row: auto; justify-self: center; }
+  }
 
   /* ================= CONTACT ================= */
-  .contact{ padding: 120px 0; }
+  .contact{ padding: 88px 0; }
   .contact-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
   .contact-info{ list-style: none; margin: 0; padding: 26px 0 0; display: flex; flex-direction: column; gap: 16px; }
   .contact-info li{ display: flex; flex-direction: column; gap: 4px; }
@@ -1079,7 +1088,7 @@
   }
 
   /* ================= STATS BAND (About) ================= */
-  .stats-band{ padding: 90px 0; border-bottom: 1px solid var(--line); }
+  .stats-band{ padding: 68px 0; border-bottom: 1px solid var(--line); }
   .stats-grid{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
   .stat-block{ text-align: center; }
   .stat-block b{
@@ -1179,7 +1188,7 @@
   @media (max-width: 900px){ .portfolio-grid{ grid-template-columns: 1fr; } }
 
   /* ================= PORTFOLIO RING ================= */
-  .portfolio-ring-section{ padding: 110px 0 130px; overflow: hidden; }
+  .portfolio-ring-section{ padding: 84px 0 100px; overflow: hidden; }
   .ring-viewport{
     perspective: 1800px; height: 420px; padding: 40px 0; box-sizing: border-box;
     display: flex; align-items: center; justify-content: center;
@@ -1438,7 +1447,7 @@
   }
 
     /* ================= PROCESS BOARD (three steps, tasks hop across) ================= */
-  .process3{ padding: 90px 0; }
+  .process3{ padding: 80px 0; }
   .p3-board{ margin-top: 40px; border: 1px solid var(--line); border-radius: 24px; background: var(--panel); overflow: hidden; }
   .p3-cols{ display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--line); }
   .p3-col{ padding: 24px 26px 22px; border-right: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,0.035), transparent); }
@@ -1516,4 +1525,10 @@
     .p3-pill i{ background: #3DBE7A; }
     .p3-status .s3{ opacity: 1; }
     .p3-pill:nth-child(n+4){ display: none; }
+  }
+
+  @media (max-width: 700px){
+    .solutions, .phases, .services, .process, .work, .testimonials, .contact, .hub-section, .process3{ padding-top: 60px; padding-bottom: 60px; }
+    .stats-band{ padding: 48px 0; }
+    .section-lede{ margin-bottom: 30px; }
   }

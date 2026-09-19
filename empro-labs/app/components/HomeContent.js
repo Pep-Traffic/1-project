@@ -77,7 +77,7 @@ export default function HomeContent() {
       </a>
       <a href="#contact" className="leak-card">
         <div className="leak-icon">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.8"/><path className="icon-clock-hand" d="M12 8V12L15 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.8"/><path d="M12 12L15 14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/><path className="icon-clock-hand" d="M12 12V8" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>
         </div>
         <h3 className="leak-title">Your ad account runs on autopilot</h3>
         <p>Nobody's watching cost-per-lead, so budget keeps burning on keywords and audiences that stopped converting months ago.</p>
