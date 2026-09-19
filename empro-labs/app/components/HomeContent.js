@@ -500,6 +500,18 @@ export default function HomeContent() {
           <i></i><span className="p3-task">Ad campaigns</span>
           <span className="p3-status"><em className="s1">Audited</em><em className="s2">Building</em><em className="s3"><svg viewBox="0 0 16 16" fill="none" width="11" height="11"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>Live</em></span>
         </div>
+        <div className="p3-pill">
+          <i></i><span className="p3-task">Local SEO</span>
+          <span className="p3-status"><em className="s1">Audited</em><em className="s2">Building</em><em className="s3"><svg viewBox="0 0 16 16" fill="none" width="11" height="11"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>Live</em></span>
+        </div>
+        <div className="p3-pill">
+          <i></i><span className="p3-task">Lead tracking</span>
+          <span className="p3-status"><em className="s1">Audited</em><em className="s2">Building</em><em className="s3"><svg viewBox="0 0 16 16" fill="none" width="11" height="11"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>Live</em></span>
+        </div>
+        <div className="p3-pill">
+          <i></i><span className="p3-task">Review requests</span>
+          <span className="p3-status"><em className="s1">Audited</em><em className="s2">Building</em><em className="s3"><svg viewBox="0 0 16 16" fill="none" width="11" height="11"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"/></svg>Live</em></span>
+        </div>
       </div>
     </div>
   </div>

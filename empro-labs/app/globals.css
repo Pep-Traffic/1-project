@@ -1439,19 +1439,27 @@
     position: absolute; left: 14px; width: calc(33.333% - 28px); height: 42px; display: flex; align-items: center; gap: 10px; padding: 0 14px;
     border-radius: 12px; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink);
     font-size: 13.5px; box-shadow: 0 10px 24px -16px rgba(0,0,0,0.8); opacity: 0;
-    animation: p3Hop 15s cubic-bezier(.65,0,.25,1) infinite, p3Tone 15s linear infinite;
+    animation: p3Hop 10s cubic-bezier(.65,0,.25,1) infinite, p3Tone 10s linear infinite;
   }
-  .p3-pill i{ width: 7px; height: 7px; border-radius: 50%; background: var(--ink-faint); flex-shrink: 0; animation: p3Dot 15s linear infinite; }
+  .p3-pill i{ width: 7px; height: 7px; border-radius: 50%; background: var(--ink-faint); flex-shrink: 0; animation: p3Dot 10s linear infinite; }
   .p3-task{ flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; }
   .p3-status{ position: relative; display: grid; justify-items: end; min-width: 64px; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
   .p3-status em{ grid-area: 1 / 1; font-style: normal; display: inline-flex; align-items: center; gap: 5px; opacity: 0; }
-  .p3-status .s1{ color: var(--ink-faint); animation: p3S1 15s linear infinite; }
-  .p3-status .s2{ color: var(--amber-soft); animation: p3S2 15s linear infinite; }
-  .p3-status .s3{ color: #6FDCA0; animation: p3S3 15s linear infinite; }
-  .p3-pill:nth-child(1){ top: 16px; } .p3-pill:nth-child(2){ top: 68px; } .p3-pill:nth-child(3){ top: 120px; }
+  .p3-status .s1{ color: var(--ink-faint); animation: p3S1 10s linear infinite; }
+  .p3-status .s2{ color: var(--amber-soft); animation: p3S2 10s linear infinite; }
+  .p3-status .s3{ color: #6FDCA0; animation: p3S3 10s linear infinite; }
+  .p3-pill:nth-child(1){ top: 16px; }
+  .p3-pill:nth-child(2){ top: 68px; }
+  .p3-pill:nth-child(3){ top: 120px; }
+  .p3-pill:nth-child(4){ top: 16px; }
+  .p3-pill:nth-child(5){ top: 68px; }
+  .p3-pill:nth-child(6){ top: 120px; }
   .p3-pill:nth-child(1), .p3-pill:nth-child(1) i, .p3-pill:nth-child(1) em{ animation-delay: 0s; }
-  .p3-pill:nth-child(2), .p3-pill:nth-child(2) i, .p3-pill:nth-child(2) em{ animation-delay: -5s; }
-  .p3-pill:nth-child(3), .p3-pill:nth-child(3) i, .p3-pill:nth-child(3) em{ animation-delay: -10s; }
+  .p3-pill:nth-child(2), .p3-pill:nth-child(2) i, .p3-pill:nth-child(2) em{ animation-delay: -1.67s; }
+  .p3-pill:nth-child(3), .p3-pill:nth-child(3) i, .p3-pill:nth-child(3) em{ animation-delay: -3.33s; }
+  .p3-pill:nth-child(4), .p3-pill:nth-child(4) i, .p3-pill:nth-child(4) em{ animation-delay: -5s; }
+  .p3-pill:nth-child(5), .p3-pill:nth-child(5) i, .p3-pill:nth-child(5) em{ animation-delay: -6.67s; }
+  .p3-pill:nth-child(6), .p3-pill:nth-child(6) i, .p3-pill:nth-child(6) em{ animation-delay: -8.33s; }
   @keyframes p3Hop{
     0%{ transform: translateX(0); opacity: 0; }
     6%, 28%{ transform: translateX(0); opacity: 1; }
@@ -1480,4 +1488,5 @@
     .p3-pill{ opacity: 1; transform: translateX(calc(var(--hop) * 2)); border-color: rgba(61,190,122,0.45); }
     .p3-pill i{ background: #3DBE7A; }
     .p3-status .s3{ opacity: 1; }
+    .p3-pill:nth-child(n+4){ display: none; }
   }
