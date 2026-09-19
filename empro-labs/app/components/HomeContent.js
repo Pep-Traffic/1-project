@@ -183,13 +183,25 @@ export default function HomeContent() {
 
       <div className="solution-card">
         <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="6" height="6" rx="1.5"/><rect x="15" y="14" width="6" height="6" rx="1.5"/><path d="M9 7h3a3 3 0 0 1 3 3v4"/></svg></span>
-        <div className="mockup mk">
-          <div className="mk-cols">
-            <div><em>New lead</em><span className="mk-k">Roof repair</span></div>
-            <div><em>Contacted</em><span className="mk-k on">Roof repair</span></div>
-            <div><em>Estimate</em><span className="mk-k on">Roof repair</span></div>
-            <div><em>Booked</em><span className="mk-k">Confirmed</span></div>
+        <div className="mockup calendar-mockup">
+          <div className="cal-head"><b>This week</b><span className="badge-pill">2 bookings</span></div>
+          <div className="cal-days"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span></div>
+          <div className="cal-grid" id="calGrid">
+            <a href="#contact" data-day="Monday, 10:00am"></a>
+            <a href="#contact" data-day="Tuesday, 11:30am"></a>
+            <a href="#contact" data-day="Wednesday, 1:00pm"></a>
+            <a href="#contact" data-day="Thursday, 11:00am"></a>
+            <a href="#contact" data-day="Friday, 3:00pm"></a>
+            <a href="#contact" data-day="Monday, 3:30pm"></a>
+            <a href="#contact" className="slot-booked" id="bookedSlot" data-day="Thursday, 2:00pm">2:00</a>
+            <a href="#contact" data-day="Wednesday, 4:00pm"></a>
+            <a href="#contact" data-day="Tuesday, 9:00am"></a>
+            <a href="#contact" data-day="Friday, 10:30am"></a>
           </div>
+        </div>
+        <div className="float-chip cal-chip" id="calChip">
+          <div className="chip-text"><b id="calDay">Thursday, 2:00pm</b><span>Estimate booked straight onto your calendar</span></div>
+          <span className="tag">Scheduled</span>
         </div>
         <div className="solution-foot">
           <p><b>One pipeline makes the next step visible.</b> Every call, form, reply, estimate, and booking in one accountable system.</p>
