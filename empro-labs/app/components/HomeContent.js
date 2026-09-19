@@ -39,18 +39,6 @@ export default function HomeContent() {
 </section>
 
 
-<section className="logo-strip">
-  <div className="wrap">
-    <p>Trusted by teams building on</p>
-    <div className="logo-row">
-      <span>Northline Roofing</span>
-      <span>Ferro Studio</span>
-      <span>Vantage Roofing</span>
-      <span>Bayview Heating</span>
-      <span>Ember &amp; Ash</span>
-    </div>
-  </div>
-</section>
 
 
 <section className="phases" id="leaks">

@@ -10,12 +10,6 @@ const RING_PROJECTS = [
   { name: "Jeff Flowers Insurance", tag: "GoHighLevel website", url: "https://jflowersinsurance.com" },
   { name: "PracForge", tag: "WordPress build", url: "https://pracforge.com" },
   { name: "Mangoholic", tag: "WooCommerce build", url: "https://mangoholicae.com" },
-  { name: "Bayview Heating", tag: "GoHighLevel funnel" },
-  { name: "Rapid Comfort Co", tag: "GHL automation" },
-  { name: "Northline Roofing", tag: "WordPress rebuild" },
-  { name: "Ferro Studio", tag: "WooCommerce build" },
-  { name: "Vantage Roofing", tag: "Local SEO" },
-  { name: "Ember & Ash", tag: "Paid search" },
 ];
 
 const COUNT = RING_PROJECTS.length;

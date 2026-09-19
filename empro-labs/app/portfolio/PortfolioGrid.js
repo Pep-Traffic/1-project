@@ -8,17 +8,11 @@ const projects = [
   { name: "What Are Peptides", categories: ["Web Development"], tag: "Custom build", result: "Live site", url: "https://whatarepeptides.us" },
   { name: "Motscbuy", categories: ["Web Development"], tag: "Custom build", result: "Live site", url: "https://motscbuy.com" },
   { name: "Jeff Flowers Insurance", categories: ["Web Development", "GHL"], tag: "GoHighLevel website", result: "Live site", url: "https://jflowersinsurance.com" },
-  { name: "Bayview Heating", categories: ["GHL"], tag: "GoHighLevel funnel", result: "3x lead response speed" },
-  { name: "Rapid Comfort Co", categories: ["GHL"], tag: "GHL automation", result: "28 sec avg. first reply" },
-  { name: "Northline Roofing", categories: ["WordPress"], tag: "WordPress rebuild", result: "1.8s load time" },
-  { name: "Ferro Studio", categories: ["WordPress"], tag: "WooCommerce build", result: "40% more conversions" },
   { name: "PracForge", categories: ["Web Development", "WordPress"], tag: "WordPress build", result: "Live site", url: "https://pracforge.com" },
   { name: "Mangoholic", categories: ["Web Development", "WordPress"], tag: "WooCommerce build", result: "Live site", url: "https://mangoholicae.com" },
-  { name: "Vantage Roofing", categories: ["SEO"], tag: "Local SEO", result: "3x organic traffic" },
-  { name: "Ember & Ash", categories: ["Ads"], tag: "Paid search", result: "$99 cost per booked job" },
 ];
 
-const categories = ["All", "Web Development", "GHL", "WordPress", "SEO", "Ads"];
+const categories = ["All", "Web Development", "GHL", "WordPress"];
 
 export default function PortfolioGrid() {
   const [active, setActive] = useState("All");
