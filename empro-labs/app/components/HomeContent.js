@@ -65,8 +65,8 @@ export default function HomeContent() {
 
 <section className="solutions">
   <div className="wrap">
-    <h2>A website, campaigns, and rankings that do the follow-up for you</h2>
-    <p className="section-lede">Three pieces of the same system: a site that captures the lead, campaigns your team can track, and reporting that tells you the truth about cost and results.</p>
+    <h2>A website, visibility, and follow-up that work as one system</h2>
+    <p className="section-lede">Every part below is connected: the site that captures the lead, the searches and ads that bring people in, and the follow-up that turns them into booked jobs.</p>
 
     <div className="solution-grid">
 
@@ -85,50 +85,106 @@ export default function HomeContent() {
           <span className="tag" id="notifTag">Lead</span>
         </div>
         <div className="solution-foot">
-          <p><b>A website that turns visitors</b> into booked leads</p>
+          <p><b>A website turns visits into opportunities.</b> Service pages, conversion paths, and tracking built around the jobs you want.</p>
           <a href="#contact" className="arrow">↗</a>
         </div>
       </div>
 
       <div className="solution-card">
-        <div className="mockup stack-mockup">
-          <div className="stack-card s3"></div>
-          <div className="stack-card s2"></div>
-          <div className="stack-card s1">
-            <div className="chrome-dots"><i></i><i></i></div>
-            <div className="bar full"></div>
-            <div className="bar w70"></div>
+        <div className="mockup mk">
+          <div className="mk-search"><svg viewBox="0 0 24 24" fill="none" width="14" height="14"><circle cx="11" cy="11" r="6.5" stroke="currentColor" strokeWidth="2"/><path d="M16 16L20 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg><span>roofing contractor near me</span></div>
+          <div className="mk-map">
+            <span className="mk-pin mk-pin-a"></span><span className="mk-pin mk-pin-b"></span><span className="mk-pin mk-pin-top"><i>1</i></span>
           </div>
+          <div className="mk-result"><b>Your business</b><span>Top local result</span></div>
         </div>
         <div className="solution-foot">
-          <p><b>Every page gets tested before it goes live,</b> not guesswork</p>
+          <p><b>Local visibility puts you in the right searches.</b> Google Business Profile, city relevance, and review signals working together.</p>
           <a href="#contact" className="arrow">↗</a>
         </div>
       </div>
 
       <div className="solution-card">
-        <div className="mockup calendar-mockup">
-          <div className="cal-head"><b>This week</b><span className="badge-pill">2 demos</span></div>
-          <div className="cal-days"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span></div>
-          <div className="cal-grid" id="calGrid">
-            <a href="#contact" data-day="Monday, 10:00am"></a>
-            <a href="#contact" data-day="Tuesday, 11:30am"></a>
-            <a href="#contact" data-day="Wednesday, 1:00pm"></a>
-            <a href="#contact" data-day="Thursday, 11:00am"></a>
-            <a href="#contact" data-day="Friday, 3:00pm"></a>
-            <a href="#contact" data-day="Monday, 3:30pm"></a>
-            <a href="#contact" className="slot-booked" id="bookedSlot" data-day="Thursday, 2:00pm">2:00</a>
-            <a href="#contact" data-day="Wednesday, 4:00pm"></a>
-            <a href="#contact" data-day="Tuesday, 9:00am"></a>
-            <a href="#contact" data-day="Friday, 10:30am"></a>
-          </div>
-        </div>
-        <div className="float-chip cal-chip" id="calChip">
-          <div className="chip-text"><b id="calDay">Thursday, 2:00pm</b><span>Strategy call — come see what's live</span></div>
-          <span className="tag">Scheduled</span>
+        <div className="mockup mk">
+          <div className="mk-head"><span>Campaign performance</span><em className="mk-badge">Active</em></div>
+          <div className="mk-bars"><i style={{ height: "18%" }}></i><i style={{ height: "30%" }}></i><i style={{ height: "26%" }}></i><i style={{ height: "42%" }}></i><i style={{ height: "38%" }}></i><i style={{ height: "58%" }}></i><i style={{ height: "72%" }}></i></div>
+          <div className="mk-foot2"><span>Leads</span><span>Bookings</span></div>
         </div>
         <div className="solution-foot">
-          <p><b>Strategy calls, booked</b> straight onto your calendar</p>
+          <p><b>Paid acquisition creates demand you can measure.</b> Google Ads and LSA readiness connected to the same lead journey.</p>
+          <a href="#contact" className="arrow">↗</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="solution-grid" style={{ marginTop: "22px" }}>
+
+      <div className="solution-card">
+        <div className="mockup mk">
+          <div className="mk-head"><span><i className="mk-live"></i>Lead assistant</span></div>
+          <div className="mk-bubble mk-in">Do you repair roof leaks?</div>
+          <div className="mk-bubble mk-out">Yes. What ZIP code is the property in?</div>
+          <div className="typing-pill"><i></i><i></i><i></i></div>
+        </div>
+        <div className="solution-foot">
+          <p><b>AI chat answers while intent is still high.</b> An immediate first response that captures job details and alerts your team.</p>
+          <a href="#contact" className="arrow">↗</a>
+        </div>
+      </div>
+
+      <div className="solution-card">
+        <div className="mockup mk mk-center">
+          <span className="mk-ico"><svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg></span>
+          <b>Missed call</b>
+          <span className="mk-sub">Customer · 8:42 PM</span>
+          <span className="mk-sent">Text sent in seconds</span>
+        </div>
+        <div className="solution-foot">
+          <p><b>Missed-call recovery keeps the conversation alive.</b> An instant personalized text when a call cannot be answered.</p>
+          <a href="#contact" className="arrow">↗</a>
+        </div>
+      </div>
+
+      <div className="solution-card">
+        <div className="mockup mk">
+          <div className="mk-stars">★★★★★</div>
+          <div className="mk-row"><svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg>Review request sent</div>
+          <div className="mk-review"><span>New customer review</span><i></i><i className="short"></i></div>
+        </div>
+        <div className="solution-foot">
+          <p><b>Reputation workflows turn completed jobs into trust.</b> Consistent review requests and private feedback follow-up after the work.</p>
+          <a href="#contact" className="arrow">↗</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="solution-grid solution-grid-centered">
+
+      <div className="solution-card">
+        <div className="mockup mk">
+          <div className="mk-head"><span>Past customers</span></div>
+          <div className="mk-progress"><i></i></div>
+          <div className="mk-row"><svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M4 12l16-8-6 16-3-7-7-1Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg>Follow-up sent to old leads</div>
+        </div>
+        <div className="solution-foot">
+          <p><b>Reactivation brings past customers back.</b> Relevant follow-up to old opportunities and customers already in your database.</p>
+          <a href="#contact" className="arrow">↗</a>
+        </div>
+      </div>
+
+      <div className="solution-card">
+        <div className="mockup mk">
+          <div className="mk-cols">
+            <div><em>New lead</em><span className="mk-k">Roof repair</span></div>
+            <div><em>Contacted</em><span className="mk-k on">Roof repair</span></div>
+            <div><em>Estimate</em><span className="mk-k on">Roof repair</span></div>
+            <div><em>Booked</em><span className="mk-k">Confirmed</span></div>
+          </div>
+        </div>
+        <div className="solution-foot">
+          <p><b>One pipeline makes the next step visible.</b> Every call, form, reply, estimate, and booking in one accountable system.</p>
           <a href="#contact" className="arrow">↗</a>
         </div>
       </div>
