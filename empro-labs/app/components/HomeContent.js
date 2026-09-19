@@ -1,5 +1,6 @@
 import GHLContactForm from "./GHLContactForm";
 import Faq from "./Faq";
+import FeatureShowcase from "./FeatureShowcase";
 
 const trades = [
   { name: "Roofing", icon: "<path d=\"M3 11l9-7 9 7\"/><path d=\"M5 10v10h14V10\"/>" },
@@ -94,6 +95,16 @@ export default function HomeContent() {
   </div>
 </section>
 
+
+<FeatureShowcase
+  id="website"
+  num="01"
+  label="Website design"
+  title="A website built to turn visits into booked jobs."
+  lede="Most local-service sites look fine and still leave the phone quiet. We rebuild yours around one goal: getting a visitor to request a quote."
+  points={["Designed to convert, not just look good", "Fast and easy to use on every phone", "Quote forms that actually get filled in", "Reviews placed where they persuade", "Connected to your CRM from day one", "Tracking on every call and form"]}
+  cta={{ href: "/services/web-development", label: "See how we build" }}
+/>
 
 <section className="solutions">
   <div className="wrap">
