@@ -1437,3 +1437,27 @@
     .mk-trend path{ stroke-dashoffset: 0; }
     .mk-pop{ display: none; }
   }
+
+  /* ================= TRADE STRIP (animated marquee under hero) ================= */
+  .trade-strip{
+    position: relative; overflow: hidden; background: var(--bg-alt);
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    padding: 18px 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 93%, transparent 100%);
+  }
+  .trade-track{ display: flex; width: max-content; animation: tradeScroll 45s linear infinite; will-change: transform; }
+  .trade-strip:hover .trade-track{ animation-play-state: paused; }
+  .trade-set{ display: flex; flex-shrink: 0; }
+  .trade-item{
+    display: inline-flex; align-items: center; gap: 10px; padding: 0 30px; white-space: nowrap;
+    font-size: 12.5px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-dim);
+    transition: color 0.25s ease;
+  }
+  .trade-item svg{ width: 15px; height: 15px; flex-shrink: 0; color: var(--amber); }
+  .trade-item:hover{ color: var(--ink); }
+  @keyframes tradeScroll{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce){
+    .trade-track{ animation: none; }
+    .trade-strip{ overflow-x: auto; }
+  }

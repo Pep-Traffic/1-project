@@ -1,5 +1,20 @@
 import GHLContactForm from "./GHLContactForm";
 
+const trades = [
+  { name: "Roofing", icon: "<path d=\"M3 11l9-7 9 7\"/><path d=\"M5 10v10h14V10\"/>" },
+  { name: "HVAC", icon: "<path d=\"M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9\"/>" },
+  { name: "Plumbing", icon: "<path d=\"M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5 2.5-2.5Z\"/>" },
+  { name: "Electrical", icon: "<path d=\"M13 2L4 14h7l-1 8 9-12h-7l1-8Z\"/>" },
+  { name: "Landscaping", icon: "<path d=\"M5 19c0-8 5-14 15-14 0 10-6 15-14 15\"/><path d=\"M5 19l7-7\"/>" },
+  { name: "Lawn Care", icon: "<path d=\"M12 21v-9\"/><path d=\"M12 12c0-4 3-6 7-6 0 4-3 6-7 6Z\"/><path d=\"M12 15c0-3-2-5-6-5 0 3 2 5 6 5Z\"/>" },
+  { name: "Tree Service", icon: "<path d=\"M12 21v-6\"/><path d=\"M12 3l6 8h-3l4 6H5l4-6H6l6-8Z\"/>" },
+  { name: "Windows", icon: "<rect x=\"4\" y=\"3\" width=\"16\" height=\"18\" rx=\"1.5\"/><path d=\"M12 3v18M4 12h16\"/>" },
+  { name: "Fencing", icon: "<path d=\"M5 21V8l2-3 2 3v13M11 21V8l2-3 2 3v13M17 21V8l2-3 2 3v13\"/>" },
+  { name: "Remodeling", icon: "<path d=\"M12.5 6.5L17 11M5 19l8-8\"/><path d=\"M14 4l6 6-3 3-6-6 3-3Z\"/>" },
+  { name: "Pest Control", icon: "<rect x=\"8\" y=\"8\" width=\"8\" height=\"11\" rx=\"4\"/><path d=\"M12 8V5M4 12h4M16 12h4M5 18l3-2M19 18l-3-2M9 5l3-2 3 2\"/>" },
+  { name: "Painting", icon: "<path d=\"M4 20c2 0 3-1 3-3l7-7 3 3-7 7c-2 0-4 1-6 0Z\"/><path d=\"M14 10l5-5 2 2-5 5\"/>" },
+];
+
 export default function HomeContent() {
   return (
     <>
@@ -28,6 +43,22 @@ export default function HomeContent() {
   </div>
 
 </section>
+
+<section className="trade-strip" aria-label="Trades we build websites and marketing for">
+  <div className="trade-track">
+    {[0, 1].map((copy) => (
+      <div className="trade-set" key={copy} aria-hidden={copy === 1 ? "true" : undefined}>
+        {trades.map((t) => (
+          <span className="trade-item" key={t.name}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" dangerouslySetInnerHTML={{ __html: t.icon }} />
+            {t.name}
+          </span>
+        ))}
+      </div>
+    ))}
+  </div>
+</section>
+
 
 
 
