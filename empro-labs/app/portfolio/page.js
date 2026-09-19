@@ -41,6 +41,17 @@ export default function PortfolioPage() {
         cta={{ href: "/contact", label: "Get a free audit" }}
       />
 
+      <FeatureShowcase
+        num="02"
+        label="What happens after launch"
+        title="The site starts the conversation. Follow-up wins the job."
+        lede="A quote request or missed call is only worth something if someone answers fast. We wire follow-up into every site we build so no lead goes cold."
+        variant="followup"
+        reverse
+        points={["Missed calls answered by text at once", "New leads alerted to your phone", "Booking links sent automatically", "Reviews requested after each job", "Old quotes followed up on", "Everything visible in one CRM"]}
+        cta={{ href: "/contact", label: "Start a project" }}
+      />
+
       <CtaBanner />
       <Footer />
     </>

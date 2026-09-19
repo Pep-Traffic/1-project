@@ -106,6 +106,18 @@ export default function HomeContent() {
   cta={{ href: "/services/web-development", label: "See how we build" }}
 />
 
+<FeatureShowcase
+  id="follow-up"
+  num="02"
+  label="Lead follow-up"
+  title="Every missed call gets a reply in seconds."
+  lede="Home-service customers call the next company when nobody picks up. We set up instant text-back so the conversation keeps going while they are still searching."
+  variant="followup"
+  reverse
+  points={["Instant text-back on every missed call", "Two-way texting from one shared inbox", "Estimate and booking links included", "Review requests after every finished job", "Follow-up on quotes that went quiet", "Every conversation logged in your CRM"]}
+  cta={{ href: "/contact", label: "Get a free audit" }}
+/>
+
 <section className="solutions">
   <div className="wrap">
     <h2>A website, visibility, and follow-up that work as one system</h2>

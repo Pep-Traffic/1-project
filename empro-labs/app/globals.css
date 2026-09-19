@@ -1638,22 +1638,22 @@
   .fs-cta{
     position: relative; display: inline-grid; place-items: center; min-width: 138px; padding: 10px 16px; border-radius: 8px;
     background: linear-gradient(140deg, var(--amber), var(--amber-deep)); color: var(--on-accent); font-size: 12px; font-weight: 700;
-    box-shadow: 0 10px 24px -10px rgba(240,160,89,0.7); animation: fsPress 9s linear infinite;
+    box-shadow: 0 10px 24px -10px rgba(240,160,89,0.7); animation: fsPress 6s linear infinite;
   }
   .fs-cta > span{ grid-area: 1 / 1; display: inline-flex; align-items: center; gap: 6px; }
-  .fs-cta-a{ animation: fsLabelA 9s linear infinite; }
-  .fs-cta-b{ opacity: 0; animation: fsLabelB 9s linear infinite; }
+  .fs-cta-a{ animation: fsLabelA 6s linear infinite; }
+  .fs-cta-b{ opacity: 0; animation: fsLabelB 6s linear infinite; }
   @keyframes fsPress{ 0%, 29%{ transform: scale(1); } 32%{ transform: scale(0.94); } 36%, 100%{ transform: scale(1); } }
   @keyframes fsLabelA{ 0%, 33%{ opacity: 1; } 35%, 87%{ opacity: 0; } 90%, 100%{ opacity: 1; } }
   @keyframes fsLabelB{ 0%, 33%{ opacity: 0; } 36%, 86%{ opacity: 1; } 89%, 100%{ opacity: 0; } }
   .fs-ripple{
     position: absolute; left: 96px; top: 20px; width: 34px; height: 34px; margin: -17px 0 0 -17px; border-radius: 50%;
-    border: 2px solid rgba(255,235,210,0.9); opacity: 0; pointer-events: none; animation: fsRipple 9s linear infinite;
+    border: 2px solid rgba(255,235,210,0.9); opacity: 0; pointer-events: none; animation: fsRipple 6s linear infinite;
   }
   @keyframes fsRipple{ 0%, 31%{ opacity: 0; transform: scale(0.2); } 32%{ opacity: 0.85; transform: scale(0.3); } 46%, 100%{ opacity: 0; transform: scale(2.2); } }
   .fs-cursor{
     position: absolute; left: 0; top: 0; z-index: 3; filter: drop-shadow(0 3px 5px rgba(0,0,0,0.6));
-    animation: fsCursor 9s cubic-bezier(.45,0,.2,1) infinite; opacity: 0;
+    animation: fsCursor 6s cubic-bezier(.45,0,.2,1) infinite; opacity: 0;
   }
   @keyframes fsCursor{
     0%{ transform: translate(150px, 130px); opacity: 0; }
@@ -1671,7 +1671,7 @@
     position: absolute; left: -4%; bottom: 0; z-index: 4; display: flex; align-items: center; gap: 12px; padding: 12px 18px 12px 12px;
     border-radius: 14px; background: var(--panel-2); border: 1px solid rgba(240,160,89,0.35);
     box-shadow: 0 24px 50px -22px rgba(0,0,0,0.9), 0 0 0 1px rgba(0,0,0,0.3);
-    opacity: 0; animation: fsToast 9s cubic-bezier(.16,1,.3,1) infinite;
+    opacity: 0; animation: fsToast 6s cubic-bezier(.16,1,.3,1) infinite;
   }
   .fs-toast b{ display: block; font-size: 13.5px; color: var(--ink); }
   .fs-toast span:not(.fs-toast-ico){ font-size: 12px; color: var(--ink-dim); }
@@ -1699,4 +1699,40 @@
     .fs-cta, .fs-cta-a, .fs-cta-b, .fs-ripple, .fs-cursor, .fs-photo svg, .fs-badges i{ animation: none; }
     .fs-cursor, .fs-ripple{ display: none; }
     .fs-toast{ animation: none; opacity: 1; }
+  }
+
+  /* --- layout B: mirrored, with the follow-up chat mockup --- */
+  .fs + .fs{ padding-top: 0; }
+  @media (min-width: 981px){
+    .fs-reverse .fs-grid{ grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
+    .fs-reverse .fs-visual{ order: -1; }
+  }
+  .fs-phone{ max-width: 430px; margin: 0 auto; }
+  .fs-chat-head{ gap: 12px; }
+  .fs-chat-head b{ display: block; font-size: 13px; color: var(--ink); }
+  .fs-chat-head span:not(.fs-avatar):not(.fs-live){ font-size: 11px; color: var(--ink-faint); }
+  .fs-avatar{ width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: linear-gradient(140deg, var(--amber), var(--amber-deep)); color: var(--on-accent); font-weight: 700; font-size: 13px; flex-shrink: 0; }
+  .fs-live{ margin-left: auto; display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: #6FDCA0; }
+  .fs-live i{ width: 7px; height: 7px; border-radius: 50%; background: #3DBE7A; animation: mkPulse 1.6s ease-in-out infinite; }
+  .fs-chat{ display: flex; flex-direction: column; gap: 12px; padding: 22px 20px 26px; min-height: 310px; background: #0F0B08; }
+  .fs-call{ display: flex; align-items: center; gap: 12px; padding: 11px 14px; border-radius: 12px; background: rgba(229,72,77,0.1); border: 1px solid rgba(229,72,77,0.28); }
+  .fs-call b{ display: block; font-size: 13px; color: var(--ink); }
+  .fs-call span:not(.fs-call-ico){ font-size: 11.5px; color: var(--ink-faint); }
+  .fs-call-ico{ width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: rgba(229,72,77,0.18); color: #F0787C; flex-shrink: 0; }
+  .fs-msg{ max-width: 80%; padding: 10px 14px; border-radius: 14px; font-size: 13.5px; line-height: 1.45; }
+  .fs-out{ align-self: flex-start; background: var(--panel-2); border: 1px solid var(--line); color: var(--ink); border-bottom-left-radius: 4px; }
+  .fs-in{ align-self: flex-end; background: linear-gradient(140deg, var(--amber), var(--amber-deep)); color: var(--on-accent); font-weight: 500; border-bottom-right-radius: 4px; }
+  .fs-s1{ animation: fsS1 6s cubic-bezier(.16,1,.3,1) infinite; opacity: 0; }
+  .fs-s2{ animation: fsS2 6s cubic-bezier(.16,1,.3,1) infinite; opacity: 0; }
+  .fs-s3{ animation: fsS3 6s cubic-bezier(.16,1,.3,1) infinite; opacity: 0; }
+  .fs-s4{ animation: fsS4 6s cubic-bezier(.16,1,.3,1) infinite; opacity: 0; }
+  .fs-toast-right{ left: auto; right: -3%; animation: fsS5 6s cubic-bezier(.16,1,.3,1) infinite; }
+  @keyframes fsS1{ 0%, 1%{ opacity: 0; transform: translateY(12px) scale(0.97); } 7%, 90%{ opacity: 1; transform: translateY(0) scale(1); } 96%, 100%{ opacity: 0; transform: translateY(4px) scale(0.99); } }
+  @keyframes fsS2{ 0%, 15%{ opacity: 0; transform: translateY(12px) scale(0.97); } 21%, 90%{ opacity: 1; transform: translateY(0) scale(1); } 96%, 100%{ opacity: 0; transform: translateY(4px) scale(0.99); } }
+  @keyframes fsS3{ 0%, 33%{ opacity: 0; transform: translateY(12px) scale(0.97); } 39%, 90%{ opacity: 1; transform: translateY(0) scale(1); } 96%, 100%{ opacity: 0; transform: translateY(4px) scale(0.99); } }
+  @keyframes fsS4{ 0%, 51%{ opacity: 0; transform: translateY(12px) scale(0.97); } 57%, 90%{ opacity: 1; transform: translateY(0) scale(1); } 96%, 100%{ opacity: 0; transform: translateY(4px) scale(0.99); } }
+  @keyframes fsS5{ 0%, 63%{ opacity: 0; transform: translateY(12px) scale(0.97); } 69%, 90%{ opacity: 1; transform: translateY(0) scale(1); } 96%, 100%{ opacity: 0; transform: translateY(4px) scale(0.99); } }
+  @media (max-width: 980px){ .fs-toast-right{ right: 12px; left: auto; } .fs-phone{ margin: 0; } }
+  @media (prefers-reduced-motion: reduce){
+    .fs-s1, .fs-s2, .fs-s3, .fs-s4, .fs-toast-right, .fs-live i{ animation: none; opacity: 1; }
   }
