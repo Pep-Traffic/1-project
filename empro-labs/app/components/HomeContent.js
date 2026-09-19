@@ -27,15 +27,6 @@ export default function HomeContent() {
     </div>
   </div>
 
-  <div className="testimonial-float" id="heroTestimonial">
-    <div className="chip-text">
-      <p id="heroQuote">"Empro Labs rebuilt our WordPress site and within two months we were finally on page one for our main service."</p>
-      <div className="who">
-        <img className="avatar" id="heroAvatar" src="https://i.pravatar.cc/64?img=47" alt="Dana R." />
-        <div><b id="heroName">Dana R.</b> <span id="heroRole">— Owner, Northline Roofing</span></div>
-      </div>
-    </div>
-  </div>
 </section>
 
 
@@ -391,82 +382,25 @@ export default function HomeContent() {
 <section className="work" id="work">
   <div className="wrap">
     <h2>Recent work</h2>
-    <p className="section-lede">A few of the sites, campaigns, and rankings we've built and kept running. Numbers below are what shipped for that specific client — results vary by starting point and scope.</p>
-
-    <details className="case">
-      <summary>
-        <div>
-          <span className="tag">Northline Roofing — WordPress</span>
-          <h3>Rebuilt a legacy WordPress site from the ground up</h3>
-          <p>Replaced a slow, outdated theme that was costing organic rankings. New build shipped in four weeks.</p>
+    <p className="section-lede">A few of the live sites we've built. Open any of them to see the real thing.</p>
+    <div className="portfolio-grid">
+      {[
+        { name: "Jeff Flowers Insurance", tag: "GoHighLevel website", url: "https://jflowersinsurance.com" },
+        { name: "PracForge", tag: "WordPress build", url: "https://pracforge.com" },
+        { name: "Mangoholic", tag: "WooCommerce build", url: "https://mangoholicae.com" },
+      ].map((p) => (
+        <div className="portfolio-card show" key={p.name}>
+          <a className="portfolio-thumb portfolio-thumb-shot" href={p.url} target="_blank" rel="noopener noreferrer">
+            <img src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(p.url)}?w=800`} alt={`${p.name} live screenshot`} loading="lazy" />
+          </a>
+          <div className="portfolio-body">
+            <span className="portfolio-tag">{p.tag}</span>
+            <h3>{p.name}</h3>
+          </div>
         </div>
-        <div className="stat"><b>1.8s</b><span>page load time</span></div>
-      </summary>
-      <div className="case-more">
-        <ul>
-          <li>Replaced a bloated page-builder theme with a lean custom build</li>
-          <li>Rebuilt on-page SEO structure alongside the redesign</li>
-          <li>Shipped with zero downtime for the existing site</li>
-        </ul>
-      </div>
-    </details>
-    <details className="case">
-      <summary>
-        <div>
-          <span className="tag">Vantage Roofing — SEO</span>
-          <h3>Turned a stagnant listing into the top local result</h3>
-          <p>A technical audit and content overhaul moved a page-two local business to the top of its core service terms.</p>
-        </div>
-        <div className="stat"><b>3x</b><span>organic traffic increase</span></div>
-      </summary>
-      <div className="case-more">
-        <ul>
-          <li>Fixed technical issues blocking indexing on key service pages</li>
-          <li>Rebuilt content around real local search volume, not guesses</li>
-          <li>Rankings tracked and reported monthly, not left to assumption</li>
-        </ul>
-      </div>
-    </details>
-    <details className="case">
-      <summary>
-        <div>
-          <span className="tag">Ember &amp; Ash — Ads management</span>
-          <h3>Rebuilt a wasteful ad account around booked jobs</h3>
-          <p>Replaced a campaign optimized for clicks with one optimized for actual booked jobs, cutting acquisition cost by more than half.</p>
-        </div>
-        <div className="stat"><b>$99</b><span>cost per booked job</span></div>
-      </summary>
-      <div className="case-more">
-        <ul>
-          <li>Rebuilt campaign structure around the real sales funnel</li>
-          <li>Cut spend on keywords that generated clicks but not jobs</li>
-          <li>Client sees cost per lead and cost per booked job weekly</li>
-        </ul>
-      </div>
-    </details>
-  </div>
-</section>
-
-
-<section className="testimonials">
-  <div className="wrap">
-    <h2>Small businesses that stopped worrying about their marketing</h2>
-    <p className="section-lede">A few words from owners and operators we've worked alongside.</p>
-
-    <div className="quote-grid">
-      <div className="quote">
-        <p>"Empro Labs rebuilt our WordPress site and our organic traffic tripled inside a quarter."</p>
-        <div className="who"><img className="avatar" src="https://i.pravatar.cc/64?img=47" alt="Dana R." /><div><b>Dana R.</b><span>Owner, Northline Roofing</span></div></div>
-      </div>
-      <div className="quote">
-        <p>"Our ad spend was going nowhere until Empro Labs took it over. Now we know exactly what a booked job costs us."</p>
-        <div className="who"><img className="avatar" src="https://i.pravatar.cc/64?img=33" alt="Marcus T." /><div><b>Marcus T.</b><span>Owner, Ember &amp; Ash</span></div></div>
-      </div>
-      <div className="quote">
-        <p>"Empro Labs is the first team that's told us the truth about what's actually working, not just vanity numbers."</p>
-        <div className="who"><img className="avatar" src="https://i.pravatar.cc/64?img=25" alt="Priya D." /><div><b>Priya D.</b><span>Owner, Vantage Roofing</span></div></div>
-      </div>
+      ))}
     </div>
+    <p style={{ marginTop: "28px" }}><a href="/portfolio" className="btn btn-ghost">See all projects</a></p>
   </div>
 </section>
 

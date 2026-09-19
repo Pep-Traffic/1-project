@@ -7,16 +7,13 @@ const platforms = {
     label: "GHL",
     blurb: "GoHighLevel website design, funnels, and automations — including Lead Connector CRM setup — built to answer every lead in under 30 seconds.",
     projects: [
-      { name: "Bayview Heating", detail: "Multi-step funnel + missed-call text-back automation." },
-      { name: "Rapid Comfort Co", detail: "Pipeline automation that routes leads by service type." },
+      { name: "Jeff Flowers Insurance", detail: "GoHighLevel website for a Murfreesboro, TN insurance agency.", url: "https://jflowersinsurance.com" },
     ],
   },
   WordPress: {
     label: "WordPress",
     blurb: "WordPress website development focused on load time, SEO structure, and a CMS your team can actually use.",
     projects: [
-      { name: "Northline Roofing", detail: "Full rebuild from a legacy theme — 1.8s load time." },
-      { name: "Ferro Studio", detail: "WooCommerce storefront with custom product filtering." },
       { name: "PracForge", detail: "WordPress build for a dental & medical practice partner.", url: "https://pracforge.com" },
       { name: "Mangoholic", detail: "WooCommerce storefront for a fresh fruit delivery brand.", url: "https://mangoholicae.com" },
     ],

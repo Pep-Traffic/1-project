@@ -75,26 +75,6 @@ export default function GoHighLevelPage() {
 
       <section className="services">
         <div className="wrap">
-          <h2>Bayview Heating</h2>
-          <p className="section-lede">
-            Built a multi-step GHL funnel with missed-call text-back automation, so an emergency
-            heating call at 8pm gets a reply in seconds instead of going to voicemail.
-          </p>
-          <div className="values-grid">
-            <div className="value-card">
-              <h3 style={{ color: "var(--amber)", fontSize: "1.8rem" }}>3x</h3>
-              <p>lead response speed</p>
-            </div>
-            <div className="value-card">
-              <h3 style={{ color: "var(--amber)", fontSize: "1.8rem" }}>28s</h3>
-              <p>avg. first reply, via Rapid Comfort Co's GHL automation</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="services">
-        <div className="wrap">
           <h2>GoHighLevel questions we get asked most</h2>
           <div className="service-list">
             {faqs.map((f) => (

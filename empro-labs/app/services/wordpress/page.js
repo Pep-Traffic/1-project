@@ -71,26 +71,6 @@ export default function WordPressPage() {
 
       <section className="services">
         <div className="wrap">
-          <h2>Northline Roofing</h2>
-          <p className="section-lede">
-            Rebuilt a legacy WordPress site from the ground up — replaced a slow, outdated theme
-            that was costing organic rankings. New build shipped in four weeks.
-          </p>
-          <div className="values-grid">
-            <div className="value-card">
-              <h3 style={{ color: "var(--amber)", fontSize: "1.8rem" }}>1.8s</h3>
-              <p>page load time after rebuild</p>
-            </div>
-            <div className="value-card">
-              <h3 style={{ color: "var(--amber)", fontSize: "1.8rem" }}>40%</h3>
-              <p>more conversions, Ferro Studio WooCommerce rebuild</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="services">
-        <div className="wrap">
           <h2>WordPress questions we get asked most</h2>
           <div className="service-list">
             {faqs.map((f) => (

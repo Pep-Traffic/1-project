@@ -30,34 +30,6 @@ export default function HomeInteractions() {
     window.IntersectionObserver = TrackedObserver;
 
 
-      // ---------- Hero testimonial cycles through real client quotes ----------
-      (function(){
-        const chip = document.getElementById('heroTestimonial');
-        if (!chip) return;
-        const quoteEl = document.getElementById('heroQuote');
-        const nameEl = document.getElementById('heroName');
-        const roleEl = document.getElementById('heroRole');
-        const avatarEl = document.getElementById('heroAvatar');
-        const quotes = [
-          { quote: '"Empro Labs rebuilt our WordPress site and within two months we were finally on page one for our main service."', name: 'Dana R.', role: '— Owner, Northline Roofing', avatar: 'https://i.pravatar.cc/64?img=47' },
-          { quote: '"Our ad spend was going nowhere until Empro Labs took it over. Now we know exactly what a booked job costs us."', name: 'Marcus T.', role: '— Owner, Ember & Ash', avatar: 'https://i.pravatar.cc/64?img=33' },
-          { quote: '"Empro Labs is the first team that\'s told us the truth about what\'s actually working, not just vanity numbers."', name: 'Priya D.', role: '— Owner, Vantage Roofing', avatar: 'https://i.pravatar.cc/64?img=25' }
-        ];
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-        let i = 0;
-        setInterval(() => {
-          chip.classList.add('swapping');
-          setTimeout(() => {
-            i = (i + 1) % quotes.length;
-            quoteEl.textContent = quotes[i].quote;
-            nameEl.textContent = quotes[i].name;
-            roleEl.textContent = quotes[i].role;
-            if (avatarEl) avatarEl.src = quotes[i].avatar;
-            chip.classList.remove('swapping');
-          }, 300);
-        }, 4500);
-      })();
-
       // ---------- Services & case-study cards: smooth animated expand/collapse ----------
       (function(){
         function animate(details, contentSelector, onIcon){

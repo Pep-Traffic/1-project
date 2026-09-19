@@ -10,12 +10,7 @@ export const industries = [
       "Google Ads and Local Services Ads managed around cost per booked job",
       "GHL or WordPress CRM with missed-call text-back and review request automations",
     ],
-    caseStudy: {
-      name: "Northline Roofing",
-      stat: "1.8s",
-      statLabel: "page load time after rebuild",
-      note: "Rebuilt a legacy WordPress site from the ground up — replaced a slow, outdated theme that was costing organic rankings.",
-    },
+    caseStudy: null,
     faqs: [
       {
         q: "Do you work with roofing companies already on GHL or WordPress?",
@@ -38,12 +33,7 @@ export const industries = [
       "Google Ads and Local Services Ads tuned for cost per booked job, not just clicks",
       "Missed-call text-back and automated review requests wired into your CRM",
     ],
-    caseStudy: {
-      name: "Bayview Heating",
-      stat: "GHL",
-      statLabel: "multi-step funnel + missed-call automation",
-      note: "Built a multi-step GHL funnel with missed-call text-back automation so no emergency call goes unanswered.",
-    },
+    caseStudy: null,
     faqs: [
       {
         q: "Can you connect ads directly into our HVAC dispatch or CRM?",
