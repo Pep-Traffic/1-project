@@ -93,12 +93,14 @@ export default function HomeContent() {
 
       <div className="solution-card">
         <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-        <div className="mockup mk">
-          <div className="mk-search"><svg viewBox="0 0 24 24" fill="none" width="14" height="14"><circle cx="11" cy="11" r="6.5" stroke="currentColor" strokeWidth="2"/><path d="M16 16L20 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg><span>roofing contractor near me</span></div>
+        <div className="mockup mk story" data-loop="8500">
+          <div className="mk-search"><svg viewBox="0 0 24 24" fill="none" width="14" height="14"><circle cx="11" cy="11" r="6.5" stroke="currentColor" strokeWidth="2"/><path d="M16 16L20 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg><span id="typedQuery"></span><i className="mk-caret"></i></div>
           <div className="mk-map">
-            <span className="mk-pin mk-pin-a"></span><span className="mk-pin mk-pin-b"></span><span className="mk-pin mk-pin-top"><i>1</i></span>
+            <span className="mk-pin mk-pin-a" data-on="700" data-off="7800"></span>
+            <span className="mk-pin mk-pin-b" data-on="1100" data-off="7800"></span>
+            <span className="mk-pin mk-pin-top" data-on="1700" data-off="7800"><i>1</i></span>
           </div>
-          <div className="mk-result"><b>Your business</b><span>Top local result</span></div>
+          <div className="mk-result" data-on="2900" data-off="7800"><b>Your business</b><span>Top local result</span></div>
         </div>
         <div className="solution-foot">
           <p><b>Local visibility puts you in the right searches.</b> Google Business Profile, city relevance, and review signals working together.</p>
@@ -109,8 +111,13 @@ export default function HomeContent() {
       <div className="solution-card">
         <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M4 10v4a1 1 0 0 0 1 1h2l6 4V5L7 9H5a1 1 0 0 0-1 1Z"/><path d="M17 9.5a4 4 0 0 1 0 5"/></svg></span>
         <div className="mockup mk">
-          <div className="mk-head"><span>Campaign performance</span><em className="mk-badge">Active</em></div>
-          <div className="mk-bars"><i style={{ height: "18%" }}></i><i style={{ height: "30%" }}></i><i style={{ height: "26%" }}></i><i style={{ height: "42%" }}></i><i style={{ height: "38%" }}></i><i style={{ height: "58%" }}></i><i style={{ height: "72%" }}></i></div>
+          <div className="mk-head"><span>Campaign performance</span><em className="mk-badge"><i className="mk-live"></i>Active</em></div>
+          <div className="mk-chart">
+            <div className="mk-bars"><i style={{ "--h": "18%" }}></i><i style={{ "--h": "30%" }}></i><i style={{ "--h": "26%" }}></i><i style={{ "--h": "44%" }}></i><i style={{ "--h": "38%" }}></i><i style={{ "--h": "60%" }}></i><i style={{ "--h": "76%" }}></i></div>
+            <svg className="mk-trend" viewBox="0 0 100 40" preserveAspectRatio="none"><path d="M4 34 L20 27 L36 30 L52 19 L68 22 L84 10 L98 3" pathLength="1"/></svg>
+            <span className="mk-pop mk-pop-a">New lead</span>
+            <span className="mk-pop mk-pop-b">Booked</span>
+          </div>
           <div className="mk-foot2"><span>Leads</span><span>Bookings</span></div>
         </div>
         <div className="solution-foot">
@@ -125,11 +132,17 @@ export default function HomeContent() {
 
       <div className="solution-card">
         <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect x="5" y="8" width="14" height="11" rx="3.5"/><path d="M12 4v4M9.5 13.2v.01M14.5 13.2v.01M9.5 16h5"/></svg></span>
-        <div className="mockup mk">
+        <div className="mockup mk story" data-loop="11500">
           <div className="mk-head"><span><i className="mk-live"></i>Lead assistant</span></div>
-          <div className="mk-bubble mk-in">Do you repair roof leaks?</div>
-          <div className="mk-bubble mk-out">Yes. What ZIP code is the property in?</div>
-          <div className="typing-pill"><i></i><i></i><i></i></div>
+          <div className="mk-thread">
+            <div className="mk-bubble mk-in" data-on="400" data-off="10800">Do you repair roof leaks?</div>
+            <div className="mk-bubble mk-out" data-on="1300" data-off="2600"><span className="mk-typing"><i></i><i></i><i></i></span></div>
+            <div className="mk-bubble mk-out" data-on="2600" data-off="10800">Yes! What ZIP code is the property in?</div>
+            <div className="mk-bubble mk-in" data-on="4400" data-off="10800">37129</div>
+            <div className="mk-bubble mk-out" data-on="5200" data-off="6500"><span className="mk-typing"><i></i><i></i><i></i></span></div>
+            <div className="mk-bubble mk-out" data-on="6500" data-off="10800">Got it. Want an estimate this week?</div>
+            <div className="mk-alert" data-on="7900" data-off="10800"><svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>Lead captured, your team is alerted</div>
+          </div>
         </div>
         <div className="solution-foot">
           <p><b>AI chat answers while intent is still high.</b> An immediate first response that captures job details and alerts your team.</p>
@@ -139,11 +152,17 @@ export default function HomeContent() {
 
       <div className="solution-card">
         <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 2-2Z"/></svg></span>
-        <div className="mockup mk mk-center">
-          <span className="mk-ico"><svg viewBox="0 0 24 24" fill="none" width="22" height="22"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg></span>
-          <b>Missed call</b>
-          <span className="mk-sub">Customer · 8:42 PM</span>
-          <span className="mk-sent">Text sent in seconds</span>
+        <div className="mockup mk mk-call story" data-loop="8800">
+          <div className="mk-callzone">
+            <div className="mk-callstate mk-ringing" data-on="0" data-off="2900">
+              <span className="mk-ico"><svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg></span><b>Incoming call</b><span className="mk-sub">Customer · 8:42 PM</span>
+            </div>
+            <div className="mk-callstate" data-on="2900" data-off="8200">
+              <span className="mk-ico missed"><svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg></span><b>Missed call</b><span className="mk-sub">Customer · 8:42 PM</span>
+            </div>
+          </div>
+          <div className="mk-bubble mk-out" data-on="4000" data-off="8200">Sorry we missed you! How can we help?</div>
+          <div className="mk-sent" data-on="4900" data-off="8200"><svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>Text sent in seconds</div>
         </div>
         <div className="solution-foot">
           <p><b>Missed-call recovery keeps the conversation alive.</b> An instant personalized text when a call cannot be answered.</p>
@@ -153,10 +172,15 @@ export default function HomeContent() {
 
       <div className="solution-card">
         <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3Z"/></svg></span>
-        <div className="mockup mk">
-          <div className="mk-stars">★★★★★</div>
-          <div className="mk-row"><svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg>Review request sent</div>
-          <div className="mk-review"><span>New customer review</span><i></i><i className="short"></i></div>
+        <div className="mockup mk story" data-loop="9800">
+          <div className="mk-stars"><span className="mk-star" data-fill="1" data-on="1100" data-off="9000">★</span><span className="mk-star" data-fill="1" data-on="1480" data-off="9000">★</span><span className="mk-star" data-fill="1" data-on="1860" data-off="9000">★</span><span className="mk-star" data-fill="1" data-on="2240" data-off="9000">★</span><span className="mk-star" data-fill="1" data-on="2620" data-off="9000">★</span></div>
+          <div className="mk-row" data-on="300" data-off="9000"><svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M4 12l16-8-6 16-3-7-7-1Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg>Review request sent</div>
+          <div className="mk-review" data-on="3300" data-off="9000">
+            <span>New customer review</span>
+            <i data-fill="1" data-on="3900" data-off="9000"></i>
+            <i className="short" data-fill="1" data-on="4300" data-off="9000"></i>
+            <em className="mk-plus" data-on="5300" data-off="9000">+1 review</em>
+          </div>
         </div>
         <div className="solution-foot">
           <p><b>Reputation workflows turn completed jobs into trust.</b> Consistent review requests and private feedback follow-up after the work.</p>
@@ -170,10 +194,11 @@ export default function HomeContent() {
 
       <div className="solution-card">
         <span className="card-icon"><svg viewBox="0 0 24 24" fill="none" width="18" height="18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.8c1.8.7 3 2.4 3 5.2"/></svg></span>
-        <div className="mockup mk">
-          <div className="mk-head"><span>Past customers</span></div>
-          <div className="mk-progress"><i></i></div>
-          <div className="mk-row"><svg viewBox="0 0 24 24" fill="none" width="14" height="14"><path d="M4 12l16-8-6 16-3-7-7-1Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"/></svg>Follow-up sent to old leads</div>
+        <div className="mockup mk story" data-loop="9800">
+          <div className="mk-head"><span>Past customers</span><span className="mk-live-txt"><i className="mk-live"></i>Reaching out</span></div>
+          <div className="mk-dots"><i data-fill="1" data-on="500" data-off="9000"></i><i data-fill="1" data-on="710" data-off="9000"></i><i data-fill="1" data-on="920" data-off="9000"></i><i className="rep" data-fill="1" data-on="1130" data-off="9000"></i><i data-fill="1" data-on="1340" data-off="9000"></i><i data-fill="1" data-on="1550" data-off="9000"></i><i data-fill="1" data-on="1760" data-off="9000"></i><i data-fill="1" data-on="1970" data-off="9000"></i><i className="rep" data-fill="1" data-on="2180" data-off="9000"></i><i data-fill="1" data-on="2390" data-off="9000"></i><i data-fill="1" data-on="2600" data-off="9000"></i><i data-fill="1" data-on="2810" data-off="9000"></i><i className="rep" data-fill="1" data-on="3020" data-off="9000"></i><i data-fill="1" data-on="3230" data-off="9000"></i><i data-fill="1" data-on="3440" data-off="9000"></i><i data-fill="1" data-on="3650" data-off="9000"></i><i className="rep" data-fill="1" data-on="3860" data-off="9000"></i><i data-fill="1" data-on="4070" data-off="9000"></i></div>
+          <div className="mk-progress"><i data-fill="1" data-on="500" data-off="9000"></i></div>
+          <div className="mk-alert" data-on="5800" data-off="9000"><svg viewBox="0 0 16 16" fill="none" width="12" height="12"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>Replies coming in</div>
         </div>
         <div className="solution-foot">
           <p><b>Reactivation brings past customers back.</b> Relevant follow-up to old opportunities and customers already in your database.</p>

@@ -81,8 +81,13 @@ export default function HomeInteractions() {
         const obs = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
             if (entry.isIntersecting){
-              setTimeout(() => entry.target.classList.add('loaded'), 1300);
-              obs.unobserve(entry.target);
+              const el = entry.target;
+              setTimeout(() => el.classList.add('loaded'), 1300);
+              setInterval(() => {
+                el.classList.remove('loaded');
+                setTimeout(() => el.classList.add('loaded'), 1300);
+              }, 8000);
+              obs.unobserve(el);
             }
           });
         }, { threshold: 0.35 });
@@ -100,7 +105,7 @@ export default function HomeInteractions() {
         const events = [
           { title: 'New quote request', sub: 'Straight into your CRM', tag: 'Lead' },
           { title: 'Callback requested', sub: 'Submitted from the website form', tag: 'Lead' },
-          { title: 'Invoice paid', sub: 'Auto-synced to your billing tool', tag: 'Paid' }
+          { title: 'Estimate booked', sub: 'Added straight to your calendar', tag: 'Booked' }
         ];
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         let i = 0;
@@ -361,10 +366,10 @@ export default function HomeInteractions() {
         const el = document.getElementById('typedQuery');
         if (!el) return;
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-          el.textContent = 'support ticket status';
+          el.textContent = 'roofing contractor near me';
           return;
         }
-        const queries = ['support ticket status', 'refund policy', 'deploy failure logs'];
+        const queries = ['roofing contractor near me', 'emergency plumber near me', 'hvac repair near me'];
         let qi = 0, ci = 0, deleting = false;
 
         function tick(){
@@ -468,6 +473,39 @@ export default function HomeInteractions() {
           setInterval(addLine, 2600);
           setInterval(tickMetrics, 2000);
         }
+      })();
+
+
+      // ---------- Solution cards: scripted multi-step loops (data-on / data-off in ms) ----------
+      (function(){
+        const stories = [...document.querySelectorAll('.story')];
+        if (!stories.length) return;
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+          stories.forEach(st => st.querySelectorAll('[data-on]').forEach(el => el.classList.add('on')));
+          return;
+        }
+        const timers = new Set();
+        let stopped = false;
+        cleanupFns.push(() => { stopped = true; timers.forEach(clearTimeout); timers.clear(); });
+        function later(fn, ms){
+          if (stopped) return;
+          const id = setTimeout(() => { timers.delete(id); fn(); }, ms);
+          timers.add(id);
+        }
+        stories.forEach((story, idx) => {
+          const total = parseInt(story.dataset.loop, 10) || 8000;
+          const els = [...story.querySelectorAll('[data-on]')];
+          function run(){
+            if (stopped) return;
+            els.forEach(el => el.classList.remove('on'));
+            els.forEach(el => {
+              later(() => el.classList.add('on'), parseInt(el.dataset.on, 10));
+              if (el.dataset.off) later(() => el.classList.remove('on'), parseInt(el.dataset.off, 10));
+            });
+            later(run, total);
+          }
+          later(run, 250 + idx * 350);
+        });
       })();
 
     return () => {
