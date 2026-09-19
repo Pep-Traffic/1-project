@@ -11,8 +11,7 @@ export default function Footer() {
               <Image src="/brand/icon.png" alt="" className="logo-mark" width={32} height={32} />
               <span>Empro Labs</span>
             </Link>
-            <p>The web makers behind small business websites, SEO, and ads — a Shopify agency, custom website developer, and custom software development company under one roof.</p>
-            <p>Also known as EmPro.</p>
+            <p>Websites, funnels, and online stores built to help small businesses get more customers.</p>
           </div>
           <div>
             <h5>Company</h5>
@@ -44,8 +43,6 @@ export default function Footer() {
             <h5>Contact</h5>
             <ul>
               <li><a href="mailto:hello@emprolabs.dev">hello@emprolabs.dev</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">X / Twitter</a></li>
             </ul>
           </div>
         </div>

@@ -49,7 +49,7 @@ export default function Header() {
               strokeLinejoin="round"
             />
           </svg>
-          Book a call
+          Get a free audit
         </Link>
         <button
           className="menu-btn"
@@ -82,7 +82,7 @@ export default function Header() {
               strokeLinejoin="round"
             />
           </svg>
-          Book a call
+          Get a free audit
         </Link>
       </div>
     </>

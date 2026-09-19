@@ -20,9 +20,9 @@ export default function HomeContent() {
 
   <div className="hero-inner">
     <h1>The web design agency that turns <span className="accent">visitors into paying customers.</span></h1>
-    <p className="lede">Empro Labs designs and builds GoHighLevel funnels, WordPress sites, and Shopify stores that load fast and convert — plus the SEO and ads to bring customers to them. Every build runs on the Empro Labs System, our advanced website development process refined across dozens of launches.</p>
+    <p className="lede">Empro Labs designs and builds GoHighLevel funnels, WordPress sites, and Shopify stores that load fast and convert — plus the SEO and ads to bring customers to them.</p>
     <div className="cta-row">
-      <a href="#contact" className="btn btn-primary">Book a call</a>
+      <a href="#contact" className="btn btn-primary">Get a free audit</a>
       <a href="#work" className="btn btn-ghost">See our work</a>
     </div>
   </div>
@@ -113,71 +113,6 @@ export default function HomeContent() {
       </div>
 
       <div className="solution-card">
-        <div className="mockup">
-          <div className="search-row">🔍 <span className="typed-query" id="typedQuery"></span><span className="caret"></span></div>
-          <div className="list-area">
-            <div className="scan-line"></div>
-            <a className="list-row" href="https://n8n.io" target="_blank" rel="noopener">
-              <span className="swatch swatch-n8n"><svg viewBox="0 0 20 20" fill="none"><circle cx="4" cy="10" r="2.4" fill="currentColor"/><circle cx="16" cy="4.5" r="2.4" fill="currentColor"/><circle cx="16" cy="15.5" r="2.4" fill="currentColor"/><path d="M6.2 9.2L13.8 5.3M6.2 10.8L13.8 14.7" stroke="currentColor" strokeWidth="1.4"/></svg></span>
-              n8n workflows
-            </a>
-            <a className="list-row" href="https://clickup.com" target="_blank" rel="noopener">
-              <span className="swatch swatch-clickup"><svg viewBox="0 0 20 20" fill="none"><path d="M10 3L15 9L10 6L5 9L10 3Z" fill="currentColor"/><path d="M10 17L5 11L10 14L15 11L10 17Z" fill="currentColor" opacity="0.55"/></svg></span>
-              ClickUp tasks
-            </a>
-            <a className="list-row" href="https://claude.ai" target="_blank" rel="noopener">
-              <span className="swatch swatch-claude"><svg viewBox="0 0 20 20" fill="none"><path d="M10 2L11.6 8.4L18 10L11.6 11.6L10 18L8.4 11.6L2 10L8.4 8.4L10 2Z" fill="currentColor"/></svg></span>
-              Claude conversations
-            </a>
-            <div className="list-row hl"><div className="swatch"></div> Your knowledge base</div>
-          </div>
-        </div>
-        <div className="solution-foot">
-          <p><b>Every campaign and page you're running,</b> tracked in one place</p>
-          <a href="#contact" className="arrow">↗</a>
-        </div>
-      </div>
-
-      <div className="solution-card">
-        <div className="mockup" style={{position: 'relative'}}>
-          <div className="badges">
-            <span className="badge-pill">AWS</span>
-            <span className="badge-pill">Vercel</span>
-            <span className="live"><i></i>Live</span>
-          </div>
-          <div className="bars" id="deployBars">
-            <i style={{height: '28%'}} data-value="12"></i><i style={{height: '42%'}} data-value="17"></i><i style={{height: '34%'}} data-value="15"></i>
-            <i style={{height: '58%'}} data-value="22"></i><i style={{height: '48%'}} data-value="19"></i><i style={{height: '70%'}} data-value="27"></i>
-            <i className="hl" style={{height: '88%'}} data-value="34"></i>
-          </div>
-          <div className="cost-row"><div><span>Cost per deploy</span><b id="costNumber">$0.42</b></div><span>and falling</span></div>
-          <div className="chat-chip" id="chatChip">
-            <button className="chat-close" id="chatClose1" aria-label="Dismiss">✕</button>
-            <div className="av">
-              <svg viewBox="0 0 24 24" fill="none" width="15" height="15">
-                <rect x="5" y="8" width="14" height="11" rx="4" fill="#FFFFFF" />
-                <rect x="9" y="3" width="2" height="4" rx="1" fill="#FFFFFF" />
-                <circle cx="10" cy="4.5" r="1.4" fill="#FFFFFF" />
-                <circle cx="9.3" cy="13.2" r="1.6" fill="#1A1006" />
-                <circle cx="14.7" cy="13.2" r="1.6" fill="#1A1006" />
-                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#1A1006" />
-                <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
-                <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
-              </svg>
-            </div>
-            <div>
-              <div className="dots"><i></i><i></i><i></i></div>
-              <p className="msg">Hi there! Any questions? Chat with us.</p>
-            </div>
-          </div>
-        </div>
-        <div className="solution-foot">
-          <p><b>Hosting and ad spend, tracked</b> and trending down</p>
-          <a href="#contact" className="arrow">↗</a>
-        </div>
-      </div>
-
-      <div className="solution-card">
         <div className="mockup stack-mockup">
           <div className="stack-card s3"></div>
           <div className="stack-card s2"></div>
@@ -189,108 +124,6 @@ export default function HomeContent() {
         </div>
         <div className="solution-foot">
           <p><b>Every page gets tested before it goes live,</b> not guesswork</p>
-          <a href="#contact" className="arrow">↗</a>
-        </div>
-      </div>
-
-      <div className="solution-card">
-        <div className="mockup">
-          <div className="thread-msg">
-            <span className="thread-meta">User report, 11:48pm</span>
-            <b>Checkout button broken</b>
-          </div>
-          <div className="typing-pill"><i></i><i></i><i></i></div>
-          <div className="patch-note">
-            <div className="patch-top">
-              <span className="patch-icon">⌥</span>
-              <div className="patch-bars" id="patchBars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              <span className="patch-time">0:12</span>
-            </div>
-            <span className="patch-label">Fix and deploy note sent</span>
-          </div>
-          <div className="reply-pill"><b id="replyCount">28</b> minutes to first response</div>
-        </div>
-        <div className="solution-foot">
-          <p><b>Sub-hour fixes,</b> day, night, and weekends</p>
-          <a href="#contact" className="arrow">↗</a>
-        </div>
-      </div>
-
-      <div className="solution-card">
-        <div className="mockup" style={{position: 'relative'}}>
-          <div className="incident-row">
-            <span className="incident-icon">☎</span>
-            <div><b>Incoming incident</b><span>Acknowledged in two minutes</span></div>
-            <span className="live-tag"><i></i>Live</span>
-          </div>
-          <div className="incident-wave" id="incidentWave">
-            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-          </div>
-          <p className="incident-status">Diagnosing the issue</p>
-          <div className="incident-row resolved">
-            <span className="incident-icon">↗</span>
-            <div><b>Root cause found</b><span>Fix deployed to production</span></div>
-            <span className="live-tag done">Resolved</span>
-          </div>
-          <div className="chat-chip" id="chatChip2">
-            <button className="chat-close" id="chatClose" aria-label="Dismiss">✕</button>
-            <div className="av">
-              <svg viewBox="0 0 24 24" fill="none" width="15" height="15">
-                <rect x="5" y="8" width="14" height="11" rx="4" fill="#FFFFFF" />
-                <rect x="9" y="3" width="2" height="4" rx="1" fill="#FFFFFF" />
-                <circle cx="10" cy="4.5" r="1.4" fill="#FFFFFF" />
-                <circle cx="9.3" cy="13.2" r="1.6" fill="#1A1006" />
-                <circle cx="14.7" cy="13.2" r="1.6" fill="#1A1006" />
-                <rect x="9" y="16.4" width="6" height="1.4" rx="0.7" fill="#1A1006" />
-                <rect x="1.5" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
-                <rect x="20.3" y="11" width="2.2" height="4" rx="1.1" fill="#FFFFFF" />
-              </svg>
-            </div>
-            <div>
-              <div className="dots"><i></i><i></i><i></i></div>
-              <p className="msg">Hi there! Need a hand? Chat with us.</p>
-            </div>
-          </div>
-        </div>
-        <div className="solution-foot">
-          <p><b>A real specialist on call,</b> not a support bot</p>
-          <a href="#contact" className="arrow">↗</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div className="solution-grid solution-grid-centered">
-      <div className="solution-card">
-        <div className="mockup escalation-mockup">
-          <div className="esc-track" id="escTrack">
-            <div className="esc-line"></div>
-            <div className="esc-dot"></div>
-            <a href="#contact" className="esc-step" data-step="0">
-              <div className="esc-icon esc-slack"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="2" width="6" height="9" rx="3" fill="currentColor"/><rect x="9" y="13" width="6" height="9" rx="3" fill="currentColor" opacity="0.5"/></svg></div>
-              <b>Slack alert</b><span>Immediate</span>
-            </a>
-            <a href="#contact" className="esc-step" data-step="1">
-              <div className="esc-icon esc-mail"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.6"/><path d="M4 6.5L12 13L20 6.5" stroke="currentColor" strokeWidth="1.6"/></svg></div>
-              <b>Email</b><span>15 min</span>
-            </a>
-            <a href="#contact" className="esc-step" data-step="2">
-              <div className="esc-icon esc-phone"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round"/></svg></div>
-              <b>Phone call</b><span>30 min</span>
-            </a>
-            <a href="#contact" className="esc-step" data-step="3">
-              <div className="esc-icon esc-done"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 6.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
-              <b>Resolved</b><span>It stops</span>
-            </a>
-          </div>
-        </div>
-        <div className="float-chip esc-chip" id="escChip">
-          <div className="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
-          <div className="chip-text"><b id="escTitle">They fix it, the alert stops</b><span id="escSub">No incident goes unanswered on any channel</span></div>
-          <span className="tag" id="escTag">Resolved</span>
-        </div>
-        <div className="solution-foot">
-          <p><b>Escalation that chases</b> until it's fixed</p>
           <a href="#contact" className="arrow">↗</a>
         </div>
       </div>
@@ -499,7 +332,7 @@ export default function HomeContent() {
 <section className="process" id="process">
   <div className="wrap">
     <h2>Five steps, no surprises</h2>
-    <p className="section-lede">Every engagement follows the Empro Lab System — an advanced website development process built to keep speed, SEO, and conversion baked in from day one, so you always know what's shipping and when.</p>
+    <p className="section-lede">Every project follows the same clear process, with speed, SEO, and conversion built in from day one, so you always know what is shipping and when.</p>
 
     <div className="steps">
       <div className="step-dot"></div>
@@ -512,43 +345,6 @@ export default function HomeContent() {
   </div>
 </section>
 
-
-<section className="phases">
-  <div className="wrap">
-    <div className="phases-grid">
-      <div className="phases-list">
-        <div className="phase">
-          <span className="phase-head"><span className="phase-num">01</span><span className="phase-title">The audit</span></span>
-          <p>We map where your website, SEO, and ad spend are actually leaking customers. You get the plan either way, and it's free.</p>
-        </div>
-        <div className="phase">
-          <span className="phase-head"><span className="phase-num">02</span><span className="phase-title">The build</span></span>
-          <p>We rebuild the site, funnel, or campaign in weeks, before it ever goes live to real customers.</p>
-        </div>
-        <div className="phase">
-          <span className="phase-head"><span className="phase-num">03</span><span className="phase-title">The handoff</span></span>
-          <p>You get reporting, documentation, and a team on call — not just a live site and a goodbye.</p>
-        </div>
-      </div>
-
-      <div className="kanban" aria-hidden="true">
-        <div className="kanban-fade kanban-fade-top"></div>
-        <div className="kanban-fade kanban-fade-bottom"></div>
-        <div className="kanban-track">
-          <div className="kanban-card"><span className="kb-dot"></span><span>Audit complete</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card"><span className="kb-dot"></span><span>Site rebuilt</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card"><span className="kb-dot"></span><span>Live and tracking</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card"><span className="kb-dot"></span><span>Campaigns launched</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-
-          <div className="kanban-card" aria-hidden="true"><span className="kb-dot"></span><span>Audit complete</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card" aria-hidden="true"><span className="kb-dot"></span><span>Site rebuilt</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card" aria-hidden="true"><span className="kb-dot"></span><span>Live and tracking</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <div className="kanban-card" aria-hidden="true"><span className="kb-dot"></span><span>Campaigns launched</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <section className="stats-band">
@@ -757,7 +553,7 @@ export default function HomeContent() {
     <div className="cta-panel">
       <h2>Ready to stop losing customers to a broken funnel?</h2>
       <p>Tell us what's not working — your site, your rankings, or your ads. We'll reply with a scoped plan, not a sales deck.</p>
-      <a href="#contact" className="btn btn-primary">Book a call</a>
+      <a href="#contact" className="btn btn-primary">Get a free audit</a>
     </div>
   </div>
 </section>
@@ -771,7 +567,7 @@ export default function HomeContent() {
         <p className="section-lede">Fill this in and we'll reply within one business day with next steps — no sales call required first.</p>
         <ul className="contact-info">
           <li><span>Email</span><a href="mailto:hello@emprolabs.dev">hello@emprolabs.dev</a></li>
-          <li><span>Response time</span><a href="#">Within 1 business day</a></li>
+          <li><span>Response time</span><span>Within 1 business day</span></li>
         </ul>
       </div>
 

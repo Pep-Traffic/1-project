@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 const projects = [
+  { name: "Jeff Flowers Insurance", categories: ["Web Development", "GHL"], tag: "GoHighLevel website", result: "Live site", url: "https://jflowersinsurance.com" },
   { name: "Bayview Heating", categories: ["GHL"], tag: "GoHighLevel funnel", result: "3x lead response speed" },
   { name: "Rapid Comfort Co", categories: ["GHL"], tag: "GHL automation", result: "28 sec avg. first reply" },
   { name: "Northline Roofing", categories: ["WordPress"], tag: "WordPress rebuild", result: "1.8s load time" },

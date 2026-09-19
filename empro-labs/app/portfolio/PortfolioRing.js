@@ -6,6 +6,7 @@ const RING_PROJECTS = [
   { name: "CorePower Peptide", tag: "Custom build", url: "https://corepowerpeptide.com" },
   { name: "AIMTN", tag: "Custom build", url: "https://aimtn.org" },
   { name: "What Are Peptides", tag: "Custom build", url: "https://whatarepeptides.us" },
+  { name: "Jeff Flowers Insurance", tag: "GoHighLevel website", url: "https://jflowersinsurance.com" },
   { name: "PracForge", tag: "WordPress build", url: "https://pracforge.com" },
   { name: "Mangoholic", tag: "WooCommerce build", url: "https://mangoholicae.com" },
   { name: "Bayview Heating", tag: "GoHighLevel funnel" },

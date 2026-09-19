@@ -2,7 +2,6 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PageHero from "../../components/PageHero";
 import CtaBanner from "../../components/CtaBanner";
-import AdsDashboard from "./AdsDashboard";
 
 export const metadata = {
   title: "Ads Management Agency for Small Businesses — Empro Labs",
@@ -104,16 +103,6 @@ export default function AdsManagementPage() {
             over the account, connect it to whatever your site runs on — GHL, WordPress, or Shopify — and report
             cost per lead and cost per booked job every month, not just impressions and clicks.
           </p>
-        </div>
-      </section>
-
-      <section className="services">
-        <div className="wrap">
-          <h2>What a managed campaign looks like</h2>
-          <p className="section-lede">
-            A simulation of the kind of live campaign dashboard you'd get access to as a client.
-          </p>
-          <AdsDashboard />
         </div>
       </section>
 

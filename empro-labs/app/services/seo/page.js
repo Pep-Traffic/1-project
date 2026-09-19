@@ -2,7 +2,6 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import PageHero from "../../components/PageHero";
 import CtaBanner from "../../components/CtaBanner";
-import TrafficChart from "./TrafficChart";
 
 export const metadata = {
   title: "SEO Agency for Small Businesses — Empro Labs",
@@ -65,16 +64,6 @@ export default function SeoPage() {
             Shopify, we know how to structure collections and product pages so they don't cannibalize each other in
             search. Whatever platform you're on, the audit and the fix are built around it, not around a template.
           </p>
-        </div>
-      </section>
-
-      <section className="services">
-        <div className="wrap">
-          <h2>Organic traffic, month over month</h2>
-          <p className="section-lede">
-            A simulation of the kind of growth curve a well-run SEO engagement produces over its first two quarters.
-          </p>
-          <TrafficChart />
         </div>
       </section>
 
