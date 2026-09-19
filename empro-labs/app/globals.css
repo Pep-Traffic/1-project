@@ -746,49 +746,49 @@
 
   /* ================= SERVICES ================= */
   .services{ padding: 88px 0; }
-  .service-list{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 1px solid var(--line); }
-  .service{ border-bottom: 1px solid var(--line); }
-  a.service{
-    display: flex; gap: 20px; align-items: flex-start; padding: 34px 0; text-decoration: none; color: inherit;
+  .service-list{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
+  .service{
+    position: relative; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: var(--panel);
+    transition: border-color 0.25s ease, background 0.25s ease, box-shadow 0.3s ease, transform 0.25s cubic-bezier(.16,1,.3,1);
   }
-  a.service:nth-child(odd){ padding-right: 40px; }
-  a.service:nth-child(even){ padding-left: 40px; }
-  a.service .icon{ transition: transform 0.2s ease, border-color 0.2s ease; }
-  a.service:hover .icon{ transform: translateY(-2px); border-color: rgba(240,160,89,0.5); }
-  @media (max-width: 800px){
-    a.service:nth-child(odd), a.service:nth-child(even){ padding-left: 0; padding-right: 0; }
-  }
-  .service:nth-child(odd){ border-right: 1px solid var(--line); }
+  .service:hover{ border-color: rgba(240,160,89,0.4); transform: translateY(-2px); box-shadow: 0 22px 44px -30px rgba(217,102,43,0.45); }
+  .service[open]{ border-color: rgba(240,160,89,0.45); background: linear-gradient(180deg, var(--panel-2), var(--panel)); }
+  a.service, div.service{ display: flex; gap: 18px; align-items: flex-start; padding: 26px; text-decoration: none; color: inherit; }
   .service summary{
-    padding: 34px 0; display: flex; gap: 20px; align-items: flex-start;
-    cursor: pointer; list-style: none; -webkit-tap-highlight-color: transparent;
+    display: flex; gap: 18px; align-items: flex-start; padding: 26px; cursor: pointer; list-style: none;
+    -webkit-tap-highlight-color: transparent; border-radius: 18px;
   }
-  .service:nth-child(odd) summary{ padding-right: 40px; }
-  .service:nth-child(even) summary{ padding-left: 40px; }
   .service summary::-webkit-details-marker{ display: none; }
+  .service summary:focus-visible{ outline: 2px solid var(--amber); outline-offset: -2px; }
   .service .icon{
-    width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0; box-sizing: border-box;
-    background: linear-gradient(140deg, rgba(240,160,89,0.16), rgba(217,102,43,0.08));
-    border: 1px solid var(--line); display: flex; align-items: center; justify-content: center;
-    padding: 9px; color: var(--amber-soft); transition: transform 0.2s ease, border-color 0.2s ease;
+    width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; box-sizing: border-box;
+    background: linear-gradient(140deg, rgba(240,160,89,0.18), rgba(217,102,43,0.08));
+    border: 1px solid rgba(240,160,89,0.22); display: flex; align-items: center; justify-content: center;
+    padding: 10px; color: var(--amber-soft); transition: transform 0.25s cubic-bezier(.16,1,.3,1), border-color 0.2s ease, background 0.25s ease;
   }
   .service .icon svg{ width: 100%; height: 100%; }
-  .service summary:hover .icon{ transform: translateY(-2px); border-color: rgba(240,160,89,0.5); }
-  .service h3{ font-family: var(--font-sora), sans-serif; font-size: 1.15rem; font-weight: 600; margin: 0 0 8px; }
-  .service p{ font-size: 14.5px; line-height: 1.6; color: var(--ink-dim); margin: 0; max-width: 40ch; }
-  .service .chev{ margin-left: auto; color: var(--ink-faint); font-size: 18px; transition: transform 0.25s ease; flex-shrink: 0; }
-  .service[open] .chev{ transform: rotate(45deg); color: var(--amber-soft); }
-  .service-more{ padding: 0 0 30px 60px; margin-top: -10px; overflow: hidden; height: 0; opacity: 0; transition: height 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.25s ease; display: block !important; }
-  .service:nth-child(even) .service-more{ padding-left: 40px; }
+  .service:hover .icon{ transform: scale(1.06); border-color: rgba(240,160,89,0.55); }
+  .service h3{ font-family: var(--font-sora), sans-serif; font-size: 1.1rem; font-weight: 600; margin: 2px 0 8px; color: var(--ink); letter-spacing: -0.01em; }
+  .service p{ font-size: 14.5px; line-height: 1.6; color: var(--ink-dim); margin: 0; max-width: 44ch; }
+  .service .chev{
+    margin-left: auto; flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line); background: var(--bg);
+    display: flex; align-items: center; justify-content: center; font-size: 15px; line-height: 1; color: var(--ink-dim);
+    transition: transform 0.35s cubic-bezier(.16,1,.3,1), background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  }
+  .service summary:hover .chev{ border-color: rgba(240,160,89,0.5); color: var(--amber-soft); }
+  .service[open] .chev{ transform: rotate(45deg); background: linear-gradient(140deg, var(--amber), var(--amber-deep)); border-color: transparent; color: var(--on-accent); }
+  .service-more{ padding: 0 26px 24px 88px; margin-top: -8px; overflow: hidden; height: 0; opacity: 0; transition: height 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.25s ease; display: block !important; }
   .service-more ul{ margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
-  .service-more li{ font-size: 14px; color: var(--ink-dim); padding-left: 18px; position: relative; }
-  .service-more li::before{ content: "—"; position: absolute; left: 0; color: var(--amber-soft); }
+  .service-more li{ font-size: 14px; line-height: 1.5; color: var(--ink-dim); padding-left: 20px; position: relative; }
+  .service-more li::before{
+    content: ""; position: absolute; left: 0; top: 0.55em; width: 10px; height: 2px; border-radius: 2px;
+    background: linear-gradient(90deg, var(--amber), var(--amber-deep));
+  }
   .service .icon.active{ border-color: rgba(240,160,89,0.55); box-shadow: 0 0 0 4px rgba(240,160,89,0.15); }
   @media (max-width: 800px){
     .service-list{ grid-template-columns: 1fr; }
-    .service:nth-child(odd){ border-right: none; }
-    .service:nth-child(odd) summary, .service:nth-child(even) summary{ padding-left: 0; padding-right: 0; }
-    .service-more, .service:nth-child(even) .service-more{ padding-left: 0; }
+    a.service, div.service, .service summary{ padding: 20px; gap: 14px; }
+    .service-more{ padding: 0 20px 20px 20px; margin-top: -4px; }
   }
 
   /* ================= LIVE PIPELINE ================= */

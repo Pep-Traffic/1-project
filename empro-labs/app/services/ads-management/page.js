@@ -112,7 +112,7 @@ export default function AdsManagementPage() {
           <h2>Everything from setup to reporting</h2>
           <div className="service-list">
             {services.map((s) => (
-              <div className="service" key={s.title} style={{ display: "flex", gap: "20px", padding: "34px 0" }}>
+              <div className="service" key={s.title} style={{ display: "flex", gap: "20px" }}>
                 <div className="icon">{s.icon}</div>
                 <div>
                   <h3>{s.title}</h3>
