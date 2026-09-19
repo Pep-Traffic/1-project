@@ -273,96 +273,121 @@ export default function HomeContent() {
 <section className="hub-section">
   <div className="wrap">
     <div className="hub-layout">
-    <div className="hub-text">
-    <h2>One team, plugged into every tool you already run</h2>
-    <p className="section-lede">We don't rip out your stack and start over. Empro Labs plugs straight into your website, your CRM, and your ad accounts, and keeps every tool your team already uses talking to each other.</p>
+      <div className="hub-text">
+        <h2>One team, plugged into every tool you already run</h2>
+        <p className="section-lede">We don't rip out your stack and start over. Empro Labs plugs into your website, your CRM, and your ad accounts, and keeps them working together.</p>
+        <ul className="hub-points">
+          <li>Works with GoHighLevel, WordPress, and Shopify</li>
+          <li>No rip-and-replace, we build on what you have</li>
+          <li>One accountable team instead of three vendors</li>
+        </ul>
+      </div>
+      <div className="hub-visual">
+    <svg className="hub-diagram" viewBox="0 0 640 400" role="img" aria-label="Empro Labs connects your website, CRM, and ad accounts and turns them into leads, booked jobs, reviews, and reporting">
+      <defs>
+        <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stopColor="#F0A059" stopOpacity="0.35" />
+          <stop offset="100%" stopColor="#F0A059" stopOpacity="0" />
+        </radialGradient>
+      </defs>
+      <text x="8" y="38" className="hub-col-title">Your tools</text>
+      <text x="632" y="38" textAnchor="end" className="hub-col-title">What you get</text>
+      <g className="hub-lines">
+        <path className="hub-line" d="M184 92 C 230 92, 222 200, 268 200" />
+        <path className="hub-line" d="M184 166 C 230 166, 222 200, 268 200" />
+        <path className="hub-line" d="M184 240 C 230 240, 222 200, 268 200" />
+        <path className="hub-line" d="M184 314 C 230 314, 222 200, 268 200" />
+        <path className="hub-line" d="M372 200 C 418 200, 410 92, 456 92" />
+        <path className="hub-line" d="M372 200 C 418 200, 410 166, 456 166" />
+        <path className="hub-line" d="M372 200 C 418 200, 410 240, 456 240" />
+        <path className="hub-line" d="M372 200 C 418 200, 410 314, 456 314" />
+      </g>
+      <circle cx="320" cy="200" r="84" fill="url(#hubGlow)" />
+      <circle cx="320" cy="200" r="66" className="hub-ring hub-ring-a" />
+      <circle cx="320" cy="200" r="66" className="hub-ring hub-ring-b" />
+      <g>
+        <g transform="translate(8 64)" className="hub-tile">
+          <rect width="176" height="56" rx="14" />
+          <circle cx="30" cy="28" r="17" className="hub-glyph-bg" />
+          <g transform="translate(30 28)"><text x="0" y="4" textAnchor="middle" fontSize="9.5" fontWeight="800" fill="#4C8DFF" fontFamily="inherit">GHL</text></g>
+          <text x="58" y="25" className="hub-label">GoHighLevel</text>
+          <text x="58" y="42" className="hub-sub">CRM and funnels</text>
+        </g>
+        <g transform="translate(8 138)" className="hub-tile">
+          <rect width="176" height="56" rx="14" />
+          <circle cx="30" cy="28" r="17" className="hub-glyph-bg" />
+          <g transform="translate(30 28)"><g transform="translate(-9 -9) scale(0.75)"><path fill="#6BA6D6" d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></g></g>
+          <text x="58" y="25" className="hub-label">WordPress</text>
+          <text x="58" y="42" className="hub-sub">Custom websites</text>
+        </g>
+        <g transform="translate(8 212)" className="hub-tile">
+          <rect width="176" height="56" rx="14" />
+          <circle cx="30" cy="28" r="17" className="hub-glyph-bg" />
+          <g transform="translate(30 28)"><g transform="translate(-9 -9) scale(0.75)"><path fill="#95BF47" d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z"/></g></g>
+          <text x="58" y="25" className="hub-label">Shopify</text>
+          <text x="58" y="42" className="hub-sub">Online store</text>
+        </g>
+        <g transform="translate(8 286)" className="hub-tile">
+          <rect width="176" height="56" rx="14" />
+          <circle cx="30" cy="28" r="17" className="hub-glyph-bg" />
+          <g transform="translate(30 28)"><g fill="none" stroke="#F0A059" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M-7 -2v4a1 1 0 0 0 1 1h1.5l5 3.5v-13l-5 3.5H-6a1 1 0 0 0-1 1Z"/><path d="M7 -3a4 4 0 0 1 0 6"/></g></g>
+          <text x="58" y="25" className="hub-label">Google Ads</text>
+          <text x="58" y="42" className="hub-sub">Search campaigns</text>
+        </g>
+        <g transform="translate(456 64)" className="hub-tile">
+          <rect width="176" height="56" rx="14" />
+          <circle cx="30" cy="28" r="17" className="hub-glyph-bg" />
+          <g transform="translate(30 28)"><g fill="none" stroke="#F0A059" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><circle cx="0" cy="-3" r="3.2"/><path d="M-7 8c0-3.2 3-5 7-5s7 1.8 7 5"/></g></g>
+          <text x="58" y="25" className="hub-label">New leads</text>
+          <text x="58" y="42" className="hub-sub">Captured and routed</text>
+        </g>
+        <g transform="translate(456 138)" className="hub-tile">
+          <rect width="176" height="56" rx="14" />
+          <circle cx="30" cy="28" r="17" className="hub-glyph-bg" />
+          <g transform="translate(30 28)"><g fill="none" stroke="#F0A059" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><rect x="-7.5" y="-6.5" width="15" height="14" rx="2"/><path d="M-7.5 -1.5h15M-3 -9v4M3 -9v4"/></g></g>
+          <text x="58" y="25" className="hub-label">Booked jobs</text>
+          <text x="58" y="42" className="hub-sub">On your calendar</text>
+        </g>
+        <g transform="translate(456 212)" className="hub-tile">
+          <rect width="176" height="56" rx="14" />
+          <circle cx="30" cy="28" r="17" className="hub-glyph-bg" />
+          <g transform="translate(30 28)"><g fill="none" stroke="#F0A059" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M0 -8l2.4 5 5.4.8-3.9 3.8.9 5.4L0 4.4l-4.8 2.6.9-5.4L-7.8 -2.2l5.4-.8L0 -8Z"/></g></g>
+          <text x="58" y="25" className="hub-label">Reviews</text>
+          <text x="58" y="42" className="hub-sub">After every job</text>
+        </g>
+        <g transform="translate(456 286)" className="hub-tile">
+          <rect width="176" height="56" rx="14" />
+          <circle cx="30" cy="28" r="17" className="hub-glyph-bg" />
+          <g transform="translate(30 28)"><g fill="none" stroke="#F0A059" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M-7 7V-1M0 7V-7M7 7V2"/></g></g>
+          <text x="58" y="25" className="hub-label">Clear reporting</text>
+          <text x="58" y="42" className="hub-sub">Cost per lead, tracked</text>
+        </g>
+      </g>
+      <circle cx="320" cy="200" r="46" className="hub-core-disc" />
+      <image href="/brand/icon.png" x="296" y="176" width="48" height="48" />
+      <g className="hub-pulses">
+        <circle r="2.6" className="hub-pulse"><animateMotion dur="3.2s" begin="0.00s" repeatCount="indefinite" path="M184 92 C 230 92, 222 200, 268 200" /></circle>
+        <circle r="2.6" className="hub-pulse"><animateMotion dur="3.2s" begin="0.55s" repeatCount="indefinite" path="M184 166 C 230 166, 222 200, 268 200" /></circle>
+        <circle r="2.6" className="hub-pulse"><animateMotion dur="3.2s" begin="1.10s" repeatCount="indefinite" path="M184 240 C 230 240, 222 200, 268 200" /></circle>
+        <circle r="2.6" className="hub-pulse"><animateMotion dur="3.2s" begin="1.65s" repeatCount="indefinite" path="M184 314 C 230 314, 222 200, 268 200" /></circle>
+        <circle r="2.6" className="hub-pulse"><animateMotion dur="3.2s" begin="1.30s" repeatCount="indefinite" path="M372 200 C 418 200, 410 92, 456 92" /></circle>
+        <circle r="2.6" className="hub-pulse"><animateMotion dur="3.2s" begin="1.85s" repeatCount="indefinite" path="M372 200 C 418 200, 410 166, 456 166" /></circle>
+        <circle r="2.6" className="hub-pulse"><animateMotion dur="3.2s" begin="2.40s" repeatCount="indefinite" path="M372 200 C 418 200, 410 240, 456 240" /></circle>
+        <circle r="2.6" className="hub-pulse"><animateMotion dur="3.2s" begin="2.95s" repeatCount="indefinite" path="M372 200 C 418 200, 410 314, 456 314" /></circle>
+      </g>
+    </svg>
+    <div className="hub-mobile">
+      <div className="hub-mobile-group">
+        <h4>Your tools</h4>
+        <ul><li>GoHighLevel</li><li>WordPress</li><li>Shopify</li><li>Google Ads</li></ul>
+      </div>
+      <div className="hub-mobile-node"><img src="/brand/icon.png" alt="Empro Labs" width="40" height="40" /></div>
+      <div className="hub-mobile-group">
+        <h4>What you get</h4>
+        <ul><li>New leads</li><li>Booked jobs</li><li>Reviews</li><li>Clear reporting</li></ul>
+      </div>
     </div>
-
-    <div className="hub-visual">
-      <div className="hub-backdrop"></div>
-
-      <div className="hub-tags-top">
-        <span className="hub-tag" style={{ left: "12.9%" }}>Website</span>
-        <span className="hub-tag hub-tag-offset" style={{ left: "38.6%" }}>GHL / CRM</span>
-        <span className="hub-tag hub-tag-offset" style={{ left: "61.4%" }}>Ads</span>
-        <span className="hub-tag" style={{ left: "87.1%" }}>Analytics</span>
       </div>
-
-      <svg className="hub-lines" viewBox="0 0 700 560" preserveAspectRatio="none">
-        {/* tag 1 — Application */}
-        <path className="hub-thread" d="M90 40 C 200 46, 260 170, 350 248" />
-        <path className="hub-thread" d="M90 40 C 150 66, 220 190, 340 246" />
-        <path className="hub-thread" d="M90 40 C 180 26, 280 150, 360 250" />
-        <path className="hub-pulse" d="M90 40 C 200 46, 260 170, 350 248" pathLength="1" style={{ animationDelay: "0s" }} />
-
-        {/* tag 2 — Database */}
-        <path className="hub-thread" d="M270 66 C 300 120, 330 190, 350 248" />
-        <path className="hub-thread" d="M270 66 C 290 130, 320 200, 340 246" />
-        <path className="hub-thread" d="M270 66 C 305 115, 335 185, 360 250" />
-        <path className="hub-pulse" d="M270 66 C 300 120, 330 190, 350 248" pathLength="1" style={{ animationDelay: "0.4s" }} />
-
-        {/* tag 3 — Website */}
-        <path className="hub-thread" d="M430 66 C 400 120, 370 190, 350 248" />
-        <path className="hub-thread" d="M430 66 C 410 130, 380 200, 360 246" />
-        <path className="hub-thread" d="M430 66 C 395 115, 365 185, 340 250" />
-        <path className="hub-pulse" d="M430 66 C 400 120, 370 190, 350 248" pathLength="1" style={{ animationDelay: "0.8s" }} />
-
-        {/* tag 4 — Warehouse */}
-        <path className="hub-thread" d="M610 40 C 500 46, 440 170, 350 248" />
-        <path className="hub-thread" d="M610 40 C 550 66, 480 190, 340 246" />
-        <path className="hub-thread" d="M610 40 C 520 26, 420 150, 360 250" />
-        <path className="hub-pulse" d="M610 40 C 500 46, 440 170, 350 248" pathLength="1" style={{ animationDelay: "1.2s" }} />
-
-        {/* hub down to each app icon */}
-        <path className="hub-thread" d="M350 312 C 250 355, 120 430, 60 507" />
-        <path className="hub-pulse" d="M350 312 C 250 355, 120 430, 60 507" pathLength="1" style={{ animationDelay: "0.15s" }} />
-        <path className="hub-thread" d="M350 312 C 300 355, 200 435, 157 507" />
-        <path className="hub-pulse" d="M350 312 C 300 355, 200 435, 157 507" pathLength="1" style={{ animationDelay: "0.5s" }} />
-        <path className="hub-thread" d="M350 312 C 335 360, 270 440, 253 507" />
-        <path className="hub-pulse" d="M350 312 C 335 360, 270 440, 253 507" pathLength="1" style={{ animationDelay: "0.85s" }} />
-        <path className="hub-thread" d="M350 312 C 350 380, 350 450, 350 507" />
-        <path className="hub-pulse" d="M350 312 C 350 380, 350 450, 350 507" pathLength="1" style={{ animationDelay: "1.2s" }} />
-        <path className="hub-thread" d="M350 312 C 365 360, 430 440, 447 507" />
-        <path className="hub-pulse" d="M350 312 C 365 360, 430 440, 447 507" pathLength="1" style={{ animationDelay: "1.55s" }} />
-        <path className="hub-thread" d="M350 312 C 400 355, 500 435, 543 507" />
-        <path className="hub-pulse" d="M350 312 C 400 355, 500 435, 543 507" pathLength="1" style={{ animationDelay: "1.9s" }} />
-        <path className="hub-thread" d="M350 312 C 450 355, 580 430, 640 507" />
-        <path className="hub-pulse" d="M350 312 C 450 355, 580 430, 640 507" pathLength="1" style={{ animationDelay: "2.25s" }} />
-      </svg>
-
-      <div className="hub-core">
-        <span className="hub-ring hub-ring-1"></span>
-        <span className="hub-ring hub-ring-2"></span>
-        <span className="hub-ring hub-ring-3"></span>
-        <span className="hub-node">
-          <img src="/brand/icon.png" alt="Empro Labs" />
-        </span>
-      </div>
-
-      <div className="hub-icons-bottom">
-        <span className="hub-icon" title="GoHighLevel">
-          <span className="hub-icon-mono" style={{ color: "#0B5CFF" }}>GHL</span>
-        </span>
-        <span className="hub-icon" title="ClickUp">
-          <svg viewBox="0 0 24 24" fill="#7B68EE"><path d="M2 18.439l3.69-2.828c1.961 2.56 4.044 3.739 6.363 3.739 2.307 0 4.33-1.166 6.203-3.704L22 18.405C19.298 22.065 15.941 24 12.053 24 8.178 24 4.788 22.078 2 18.439zM12.04 6.15l-6.568 5.66-3.036-3.52L12.055 0l9.543 8.296-3.05 3.509z" /></svg>
-        </span>
-        <span className="hub-icon" title="Slack">
-          <svg viewBox="0 0 24 24" fill="#4A154B"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z" /></svg>
-        </span>
-        <span className="hub-icon" title="WordPress">
-          <svg viewBox="0 0 24 24" fill="#21759B"><path d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0" /></svg>
-        </span>
-        <span className="hub-icon" title="Shopify">
-          <svg viewBox="0 0 24 24" fill="#95BF47"><path d="M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z" /></svg>
-        </span>
-        <span className="hub-icon" title="Etsy">
-          <svg viewBox="0 0 24 24" fill="#F1641E"><path d="M8.559 2.445c0-.325.033-.52.59-.52h7.465c1.3 0 2.02 1.11 2.54 3.193l.42 1.666h1.27c.23-4.728.43-6.784.43-6.784s-3.196.36-5.09.36H6.635L1.521.196v1.37l1.725.326c1.21.24 1.5.496 1.6 1.606 0 0 .11 3.27.11 8.64 0 5.385-.09 8.61-.09 8.61 0 .973-.39 1.333-1.59 1.573l-1.722.33V24l5.13-.165h8.55c1.935 0 6.39.165 6.39.165.105-1.17.75-6.48.855-7.064h-1.2l-1.284 2.91c-1.005 2.28-2.476 2.445-4.11 2.445h-4.906c-1.63 0-2.415-.64-2.415-2.05V12.8s3.62 0 4.79.096c.912.064 1.463.325 1.76 1.598l.39 1.695h1.41l-.09-4.278.192-4.305h-1.391l-.45 1.89c-.283 1.244-.48 1.47-1.754 1.6-1.666.17-4.815.14-4.815.14V2.45h-.05z" /></svg>
-        </span>
-        <span className="hub-icon" title="Supabase">
-          <svg viewBox="0 0 24 24" fill="#3ECF8E"><path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z" /></svg>
-        </span>
-      </div>
-    </div>
     </div>
   </div>
 </section>
@@ -439,18 +464,37 @@ export default function HomeContent() {
 </section>
 
 
-<section className="process" id="process">
+<section className="process3" id="process">
   <div className="wrap">
-    <h2>Five steps, no surprises</h2>
-    <p className="section-lede">Every project follows the same clear process, with speed, SEO, and conversion built in from day one, so you always know what is shipping and when.</p>
+    <h2>Three steps from a leaky site to booked jobs</h2>
+    <p className="section-lede">One audit, one build, then ongoing tuning. Here is how every project moves through.</p>
 
-    <div className="steps">
-      <div className="step-dot"></div>
-      <div className="step"><div className="num">01</div><h4>Discover</h4><p>We audit your site, rankings, and ad spend before touching anything.</p></div>
-      <div className="step"><div className="num">02</div><h4>Plan</h4><p>A scoped roadmap with milestones you can hold us to.</p></div>
-      <div className="step"><div className="num">03</div><h4>Build</h4><p>Weekly check-ins. You see progress, not status reports.</p></div>
-      <div className="step"><div className="num">04</div><h4>Launch</h4><p>Tested and checked across devices before it reaches real customers.</p></div>
-      <div className="step"><div className="num">05</div><h4>Support</h4><p>We stay on to maintain and extend what we built.</p></div>
+    <div className="p3-board">
+      <div className="p3-cols">
+        <div className="p3-col">
+          <span className="p3-num">1</span>
+          <h3>The audit</h3>
+          <p>We map where your website, SEO, and ad spend are leaking customers. You get the plan either way, and it's free.</p>
+        </div>
+        <div className="p3-col">
+          <span className="p3-num">2</span>
+          <h3>The build</h3>
+          <p>We rebuild the site, funnel, or campaign in weeks and test everything before it reaches real customers.</p>
+        </div>
+        <div className="p3-col">
+          <span className="p3-num">3</span>
+          <h3>The launch</h3>
+          <p>Everything goes live, every lead gets a fast reply, and we keep tuning based on what the numbers show.</p>
+        </div>
+      </div>
+      <div className="p3-sweep" aria-hidden="true"></div>
+      <div className="p3-lanes" aria-hidden="true">
+        <div className="p3-pill"><i></i><span>Audit complete</span><b><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></b></div>
+        <div className="p3-pill"><i></i><span>Site rebuilt</span><b><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></b></div>
+        <div className="p3-pill"><i></i><span>Tracking installed</span><b><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></b></div>
+        <div className="p3-pill"><i></i><span>Campaigns live</span><b><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></b></div>
+        <div className="p3-pill"><i></i><span>Leads answered</span><b><svg viewBox="0 0 16 16" fill="none" width="14" height="14"><path d="M3 8.5L6.2 11.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg></b></div>
+      </div>
     </div>
   </div>
 </section>
