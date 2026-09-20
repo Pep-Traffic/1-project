@@ -1736,3 +1736,44 @@
   @media (prefers-reduced-motion: reduce){
     .fs-s1, .fs-s2, .fs-s3, .fs-s4, .fs-toast-right, .fs-live i{ animation: none; opacity: 1; }
   }
+
+  /* ================= SERVICES INDEX (/services) ================= */
+  .band-alt{ background: var(--bg-alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+  .svc-router .leak-grid{ margin-top: 4px; }
+
+  .svc-band-group + .svc-band-group{ margin-top: 44px; }
+  .svc-band{ font-family: var(--font-sora), sans-serif; font-size: 1.15rem; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .svc-band-lede{ font-size: 14.5px; line-height: 1.6; color: var(--ink-dim); margin: 0 0 20px; max-width: 56ch; }
+
+  .svc-body{ flex: 1; min-width: 0; }
+  .service-facts{ list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 8px; }
+  .service-facts li{ position: relative; padding-left: 18px; font-size: 13.5px; line-height: 1.5; color: var(--ink-dim); }
+  .service-facts li::before{
+    content: ""; position: absolute; left: 0; top: 0.6em; width: 9px; height: 2px; border-radius: 2px;
+    background: linear-gradient(90deg, var(--amber), var(--amber-deep));
+  }
+
+  .service-meta{
+    display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+    margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--line);
+  }
+  .svc-time{ font-size: 12.5px; line-height: 1.4; color: var(--amber-soft); margin-right: auto; }
+  .service-meta .skill-pill{ font-size: 11.5px; padding: 6px 12px; }
+
+  .hub-points-no li::before{
+    background: var(--ink-faint); border-radius: 2px;
+    width: 11px; height: 2px; top: 11px; left: 3px; opacity: 0.75;
+  }
+
+  a.portfolio-card{ display: block; text-decoration: none; color: inherit; }
+
+  .svc-note{ font-size: 14.5px; line-height: 1.6; color: var(--ink-dim); margin: 28px 0 0; }
+  .svc-note a{ color: var(--amber-soft); text-decoration: none; font-weight: 600; }
+  .svc-note a:hover{ color: var(--amber); text-decoration: underline; }
+
+  @media (max-width: 800px){
+    .service-meta{ margin-top: 14px; }
+    .svc-time{ margin-right: 0; width: 100%; }
+    .svc-band-group + .svc-band-group{ margin-top: 34px; }
+  }
