@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "../../../components/Header";
 import Footer from "../../../components/Footer";
 import CtaBanner from "../../../components/CtaBanner";
@@ -5,7 +6,7 @@ import CtaBanner from "../../../components/CtaBanner";
 export const metadata = {
   title: "Adnan Javed — Empro Labs",
   description:
-    "Adnan Javed is Empro Labs' GHL, SEO, WordPress, and Shopify expert, part of the Empro Lab team behind the Empro Labs System.",
+    "Adnan Javed is the founder of Empro Labs and the person who builds every project — GoHighLevel funnels and CRM, WordPress, Shopify, SEO and Google Ads.",
   alternates: { canonical: "/about/team/adnan-javed" },
 };
 
@@ -27,10 +28,9 @@ export default function AdnanJavedProfilePage() {
           <div className="profile-info">
             <h1>Adnan Javed</h1>
             <p className="lede">
-              GHL, SEO, WordPress, and Shopify expert at Empro Labs — building funnels,
-              rebuilding sites, and driving organic growth for clients who need results,
-              not just deliverables. Part of the Empro Lab team running every engagement on
-              the Empro Labs System.
+              GoHighLevel, SEO, WordPress and Shopify. Adnan founded Empro Labs and does the
+              build himself — funnels, site rebuilds, and the organic growth work after
+              launch. When you hire Empro Labs, this is who you are working with.
             </p>
             <div className="skill-row">
               {skills.map((s) => (
@@ -91,6 +91,24 @@ export default function AdnanJavedProfilePage() {
               </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="services">
+        <div className="wrap">
+          <h2>What Adnan does on your project</h2>
+          <p className="section-lede">
+            Not a role description. The actual list of things that land on one desk.
+          </p>
+          <ul className="hub-points">
+            <li>Scopes the work and writes the quote</li>
+            <li>Builds the site, funnel or store</li>
+            <li>Sets up tracking, SEO and Google Ads</li>
+            <li>Answers your support messages after launch</li>
+          </ul>
+          <p className="svc-note">
+            <Link href="/about">&larr; About Empro Labs</Link>
+          </p>
         </div>
       </section>
 

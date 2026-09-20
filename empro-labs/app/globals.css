@@ -1777,3 +1777,68 @@
     .svc-time{ margin-right: 0; width: 100%; }
     .svc-band-group + .svc-band-group{ margin-top: 34px; }
   }
+
+  /* ================= ABOUT PAGE ================= */
+  .about-name{
+    font-family: var(--font-sora), sans-serif; font-weight: 700; font-size: 1.5rem;
+    line-height: 1.2; letter-spacing: -0.015em; color: var(--ink); margin: 24px 0 6px;
+  }
+  .about-role{
+    display: block; font-size: 12.5px; letter-spacing: 0.03em;
+    color: var(--amber-soft); margin-bottom: 16px;
+  }
+  .about-body{ font-size: 14.5px; line-height: 1.65; color: var(--ink-dim); margin: 0; max-width: 46ch; }
+  .about-body + .svc-note{ margin-top: 22px; }
+
+  .cap-stack{ display: grid; gap: 30px; }
+  .cap-stack h4{
+    font-family: var(--font-sora), sans-serif; font-weight: 600; font-size: 1.05rem;
+    letter-spacing: -0.01em; color: var(--ink); margin: 0 0 14px;
+  }
+
+  .about-leaks .leak-grid{ margin-top: 4px; }
+
+  /* Ownership ledger */
+  .own-list{ list-style: none; margin: 0; padding: 0; display: grid; }
+  .own-row{
+    display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 12px; align-items: center;
+    padding: 11px 0; border-bottom: 1px solid var(--line);
+    font-size: 14.5px; line-height: 1.4; color: var(--ink-faint);
+    animation: ownLight 9s linear infinite;
+    animation-delay: calc(var(--i, 0) * 0.28s);
+  }
+  .own-row:last-child{ border-bottom: 0; padding-bottom: 0; }
+  .own-check{
+    width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0;
+    background: rgba(240,160,89,0.12);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .own-check svg{ width: 13px; height: 13px; display: block; overflow: visible; color: var(--amber); }
+  .own-check path{
+    stroke-dasharray: 1; stroke-dashoffset: 1;
+    animation: ownDraw 9s linear infinite;
+    animation-delay: calc(var(--i, 0) * 0.28s);
+  }
+  .own-note{ margin: 18px 0 0; font-size: 13.5px; line-height: 1.6; color: var(--ink-faint); }
+  @keyframes ownDraw{
+    0%{ stroke-dashoffset: 1; }
+    8%{ stroke-dashoffset: 0; }
+    86%{ stroke-dashoffset: 0; }
+    94%{ stroke-dashoffset: 1; }
+    100%{ stroke-dashoffset: 1; }
+  }
+  @keyframes ownLight{
+    0%{ color: var(--ink-faint); }
+    8%{ color: var(--ink); }
+    86%{ color: var(--ink); }
+    94%{ color: var(--ink-faint); }
+    100%{ color: var(--ink-faint); }
+  }
+  @media (max-width: 640px){
+    .own-row{ font-size: 13.5px; gap: 10px; }
+    .about-name{ font-size: 1.35rem; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .own-row{ animation: none; color: var(--ink); }
+    .own-check path{ animation: none; stroke-dashoffset: 0; }
+  }
