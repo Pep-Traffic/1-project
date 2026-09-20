@@ -1891,3 +1891,92 @@
       background-position: 0 0;
     }
   }
+
+  /* ================= INDUSTRIES (index + trade template) ================= */
+  .ind-leaks .leak-card{ cursor: default; }
+
+  .mech-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 44px; align-items: start; }
+  .mech-card{
+    background: var(--panel); border: 1px solid var(--line); border-radius: 18px;
+    padding: 24px 22px; box-shadow: 0 18px 40px -28px rgba(0,0,0,0.7);
+  }
+  .mech-card h3{
+    font-family: var(--font-sora), sans-serif; font-size: 1.02rem; font-weight: 600;
+    color: var(--ink); letter-spacing: -0.01em; margin: 0 0 16px;
+  }
+
+  .mech-fields{ list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .mech-fields li{
+    position: relative; border: 1px dashed var(--line); border-radius: 10px;
+    padding: 11px 13px; font-size: 13.5px; line-height: 1.45; color: var(--ink-dim);
+  }
+  .mech-fields li::after{
+    content: ""; position: absolute; inset: -1px; border-radius: 10px;
+    border: 1px solid var(--amber); opacity: 0; pointer-events: none;
+    animation: mechFocus 8s ease-in-out infinite;
+  }
+  .mech-fields li:nth-child(1)::after{ animation-delay: 0s; }
+  .mech-fields li:nth-child(2)::after{ animation-delay: 2s; }
+  .mech-fields li:nth-child(3)::after{ animation-delay: 4s; }
+  .mech-fields li:nth-child(4)::after{ animation-delay: 6s; }
+  @keyframes mechFocus{ 0%, 2%{ opacity: 0; } 6%, 18%{ opacity: 1; } 22%, 100%{ opacity: 0; } }
+
+  .mech-sms{
+    margin: 0; padding: 14px 16px; border-radius: 14px 14px 14px 4px;
+    background: rgba(240,160,89,0.10); border: 1px solid rgba(240,160,89,0.28);
+    font-size: 13.5px; line-height: 1.6; color: var(--ink);
+  }
+  .mech-sms-meta{
+    display: flex; align-items: center; gap: 7px; margin: 12px 0 0;
+    font-size: 11.5px; color: var(--ink-faint);
+  }
+  .mech-sms-meta i{ width: 6px; height: 6px; border-radius: 50%; background: #3DBE7A; flex-shrink: 0; }
+
+  .mech-stages{ list-style: none; margin: 0; padding: 0 0 0 22px; display: grid; gap: 14px; position: relative; }
+  .mech-stages::before{ content: ""; position: absolute; left: 4px; top: 8px; bottom: 8px; width: 1px; background: var(--line); }
+  .mech-stages li{ position: relative; font-size: 13.5px; line-height: 1.45; color: var(--ink-dim); }
+  .mech-stages li::before{
+    content: ""; position: absolute; left: -22px; top: 5px; width: 9px; height: 9px; box-sizing: border-box;
+    border-radius: 50%; background: var(--panel); border: 1px solid var(--amber);
+  }
+  .mech-stages li:first-child::before{ background: var(--amber); }
+
+  .mech-caption{ margin: 24px 0 0; font-size: 13.5px; line-height: 1.6; color: var(--ink-faint); max-width: 64ch; }
+
+  @media (max-width: 900px){ .mech-grid{ grid-template-columns: 1fr; gap: 16px; } }
+  @media (prefers-reduced-motion: reduce){
+    .mech-fields li::after{ animation: none; opacity: 0; }
+  }
+
+  @media (max-width: 860px){
+    .p3-board-stack .p3-lanes{
+      display: grid; grid-template-columns: 1fr; gap: 10px;
+      position: static; height: auto; overflow: visible; padding: 16px; background: none;
+      border-top: 1px solid var(--line);
+    }
+    .p3-board-stack .p3-pill{
+      position: static; width: auto; height: auto; min-height: 42px;
+      opacity: 1; transform: none; animation: none; border-color: var(--line);
+    }
+    .p3-board-stack .p3-pill i{ animation: none; background: var(--amber); }
+    .p3-board-stack .p3-task{ white-space: normal; overflow: visible; text-overflow: clip; }
+    .p3-board-stack .p3-status{ display: none; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .p3-board-stack .p3-lanes{
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;
+      position: static; height: auto; overflow: visible; padding: 16px; background: none;
+      border-top: 1px solid var(--line);
+    }
+    .p3-board-stack .p3-pill{
+      position: static; width: auto; height: auto; min-height: 42px;
+      opacity: 1; transform: none; animation: none; border-color: var(--line);
+    }
+    .p3-board-stack .p3-pill:nth-child(n+4){ display: flex; }
+    .p3-board-stack .p3-pill i{ animation: none; background: var(--amber); }
+    .p3-board-stack .p3-task{ white-space: normal; overflow: visible; text-overflow: clip; }
+    .p3-board-stack .p3-status{ display: none; }
+  }
+  @media (max-width: 860px) and (prefers-reduced-motion: reduce){
+    .p3-board-stack .p3-lanes{ grid-template-columns: 1fr; }
+  }
