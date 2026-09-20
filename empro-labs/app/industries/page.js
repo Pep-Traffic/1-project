@@ -5,6 +5,7 @@ import PageHero from "../components/PageHero";
 import CtaBanner from "../components/CtaBanner";
 import { industries } from "./data";
 import { tradeIcon, plusIcon, pieceIcon, painIcons } from "./icons";
+import { shotFor, initialsFor } from "../work-shots";
 
 export const metadata = {
   title: "Contractor Marketing Agency — Websites, SEO & Ads",
@@ -163,12 +164,12 @@ export default function IndustriesPage() {
           <div className="portfolio-grid">
             {work.map((p) => (
               <a className="portfolio-card show" key={p.url} href={p.url} target="_blank" rel="noopener noreferrer">
-                <div className="portfolio-thumb portfolio-thumb-shot">
-                  <img
-                    src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(p.url)}?w=800`}
-                    alt={`${p.name} live screenshot`}
-                    loading="lazy"
-                  />
+                <div className={`portfolio-thumb${shotFor(p.url) ? " portfolio-thumb-shot" : ""}`}>
+                  {shotFor(p.url) ? (
+                    <img src={shotFor(p.url)} alt={`${p.name} live screenshot`} width="828" height="466" loading="lazy" />
+                  ) : (
+                    initialsFor(p.name)
+                  )}
                 </div>
                 <div className="portfolio-body">
                   <span className="portfolio-tag">{p.tag}</span>

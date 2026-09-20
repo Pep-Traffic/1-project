@@ -1,6 +1,7 @@
 import GHLContactForm from "./GHLContactForm";
 import Faq from "./Faq";
 import FeatureShowcase from "./FeatureShowcase";
+import { shotFor, initialsFor } from "../work-shots";
 
 const trades = [
   { name: "Roofing", icon: "<path d=\"M3 11l9-7 9 7\"/><path d=\"M5 10v10h14V10\"/>" },
@@ -608,8 +609,17 @@ export default function HomeContent() {
         { name: "Mangoholic", tag: "WooCommerce build", url: "https://mangoholicae.com" },
       ].map((p) => (
         <div className="portfolio-card show" key={p.name}>
-          <a className="portfolio-thumb portfolio-thumb-shot" href={p.url} target="_blank" rel="noopener noreferrer">
-            <img src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(p.url)}?w=800`} alt={`${p.name} live screenshot`} loading="lazy" />
+          <a
+            className={`portfolio-thumb${shotFor(p.url) ? " portfolio-thumb-shot" : ""}`}
+            href={p.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {shotFor(p.url) ? (
+              <img src={shotFor(p.url)} alt={`${p.name} live screenshot`} width="828" height="466" loading="lazy" />
+            ) : (
+              initialsFor(p.name)
+            )}
           </a>
           <div className="portfolio-body">
             <span className="portfolio-tag">{p.tag}</span>

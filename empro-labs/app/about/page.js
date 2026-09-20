@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import PageHero from "../components/PageHero";
 import CtaBanner from "../components/CtaBanner";
 import Faq from "../components/Faq";
+import { shotFor, initialsFor } from "../work-shots";
 
 export const metadata = {
   title: "About — Empro Labs",
@@ -304,12 +305,17 @@ export default function AboutPage() {
           <div className="portfolio-grid">
             {sites.map((p) => (
               <div className="portfolio-card show" key={p.url}>
-                <a className="portfolio-thumb portfolio-thumb-shot" href={`https://${p.url}`} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(`https://${p.url}`)}?w=800`}
-                    alt={`${p.name} live screenshot`}
-                    loading="lazy"
-                  />
+                <a
+                  className={`portfolio-thumb${shotFor(p.url) ? " portfolio-thumb-shot" : ""}`}
+                  href={`https://${p.url}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {shotFor(p.url) ? (
+                    <img src={shotFor(p.url)} alt={`${p.name} live screenshot`} width="828" height="466" loading="lazy" />
+                  ) : (
+                    initialsFor(p.name)
+                  )}
                 </a>
                 <div className="portfolio-body">
                   <span className="portfolio-tag">{p.tag}</span>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { shotFor } from "../work-shots";
 
 const RING_PROJECTS = [
   { name: "CorePower Peptide", tag: "Custom build", url: "https://corepowerpeptide.com" },
@@ -77,7 +78,7 @@ export default function PortfolioRing() {
                   transform: `translate3d(${x}px, 0, ${z}px) rotateY(${faceAngle}deg)`,
                 }}
               >
-                {p.url ? (
+                {shotFor(p.url) ? (
                   <a
                     className="ring-card-thumb"
                     href={p.url}
@@ -86,8 +87,10 @@ export default function PortfolioRing() {
                     onPointerDown={(e) => e.stopPropagation()}
                   >
                     <img
-                      src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(p.url)}?w=500`}
+                      src={shotFor(p.url, 640)}
                       alt={`${p.name} live screenshot`}
+                      width="640"
+                      height="360"
                       loading="lazy"
                       draggable={false}
                     />

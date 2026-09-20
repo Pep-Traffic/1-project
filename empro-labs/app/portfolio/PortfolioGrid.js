@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { shotFor, initialsFor } from "../work-shots";
 
 const projects = [
   { name: "CorePower Peptide", categories: ["Web Development"], tag: "Custom build", result: "Live site", url: "https://corepowerpeptide.com" },
@@ -45,8 +46,10 @@ export default function PortfolioGrid() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(p.url)}?w=800`}
+                    src={shotFor(p.url)}
                     alt={`${p.name} live screenshot`}
+                    width="828"
+                    height="466"
                     loading="lazy"
                   />
                 </a>

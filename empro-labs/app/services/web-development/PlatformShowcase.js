@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { shotFor } from "../../work-shots";
 
 const platforms = {
   GHL: {
@@ -48,7 +49,7 @@ export default function PlatformShowcase() {
       <div className="platform-projects">
         {current.projects.map((p) => (
           <div className="portfolio-card show" key={p.name}>
-            {p.url ? (
+            {shotFor(p.url) ? (
               <a
                 className="portfolio-thumb portfolio-thumb-shot"
                 href={p.url}
@@ -56,8 +57,10 @@ export default function PlatformShowcase() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src={`https://s0.wp.com/mshots/v1/${encodeURIComponent(p.url)}?w=800`}
+                  src={shotFor(p.url)}
                   alt={`${p.name} live screenshot`}
+                  width="828"
+                  height="466"
                   loading="lazy"
                 />
               </a>
