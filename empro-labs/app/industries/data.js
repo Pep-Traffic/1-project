@@ -12,6 +12,9 @@ export const industries = [
     slug: "roofing",
     name: "Roofing",
     shortName: "roofing",
+    metaTitle: "Roofing Marketing Agency — Websites, SEO & Ads",
+    metaDescription:
+      "A roofing marketing agency handling your website, roofing SEO and ads. Built for storm weeks, insurance jobs and booked inspections. Get a free quote.",
     headline: "The roofing company website, SEO & ads system that books more jobs.",
     lede: "A GHL or WordPress website, local SEO, and ad campaigns built around roof repairs and replacements — installed and run by one team, not a rotating cast of freelancers.",
     edge: "Storm weeks bury you, then it goes quiet for a month. The system has to hold both.",
@@ -92,6 +95,9 @@ export const industries = [
     slug: "hvac-heating",
     name: "HVAC & Heating",
     shortName: "HVAC",
+    metaTitle: "HVAC Marketing Agency — Websites, SEO & Ads",
+    metaDescription:
+      "An HVAC marketing agency for heating and cooling contractors: website, HVAC SEO and ads tuned to both peak seasons and the quiet months between.",
     headline: "The HVAC & heating website, SEO & ads system that books more jobs.",
     lede: "A GHL funnel or WordPress site, local SEO, and ad campaigns built around emergency repairs, installs, and maintenance plans — with a CRM that answers every lead within seconds.",
     edge: "Two peak seasons, two different ad budgets, and maintenance plans to sell in the months between.",
@@ -172,6 +178,9 @@ export const industries = [
     slug: "plumbing",
     name: "Plumbing",
     shortName: "plumbing",
+    metaTitle: "Plumber Website Design, SEO & Ads — Empro Labs",
+    metaDescription:
+      "Plumber website design with after-hours text-back, local SEO and ads. Built so the 11pm emergency call reaches you, not the next plumber. Free quote.",
     headline: "The plumbing company website, SEO & ads system that books more jobs.",
     lede: "A website, local SEO, and ad campaigns built around emergency plumbing searches — connected to a CRM that responds to every call and text in seconds, not hours.",
     edge: "Emergencies at 11pm. Whoever answers first gets the job, and it won't be whoever calls back on Monday.",
@@ -252,6 +261,9 @@ export const industries = [
     slug: "electrical",
     name: "Electrical",
     shortName: "electrical",
+    metaTitle: "Electrician Website Design, SEO & Ads — Empro Labs",
+    metaDescription:
+      "Electrician website design with license and insurance signals, job-size intake, electrician SEO and ads that survive the permit wait. Get a free quote.",
     headline: "The electrician website, SEO & ads system that books more jobs.",
     lede: "A website, local SEO, and ad campaigns built around residential and commercial electrical searches — with a CRM that turns every inquiry into a scheduled job.",
     edge: "Panel upgrades and permits slow the quote down. The follow-up has to survive the wait.",
@@ -331,6 +343,9 @@ export const industries = [
     slug: "remodeling",
     name: "Remodeling",
     shortName: "remodeling",
+    metaTitle: "Remodeling Marketing Agency — Websites, SEO & Ads",
+    metaDescription:
+      "A remodeling marketing agency for kitchen, bath and whole-home contractors. Portfolio-led sites and follow-up that survives a months-long decision.",
     headline: "The remodeling contractor website, SEO & ads system that books more jobs.",
     lede: "A website, local SEO, and ad campaigns built around kitchen, bath, and whole-home remodeling searches — connected to a CRM that keeps every estimate moving.",
     edge: "A kitchen is a months-long decision. Most of them are lost in the gap between the estimate and the signature.",

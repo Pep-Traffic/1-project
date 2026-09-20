@@ -6,9 +6,9 @@ import CtaBanner from "../../components/CtaBanner";
 import PlatformShowcase from "./PlatformShowcase";
 
 export const metadata = {
-  title: "GoHighLevel, WordPress & Shopify Website Design — Empro Labs",
+  title: "Website Design Company for Small Business — Empro Labs",
   description:
-    "GoHighLevel (GHL) website design, WordPress website development, and Shopify agency services from Empro Labs — the website redesign company and custom website developer small businesses hire to build funnels, rebuild sites, and ship stores that convert. Get a free quote.",
+    "A small business website design company building on GoHighLevel, WordPress and Shopify, plus custom builds. Fixed quote before work starts. Get a quote.",
   alternates: { canonical: "/services/web-development" },
 };
 

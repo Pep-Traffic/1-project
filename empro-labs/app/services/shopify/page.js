@@ -5,9 +5,9 @@ import CtaBanner from "../../components/CtaBanner";
 import Faq from "../../components/Faq";
 
 export const metadata = {
-  title: "Shopify Developer & Website Design — Empro Labs",
+  title: "Shopify Development Agency — Themes, Liquid & Speed",
   description:
-    "Hire a Shopify developer for custom theme design, speed optimization, and app integration — small business Shopify stores built to convert, not just look good in a demo. Get a free quote.",
+    "A Shopify development agency for custom themes, Liquid development, checkout fixes and Core Web Vitals work. Scoped after a store audit. Get a quote.",
   alternates: { canonical: "/services/shopify" },
 };
 

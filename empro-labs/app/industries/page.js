@@ -7,9 +7,9 @@ import { industries } from "./data";
 import { tradeIcon, plusIcon, pieceIcon, painIcons } from "./icons";
 
 export const metadata = {
-  title: "Industries We Serve — GHL, WordPress & Shopify for Home Services — Empro Labs",
+  title: "Contractor Marketing Agency — Websites, SEO & Ads",
   description:
-    "Empro Labs builds the website, SEO, and ads system for roofing, HVAC, plumbing, electrical, and remodeling companies — booked more jobs, not just more clicks.",
+    "A contractor marketing agency for roofing, HVAC, plumbing, electrical and remodeling. See the intake, follow-up and pipeline we ship for your trade.",
   alternates: { canonical: "/industries" },
 };
 

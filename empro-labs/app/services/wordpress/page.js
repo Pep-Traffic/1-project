@@ -5,9 +5,9 @@ import CtaBanner from "../../components/CtaBanner";
 import Faq from "../../components/Faq";
 
 export const metadata = {
-  title: "WordPress Developer & Website Design — Empro Labs",
+  title: "Hire a WordPress Developer — Custom Builds & Speed",
   description:
-    "Hire a WordPress developer for custom Elementor and Gutenberg builds, speed and security hardening, and WooCommerce rebuilds — small business website design that loads fast and actually ranks. Get a free quote.",
+    "Hire a WordPress developer for custom Elementor and Gutenberg builds, WooCommerce rebuilds, and speed and security work. Typically live in 2-4 weeks.",
   alternates: { canonical: "/services/wordpress" },
 };
 

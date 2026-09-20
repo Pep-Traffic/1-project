@@ -5,9 +5,9 @@ import CtaBanner from "../../components/CtaBanner";
 import Faq from "../../components/Faq";
 
 export const metadata = {
-  title: "SEO Agency for Small Businesses — Empro Labs",
+  title: "Contractor SEO — Local SEO for Home Service Trades",
   description:
-    "Empro Labs offers local SEO services and SEO for small businesses running on GoHighLevel, WordPress, or Shopify. Technical audits, on-page fixes, and content strategy built on the Empro Lab System, tracked back to leads and booked jobs. Get a free SEO audit.",
+    "Contractor SEO that turns rankings into calls: technical fixes, Google Business Profile and service-area pages for roofers, HVAC and plumbers. Free audit.",
   alternates: { canonical: "/services/seo" },
 };
 

@@ -5,9 +5,9 @@ import CtaBanner from "../../components/CtaBanner";
 import Faq from "../../components/Faq";
 
 export const metadata = {
-  title: "Ads Management Agency for Small Businesses — Empro Labs",
+  title: "PPC Management for Small Business — Google Ads & LSA",
   description:
-    "Empro Labs is a PPC management agency for small businesses on GoHighLevel, WordPress, and Shopify. Paid search and social campaigns run on the Empro Labs System, optimized for cost per booked job, not just clicks. Get a free quote.",
+    "PPC management for small businesses: Google Search, Local Services Ads and retargeting, managed against cost per booked job, not clicks. Get a free audit.",
   alternates: { canonical: "/services/ads-management" },
 };
 

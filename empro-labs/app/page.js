@@ -4,9 +4,9 @@ import HomeContent from "./components/HomeContent";
 import HomeInteractions from "./components/HomeInteractions";
 
 export const metadata = {
-  title: "GHL, WordPress & Shopify Web Design, SEO & Ads Agency — Empro Labs",
+  title: "Home Service Website Design, SEO & Ads — Empro Labs",
   description:
-    "Empro Labs builds GoHighLevel funnels, WordPress and Shopify sites, plus the SEO and ads that bring in customers — for small businesses done relying on a rotating cast of freelancers.",
+    "Websites, SEO and Google Ads for roofing, HVAC, plumbing, electrical and remodeling companies. Built to turn visitors into booked jobs. Get a free audit.",
   alternates: { canonical: "/" },
 };
 

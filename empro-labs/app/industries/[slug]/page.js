@@ -16,8 +16,8 @@ export function generateMetadata({ params }) {
   const ind = getIndustryBySlug(params.slug);
   if (!ind) return {};
   return {
-    title: `${ind.name} Website, SEO & Ads Agency — Empro Labs`,
-    description: ind.lede,
+    title: ind.metaTitle,
+    description: ind.metaDescription,
     alternates: { canonical: `/industries/${ind.slug}` },
   };
 }

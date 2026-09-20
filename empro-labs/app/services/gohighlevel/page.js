@@ -5,9 +5,9 @@ import CtaBanner from "../../components/CtaBanner";
 import Faq from "../../components/Faq";
 
 export const metadata = {
-  title: "GoHighLevel Developer & CRM Setup — Empro Labs",
+  title: "GoHighLevel Developer — GHL Funnels & CRM Setup",
   description:
-    "Hire a GoHighLevel (GHL) developer for custom snapshot setup, funnel styling, and webhook automation — GHL builds for small businesses and the agencies that resell it. Get a free quote.",
+    "Hire a GoHighLevel developer for snapshot setup, funnel and membership styling, webhook automation and CRM builds. Typically live in 2-4 weeks.",
   alternates: { canonical: "/services/gohighlevel" },
 };
 

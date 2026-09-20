@@ -6,9 +6,9 @@ import CtaBanner from "../components/CtaBanner";
 import Faq from "../components/Faq";
 
 export const metadata = {
-  title: "GHL, WordPress & Shopify Web Development, SEO & Ads — Empro Labs",
+  title: "Contractor Website Design, SEO & Ads Services — Empro Labs",
   description:
-    "Six services for home-service businesses: GoHighLevel funnels and CRM, WordPress sites, Shopify stores, custom builds, SEO and Google Ads management. What each one includes, how long it takes, and what you keep.",
+    "Six services for contractors and home-service businesses: websites on GoHighLevel, WordPress or Shopify, local SEO, and Google Ads. See what each includes.",
   alternates: { canonical: "/services" },
 };
 
