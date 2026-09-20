@@ -18,6 +18,24 @@ export const posts = [
     readTime: "8 min read",
   },
   {
+    slug: "home-services-crm",
+    title: "Home Services CRM: What Contractors Need",
+    excerpt:
+      "A home services CRM has one job: make sure no inquiry goes unanswered and no estimate goes quiet. Here's what that requires, what to ignore, and the order to set it up in.",
+    category: "CRM",
+    date: "2026-09-21",
+    readTime: "10 min read",
+  },
+  {
+    slug: "contractor-lead-generation",
+    title: "Contractor Lead Generation: 6 Channels Ranked",
+    excerpt:
+      "Local Services Ads, Search ads, the map pack, service-area pages, lead marketplaces and past customers — what each is for, which ones you own, and the order to build them in.",
+    category: "Lead Generation",
+    date: "2026-09-21",
+    readTime: "11 min read",
+  },
+  {
     slug: "website-builder",
     title: "Website Builder vs. Hiring a Web Design Agency: Which Is Right for Your Small Business?",
     excerpt:

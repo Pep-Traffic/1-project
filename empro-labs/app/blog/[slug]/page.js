@@ -6,11 +6,15 @@ import { posts, getPostBySlug } from "../data";
 import ShopifyGoHighLevelIntegrationGuide from "../content/shopify-gohighlevel-integration-guide";
 import WhatIsLeadConnectorCrm from "../content/what-is-lead-connector-crm";
 import WebsiteBuilderVsHiringAWebDesignAgency from "../content/website-builder";
+import HomeServicesCrm from "../content/home-services-crm";
+import ContractorLeadGeneration from "../content/contractor-lead-generation";
 
 const CONTENT_MAP = {
   "shopify-gohighlevel-integration-guide": ShopifyGoHighLevelIntegrationGuide,
   "what-is-lead-connector-crm": WhatIsLeadConnectorCrm,
   "website-builder": WebsiteBuilderVsHiringAWebDesignAgency,
+  "home-services-crm": HomeServicesCrm,
+  "contractor-lead-generation": ContractorLeadGeneration,
 };
 
 export function generateStaticParams() {
