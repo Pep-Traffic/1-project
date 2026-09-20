@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Faq({ title, lede, items }) {
+export default function Faq({ title, lede, items, aside }) {
   return (
     <section className="faq">
       <div className="wrap">
@@ -8,16 +8,20 @@ export default function Faq({ title, lede, items }) {
           <div className="faq-intro">
             <h2>{title}</h2>
             {lede ? <p className="section-lede">{lede}</p> : null}
-            <div className="faq-ask">
-              <b>Still have a question?</b>
-              <span>Tell us what you're trying to solve and we'll answer within one business day.</span>
-              <Link href="/contact" className="faq-ask-link">
-                Ask us directly
-                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" aria-hidden="true">
-                  <path d="M3 8h9M8.5 4L12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </Link>
-            </div>
+            {aside === undefined ? (
+              <div className="faq-ask">
+                <b>Still have a question?</b>
+                <span>Tell us what you're trying to solve and we'll answer within one business day.</span>
+                <Link href="/contact" className="faq-ask-link">
+                  Ask us directly
+                  <svg viewBox="0 0 16 16" width="14" height="14" fill="none" aria-hidden="true">
+                    <path d="M3 8h9M8.5 4L12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </Link>
+              </div>
+            ) : (
+              aside
+            )}
           </div>
 
           <div className="faq-list">

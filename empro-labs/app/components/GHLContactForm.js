@@ -7,7 +7,7 @@ export default function GHLContactForm() {
     <>
       <iframe
         src="https://link.pmcasolutions.com/widget/form/kFLV4CeQUICdgxlhlLX2"
-        style={{ width: "100%", height: "494px", border: "none", borderRadius: "8px" }}
+        style={{ width: "100%", height: "494px", border: "none", borderRadius: "12px" }}
         id="inline-kFLV4CeQUICdgxlhlLX2"
         data-layout='{"id":"INLINE"}'
         data-trigger-type="alwaysShow"
