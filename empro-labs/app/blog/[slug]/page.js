@@ -8,6 +8,7 @@ import WhatIsLeadConnectorCrm from "../content/what-is-lead-connector-crm";
 import WebsiteBuilderVsHiringAWebDesignAgency from "../content/website-builder";
 import HomeServicesCrm from "../content/home-services-crm";
 import ContractorLeadGeneration from "../content/contractor-lead-generation";
+import GoHighLevelPricing from "../content/gohighlevel-pricing";
 
 const CONTENT_MAP = {
   "shopify-gohighlevel-integration-guide": ShopifyGoHighLevelIntegrationGuide,
@@ -15,6 +16,7 @@ const CONTENT_MAP = {
   "website-builder": WebsiteBuilderVsHiringAWebDesignAgency,
   "home-services-crm": HomeServicesCrm,
   "contractor-lead-generation": ContractorLeadGeneration,
+  "gohighlevel-pricing": GoHighLevelPricing,
 };
 
 export function generateStaticParams() {

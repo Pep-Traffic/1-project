@@ -1,5 +1,14 @@
 export const posts = [
   {
+    slug: "gohighlevel-pricing",
+    title: "GoHighLevel Pricing 2026: What It Really Costs",
+    excerpt:
+      "GoHighLevel is $97, $297 or $497 a month — but texts, calls, AI and setup sit outside the pricing page. What each plan includes, the hidden costs, and which plan you actually need.",
+    category: "GoHighLevel",
+    date: "2026-09-22",
+    readTime: "12 min read",
+  },
+  {
     slug: "shopify-gohighlevel-integration-guide",
     title: "The Definitive 2026 Guide to Integrating Shopify with GoHighLevel for Enterprise Automation",
     excerpt:
