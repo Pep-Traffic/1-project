@@ -1,4 +1,4 @@
-import GHLContactForm from "./GHLContactForm";
+import InquiryPanel from "./InquiryPanel";
 import Faq from "./Faq";
 import FeatureShowcase from "./FeatureShowcase";
 import { shotFor, initialsFor } from "../work-shots";
@@ -677,14 +677,14 @@ export default function HomeContent() {
     <div className="contact-grid">
       <div>
         <h2>Tell us what you're building</h2>
-        <p className="section-lede">Fill this in and we'll reply within one business day with next steps — no sales call required first.</p>
+        <p className="section-lede">Send us a line about what's not working and we'll reply within one business day with next steps — no sales call required first.</p>
         <ul className="contact-info">
           <li><span>Email</span><a href="mailto:hello@emprolabs.dev">hello@emprolabs.dev</a></li>
           <li><span>Response time</span><span>Within 1 business day</span></li>
         </ul>
       </div>
 
-      <GHLContactForm />
+      <InquiryPanel />
     </div>
   </div>
 </section>

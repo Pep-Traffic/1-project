@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PageHero from "../components/PageHero";
 import Faq from "../components/Faq";
-import GHLContactForm from "../components/GHLContactForm";
+import InquiryPanel from "../components/InquiryPanel";
 import CopyOutline from "./CopyOutline";
 
 export const metadata = {
@@ -51,7 +51,7 @@ export default function ContactPage() {
 
       <PageHero
         title="Tell us what you're building"
-        lede="Send the form and you'll get a real reply from Adnan within one business day — what we'd fix first, roughly what it costs, and how long it takes. No sales call required to get that."
+        lede="Send us the details and you'll get a real reply from Adnan within one business day — what we'd fix first, roughly what it costs, and how long it takes. No sales call required to get that."
       />
 
       <section className="contact">
@@ -76,32 +76,9 @@ export default function ContactPage() {
               </ul>
 
               <CopyOutline />
-
-              <h3 className="contact-sub">Rather not fill in a form?</h3>
-              <ul className="contact-info">
-                <li>
-                  <span>Email</span>
-                  <a href="mailto:hello@emprolabs.dev">hello@emprolabs.dev</a>
-                </li>
-                <li>
-                  <span>Reply time</span>
-                  <span>Within 1 business day</span>
-                </li>
-              </ul>
             </div>
 
-            <div className="dash-panel contact-form-panel">
-              <div className="dash-head">
-                <b>Project inquiry</b>
-                <span>Runs on our own GoHighLevel</span>
-              </div>
-              <GHLContactForm />
-              <p className="form-note">
-                This is the same CRM we set up for clients, so your details land in a pipeline, not an inbox someone
-                forgets to check. If the form doesn&rsquo;t load for you, email{" "}
-                <a href="mailto:hello@emprolabs.dev">hello@emprolabs.dev</a> instead and we&rsquo;ll pick it up there.
-              </p>
-            </div>
+            <InquiryPanel showOnboarding />
           </div>
         </div>
       </section>
@@ -117,10 +94,10 @@ export default function ContactPage() {
                 <div className="p3-numrow">
                   <span className="p3-num">1</span>
                 </div>
-                <h3>It lands in the pipeline</h3>
+                <h3>It reaches the person who builds it</h3>
                 <p>
-                  It goes into our GoHighLevel pipeline, the same CRM we set up for clients, so it can&rsquo;t get
-                  buried in an inbox behind everything else that arrived that morning.
+                  There&rsquo;s no intake team or ticket queue in between. Adnan reads every message himself, so
+                  nobody has to pass your details along before the work can be scoped.
                 </p>
               </div>
               <div className="p3-col">
@@ -150,12 +127,12 @@ export default function ContactPage() {
 
       <Faq
         title="Before you send it"
-        lede="The questions people email us instead of using the form."
+        lede="What people usually ask before they send anything."
         aside={
           <div className="faq-ask">
-            <b>Rather just email?</b>
+            <b>Still have a question?</b>
             <span>
-              Send the same details to hello@emprolabs.dev. It reaches the same person and gets the same reply.
+              Email it to hello@emprolabs.dev. It reaches the same person who would build your project.
             </span>
             <a href="mailto:hello@emprolabs.dev" className="faq-ask-link">
               hello@emprolabs.dev
@@ -171,7 +148,7 @@ export default function ContactPage() {
       <section className="work">
         <div className="wrap">
           <h2>Not ready to send anything yet?</h2>
-          <p className="section-lede">Have a look around first. The form will still be here.</p>
+          <p className="section-lede">Have a look around first. We&rsquo;ll still be here.</p>
 
           <div className="values-grid">
             <Link href="/portfolio" className="value-card">

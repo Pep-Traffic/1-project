@@ -12,7 +12,7 @@ const OUTLINE = [
 
 const LABELS = {
   idle: "Copy this outline",
-  copied: "Copied — paste it in the message box",
+  copied: "Copied — paste it into your message",
   failed: "Copy didn't work — select the list above",
 };
 
