@@ -1187,43 +1187,182 @@
   .portfolio-body p{ font-size: 13.5px; line-height: 1.55; color: var(--ink-dim); margin: 0; }
   @media (max-width: 900px){ .portfolio-grid{ grid-template-columns: 1fr; } }
 
-  /* ================= PORTFOLIO RING ================= */
-  .portfolio-ring-section{ padding: 84px 0 100px; overflow: hidden; }
-  .ring-viewport{
-    perspective: 1800px; height: 420px; padding: 40px 0; box-sizing: border-box;
+  /* ================= PORTFOLIO: ORBIT CAROUSEL ================= */
+  .pring{ padding: 70px 0 30px; overflow: hidden; }
+  .pring-toolbar{ display: flex; justify-content: flex-end; max-width: 1100px; margin: 0 auto 6px; }
+  .pring-toggle{
+    display: inline-flex; align-items: center; gap: 7px; min-height: 34px; padding: 0 14px; border-radius: 999px;
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink-dim);
+    font-family: var(--font-outfit), sans-serif; font-size: 12.5px; font-weight: 600; cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
+  }
+  .pring-toggle:hover{ border-color: rgba(240,160,89,0.55); color: var(--ink); }
+  .pring-toggle[aria-pressed="true"]{ color: var(--amber-soft); border-color: rgba(240,160,89,0.45); }
+  .pring-toggle:focus-visible{ outline: 2px solid var(--amber); outline-offset: 3px; }
+  .pring-stage{
+    position: relative; height: 430px; margin: 0 auto; max-width: 1100px;
+    cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; outline: none;
+  }
+  .pring-stage.is-dragging{ cursor: grabbing; }
+  .pring-stage:focus-visible{ outline: 2px solid var(--amber); outline-offset: 6px; border-radius: 22px; }
+  .pring-floor{
+    position: absolute; left: 50%; top: 62%; width: 78%; height: 150px; transform: translate(-50%, -50%);
+    background: radial-gradient(50% 50% at 50% 50%, rgba(240,160,89,0.16), transparent 70%);
+    pointer-events: none;
+  }
+  .pring-card{
+    position: absolute; left: 50%; top: 50%; width: 300px; padding: 0; margin: 0;
+    border: 1px solid var(--line); border-radius: 16px; background: var(--panel); overflow: hidden;
+    text-align: left; color: inherit; font: inherit;
+    box-shadow: 0 30px 60px -32px rgba(0,0,0,0.85);
+    will-change: transform, opacity, filter;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .pring-card.is-active{
+    border-color: rgba(240,160,89,0.55);
+    box-shadow: 0 34px 70px -30px rgba(0,0,0,0.9), 0 0 0 1px rgba(240,160,89,0.25), 0 0 60px -10px rgba(240,160,89,0.35);
+  }
+  .pring-chrome, .pcard-chrome{
+    display: flex; align-items: center; gap: 6px; padding: 9px 12px;
+    background: var(--panel-2); border-bottom: 1px solid var(--line);
+  }
+  .pring-chrome i, .pcard-chrome i{ width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.14); flex-shrink: 0; }
+  .pring-chrome em, .pcard-chrome em{
+    margin-left: 8px; flex: 1; min-width: 0; padding: 3px 10px; border-radius: 999px; background: var(--bg);
+    font-style: normal; font-size: 10.5px; color: var(--ink-dim);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .pring-shot, .pcard-shot{ display: block; aspect-ratio: 16 / 9; overflow: hidden; background: var(--bg-alt); }
+  .pring-shot img, .pcard-shot img{ width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; pointer-events: none; }
+  .pring-shot.is-fallback, .pcard-shot.is-fallback{
     display: flex; align-items: center; justify-content: center;
-    cursor: grab; touch-action: none; user-select: none;
+    background: linear-gradient(140deg, rgba(240,160,89,0.16), rgba(217,102,43,0.05)), var(--bg-alt);
   }
-  .portfolio-ring-section.dragging .ring-viewport{ cursor: grabbing; }
-  .ring{
-    position: relative; width: 0; height: 0; transform-style: preserve-3d;
-    transform: rotateX(14deg) translateY(10px);
+  .pring-shot.is-fallback b, .pcard-shot.is-fallback b{
+    font-family: var(--font-sora), sans-serif; font-weight: 700; font-size: 2rem; color: var(--amber-soft); letter-spacing: 0.02em;
   }
-  .ring-card{
-    position: absolute; width: 220px; height: 290px; left: -110px; top: -145px;
-    background: var(--panel); border: 1px solid var(--line); border-radius: 16px; overflow: hidden;
-    backface-visibility: hidden; display: flex; flex-direction: column;
-    box-shadow: 0 30px 60px -30px rgba(0,0,0,0.7);
-    transition: transform 0.08s linear;
+  .pring-name{
+    display: block; padding: 12px 14px 14px; font-family: var(--font-sora), sans-serif;
+    font-size: 0.95rem; font-weight: 600; color: var(--ink);
   }
-  .ring-card-thumb{
-    height: 150px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
-    background: linear-gradient(140deg, rgba(240,160,89,0.14), rgba(217,102,43,0.06));
-    border-bottom: 1px solid var(--line); overflow: hidden;
+
+  .pring-panel{
+    display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 24px;
+    max-width: 720px; margin: 10px auto 0;
   }
-  .ring-card-thumb img{ width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; pointer-events: none; }
-  .ring-card-thumb-fallback{
-    font-family: var(--font-sora), sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--amber-soft);
+  .pring-arrow{
+    width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel);
+    color: var(--ink); display: inline-flex; align-items: center; justify-content: center; cursor: pointer;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s cubic-bezier(.16,1,.3,1);
   }
-  .ring-card-body{ padding: 16px 18px 18px; }
-  .ring-card-body h3{ font-family: var(--font-sora), sans-serif; font-size: 0.98rem; font-weight: 600; margin: 0; }
-  .ring-hint{
-    text-align: center; margin: 18px 0 0; font-size: 12.5px; color: var(--ink-faint); letter-spacing: 0.03em;
+  .pring-arrow:hover{ border-color: rgba(240,160,89,0.55); background: var(--panel-2); }
+  .pring-arrow:active{ transform: scale(0.94); }
+  .pring-arrow:focus-visible{ outline: 2px solid var(--amber); outline-offset: 3px; }
+  .pring-info{ text-align: center; min-height: 196px; }
+  .pring-meta, .pcard-meta{ display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+  .pring-badge{
+    display: inline-flex; align-items: center; padding: 4px 11px; border-radius: 999px;
+    font-size: 11.5px; font-weight: 600; letter-spacing: 0.02em;
+    background: rgba(240,160,89,0.14); border: 1px solid rgba(240,160,89,0.3); color: var(--amber-soft);
+  }
+  .pring-industry, .pcard-industry{ font-size: 12.5px; color: var(--ink-dim); }
+  .pring-title{
+    margin: 0 auto 10px; max-width: none; font-family: var(--font-sora), sans-serif; font-weight: 700;
+    font-size: clamp(1.4rem, 2.4vw, 1.9rem); letter-spacing: -0.015em; color: var(--ink);
+  }
+  .pring-summary{ margin: 0 auto 20px; max-width: 54ch; font-size: 15px; line-height: 1.65; color: var(--ink-dim); }
+  .pring-visit{
+    display: inline-flex; align-items: center; gap: 8px; padding: 11px 20px; border-radius: 999px;
+    background: linear-gradient(140deg, var(--amber), var(--amber-deep)); color: var(--on-accent);
+    font-size: 14px; font-weight: 600; text-decoration: none;
+    transition: transform 0.2s cubic-bezier(.16,1,.3,1), box-shadow 0.2s ease;
+  }
+  .pring-visit:hover{ transform: translateY(-2px); box-shadow: 0 12px 26px -12px rgba(240,160,89,0.7); }
+  .pring-visit:focus-visible{ outline: 2px solid var(--amber); outline-offset: 3px; }
+  .pring-dots{ display: flex; justify-content: center; gap: 2px; margin-top: 20px; }
+  /* 24px hit area per dot; the visible pill is drawn by ::before */
+  .pring-dot{
+    position: relative; width: 24px; height: 24px; padding: 0; border: 0; border-radius: 999px;
+    background: transparent; cursor: pointer; transition: width 0.3s cubic-bezier(.16,1,.3,1);
+  }
+  .pring-dot::before{
+    content: ""; position: absolute; left: 50%; top: 50%; width: 8px; height: 8px; border-radius: 999px;
+    transform: translate(-50%, -50%); background: rgba(255,255,255,0.45);
+    transition: width 0.3s cubic-bezier(.16,1,.3,1), background 0.3s ease;
+  }
+  .pring-dot:hover::before{ background: rgba(255,255,255,0.7); }
+  .pring-dot.is-active{ width: 36px; }
+  .pring-dot.is-active::before{ width: 26px; background: var(--amber); }
+  .pring-dot:focus-visible{ outline: 2px solid var(--amber); outline-offset: 1px; }
+
+  @media (max-width: 1024px){
+    .pring-stage{ height: 380px; }
+    .pring-card{ width: 250px; }
   }
   @media (max-width: 640px){
-    .ring-viewport{ height: 320px; padding: 30px 0; }
-    .ring-card{ width: 170px; height: 230px; left: -85px; top: -115px; }
-    .ring-card-thumb{ height: 110px; }
+    .pring{ padding: 44px 0 20px; }
+    .pring-stage{ height: 290px; }
+    .pring-card{ width: 190px; border-radius: 12px; }
+    .pring-name{ font-size: 0.85rem; padding: 9px 11px 11px; }
+    .pring-chrome em{ display: none; }
+    .pring-panel{ grid-template-columns: 1fr; gap: 16px; }
+    .pring-arrow{ display: none; }
+    .pring-info{ min-height: 0; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .pring-card, .pring-dot, .pring-dot::before, .pring-arrow, .pring-visit, .pring-toggle{ transition: none; }
+  }
+
+  /* ================= PORTFOLIO: PROJECT GRID ================= */
+  .pgrid-section{ padding-top: 60px; }
+  .pgrid-head{ display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; flex-wrap: wrap; margin-bottom: 34px; }
+  .pgrid-head h2{ margin-bottom: 10px; }
+  .pgrid-head .section-lede{ margin: 0; }
+  .pgrid-filters{ display: flex; gap: 8px; flex-wrap: wrap; }
+  .pgrid-filters .filter-tab{ display: inline-flex; align-items: center; gap: 8px; }
+  .pgrid-count{
+    min-width: 20px; height: 20px; padding: 0 6px; border-radius: 999px; font-size: 11px; font-weight: 600;
+    display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.08);
+  }
+  .filter-tab.active .pgrid-count{ background: rgba(26,16,6,0.22); }
+
+  .pgrid{ display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+  .pcard{
+    display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 18px;
+    background: var(--panel); overflow: hidden;
+    transition: transform 0.3s cubic-bezier(.16,1,.3,1), border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .pcard:hover{ transform: translateY(-4px); border-color: rgba(240,160,89,0.4); box-shadow: 0 26px 50px -30px rgba(217,102,43,0.45); }
+  .pcard-frame{ display: block; text-decoration: none; color: inherit; }
+  .pcard-frame:focus-visible{ outline: 2px solid var(--amber); outline-offset: -2px; }
+  .pcard-shot img{ transition: transform 0.6s cubic-bezier(.16,1,.3,1); }
+  .pcard:hover .pcard-shot img{ transform: scale(1.04); }
+  .pcard-body{ display: flex; flex-direction: column; flex: 1; padding: 20px 22px 22px; }
+  .pcard-meta{ justify-content: flex-start; margin-bottom: 12px; }
+  .pcard-body h3{ margin: 0 0 8px; font-family: var(--font-sora), sans-serif; font-size: 1.1rem; font-weight: 600; color: var(--ink); }
+  .pcard-body p{ margin: 0 0 16px; font-size: 14px; line-height: 1.6; color: var(--ink-dim); }
+  .pcard-built{ list-style: none; margin: 0 0 18px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .pcard-built li{
+    padding: 4px 10px; border-radius: 8px; font-size: 11.5px; color: var(--ink-dim);
+    background: var(--bg-alt); border: 1px solid var(--line);
+  }
+  .pcard-link{
+    margin-top: auto; display: inline-flex; align-items: center; gap: 7px; align-self: flex-start;
+    font-size: 13.5px; font-weight: 600; color: var(--amber-soft); text-decoration: none;
+  }
+  .pcard-link:hover{ color: var(--amber); }
+  .pcard-link svg{ transition: transform 0.2s cubic-bezier(.16,1,.3,1); }
+  .pcard-link:hover svg{ transform: translate(2px, -2px); }
+  .pcard-link:focus-visible{ outline: 2px solid var(--amber); outline-offset: 3px; border-radius: 4px; }
+
+  @media (max-width: 1024px){ .pgrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 640px){
+    .pgrid{ grid-template-columns: 1fr; }
+    .pgrid-head{ align-items: flex-start; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .pcard, .pcard-shot img, .pcard-link svg{ transition: none; }
+    .pcard:hover, .pcard:hover .pcard-shot img{ transform: none; }
   }
 
   /* ================= PLATFORM TABS (Web Development) ================= */

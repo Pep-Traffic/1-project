@@ -7,9 +7,9 @@ import PortfolioRing from "./PortfolioRing";
 import FeatureShowcase from "../components/FeatureShowcase";
 
 export const metadata = {
-  title: "Portfolio — Empro Labs",
+  title: "Web Design Portfolio — Live Sites We've Built",
   description:
-    "Web development, GHL, WordPress, Shopify, SEO, and ads projects delivered by Empro Labs, all built on the Empro Lab System.",
+    "Live websites built by Empro Labs on GoHighLevel, WordPress, WooCommerce and custom code — insurance, medical, e-commerce, education and nonprofit work you can open and inspect.",
   alternates: { canonical: "/portfolio" },
 };
 
@@ -19,14 +19,13 @@ export default function PortfolioPage() {
       <Header />
 
       <PageHero
-        eyebrow="Selected work"
-        title="Projects across the whole stack"
-        lede="From custom web builds to GHL automations, WordPress rebuilds, Shopify storefronts, SEO campaigns, and paid ads — every project below ran on the Empro Labs System. Filter by category to see relevant work."
+        title="Seven live sites. Open any of them."
+        lede="GoHighLevel, WordPress, WooCommerce and custom builds across insurance, dental and medical, e-commerce, education and nonprofit work. No mockups and no case-study PDFs — every link goes straight to the real site."
       />
 
       <PortfolioRing />
 
-      <section className="work">
+      <section className="work pgrid-section">
         <div className="wrap">
           <PortfolioGrid />
         </div>
@@ -36,8 +35,8 @@ export default function PortfolioPage() {
         num="01"
         label="How our sites are built"
         title="Every site we ship is built to get the quote request."
-        lede="The projects above share one blueprint: a clear offer, pages that load fast, and a form that reaches your CRM the moment someone submits it."
-        points={["A clear offer above the fold", "Fast on mobile, tested before launch", "Forms that reach your CRM instantly", "Trust signals where visitors decide", "Built on GHL, WordPress, or Shopify", "Tracked so you see what works"]}
+        lede="When we build a site for a service business, this is the checklist: a clear offer, pages that load fast, and a form that reaches your CRM the moment someone submits it."
+        points={["A clear offer above the fold", "Fast on mobile, tested before launch", "Forms that reach your CRM instantly", "Trust signals where visitors decide", "Built on GHL, WordPress, WooCommerce or custom code", "Tracked so you see what works"]}
         cta={{ href: "/contact", label: "Get a free audit" }}
       />
 
@@ -52,7 +51,11 @@ export default function PortfolioPage() {
         cta={{ href: "/contact", label: "Start a project" }}
       />
 
-      <CtaBanner />
+      <CtaBanner
+        title="Want your site in this list?"
+        lede="Send the site you have now and what isn't working. You'll get an honest read on what we'd change first."
+        ctaLabel="Get a free audit"
+      />
       <Footer />
     </>
   );
