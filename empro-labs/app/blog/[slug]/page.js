@@ -9,6 +9,7 @@ import WebsiteBuilderVsHiringAWebDesignAgency from "../content/website-builder";
 import HomeServicesCrm from "../content/home-services-crm";
 import ContractorLeadGeneration from "../content/contractor-lead-generation";
 import GoHighLevelPricing from "../content/gohighlevel-pricing";
+import SeoForRoofers from "../content/seo-for-roofers";
 
 const CONTENT_MAP = {
   "shopify-gohighlevel-integration-guide": ShopifyGoHighLevelIntegrationGuide,
@@ -17,6 +18,7 @@ const CONTENT_MAP = {
   "home-services-crm": HomeServicesCrm,
   "contractor-lead-generation": ContractorLeadGeneration,
   "gohighlevel-pricing": GoHighLevelPricing,
+  "seo-for-roofers": SeoForRoofers,
 };
 
 export function generateStaticParams() {

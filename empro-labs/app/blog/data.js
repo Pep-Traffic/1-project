@@ -1,5 +1,14 @@
 export const posts = [
   {
+    slug: "seo-for-roofers",
+    title: "SEO for Roofers: A Roofing SEO Playbook for 2026",
+    excerpt:
+      "What to fix first, what it realistically returns, and the part no other roofing SEO guide covers — how storm season and insurance work change the strategy. Written for the owner, not the agency.",
+    category: "SEO",
+    date: "2026-09-23",
+    readTime: "13 min read",
+  },
+  {
     slug: "gohighlevel-pricing",
     title: "GoHighLevel Pricing 2026: What It Really Costs",
     excerpt:
